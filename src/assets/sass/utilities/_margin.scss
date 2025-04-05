@@ -43,11 +43,25 @@
 
 
 .tw {
-  &-ms-auto {
-    margin-inline-start: auto;
+  &-ms {
+    &-auto {
+      margin-inline-start: auto;
+    }
   }
-  &-me-auto {
-    margin-inline-end: auto;
+  &--mt {
+    &-6-px {
+      margin-block-start: -6px;
+    }
+  }
+  &-me {
+    &-auto {
+      margin-inline-end: auto;
+    }
+  }
+  &--me {
+    &-6-px {
+      margin-inline-end: -6px;
+    }
   }
 }
 

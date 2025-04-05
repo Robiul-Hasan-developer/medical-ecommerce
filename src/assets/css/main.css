@@ -87,6 +87,7 @@
     --neutral-800: #1f2937;
     --neutral-900: #111827;
     --neutral-950: #030712;
+    --font-xxs: 0.625rem;
     --font-xs: 0.75rem;
     --font-sm: 0.875rem;
     --font-base: 1rem;
@@ -284,6 +285,14 @@
     background-color: var(--main-600);
     border: 1px solid var(--main-600);
     color: hsl(var(--black));
+}
+
+.placeholder-text-neutral-500::placeholder {
+    color: var(--neutral-500);
+}
+
+.placeholder-text-sm::placeholder {
+    font-size: 14px !important;
 }
 
 /* input File End */
@@ -650,6 +659,182 @@ input[type=number] {
 /* Toast Message Css End  */
 /* Custom Select Css Start */
 /* Custom Select Css End */
+/* ======================= Select 2 Css Start =========================== */
+.select2-container--default .select2-selection--single {
+    border: 0;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border: 0;
+    position: relative;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b::before {
+    position: relative;
+    content: "\e136";
+    font-family: "Phosphor";
+    font-weight: 900;
+    transition: 0.2s linear;
+}
+
+.select2-container--open.select2-container--default .select2-selection--single .select2-selection__arrow b::before {
+    content: "\e13c" !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: 0 !important;
+    margin: 0 !important;
+    inset-block-start: 0 !important;
+    inset-inline-start: 0 !important;
+    position: relative !important;
+}
+
+.select2-container {
+    height: inherit !important;
+    width: auto !important;
+}
+
+.select2-selection.select2-selection--single {
+    height: inherit !important;
+    border: 1px solid var(--gray-200) !important;
+    background-color: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.radius-end-0 .select2-selection.select2-selection--single {
+    border-start-start-radius: 50px !important;
+    border-end-start-radius: 50px !important;
+}
+
+.select2-selection.select2-selection--single {
+    position: relative;
+}
+
+.select2-container .selection {
+    height: inherit;
+}
+
+.select2-selection__arrow {
+    inset-inline-end: 0 !important;
+    inset-block-start: 50% !important;
+    transform: translateY(-50%) !important;
+    width: unset !important;
+    line-height: 2.6;
+    font-size: 10px;
+    color: var(--heading-color);
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-inline-start: 0px !important;
+    padding-inline-end: 20px !important;
+    font-size: 14px;
+}
+
+.select-border-end-0 .select2-selection.select2-selection--single {
+    border-inline-end: 0 !important;
+}
+
+.select2-dropdown {
+    border: 1px solid var(--gray-100) !important;
+    padding: 10px !important;
+    border-radius: 4px !important;
+    min-width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+    .select2-dropdown {
+        min-width: 170px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .select2-dropdown {
+        min-width: 150px;
+    }
+}
+
+.select2-search--dropdown {
+    padding: 0 !important;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid var(--gray-100) !important;
+    border-radius: 6px !important;
+    padding: 4px 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus-visible {
+    outline: 1px solid var(--main-200);
+}
+
+.select2-results {
+    margin-block-start: 8px !important;
+}
+
+.select2-results__option.select2-results__option--selectable {
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    color: var(--gray-500);
+    font-size: 14px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .select2-results__option.select2-results__option--selectable {
+        padding: 4px 10px !important;
+        font-size: 12px !important;
+    }
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: var(--main-600) !important;
+    color: white !important;
+}
+
+.select2-results__option.select2-results__option--selectable:hover {
+    background-color: var(--main-100) !important;
+    color: var(--main-600) !important;
+}
+
+.select2-container--default .select2-results__option--selected, .select2-container--default .select2-results__option--selected:hover {
+    background-color: var(--main-600) !important;
+    color: #fff !important;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    padding-inline-end: 8px;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar {
+    width: 6px;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-track {
+    background: #ecebeb;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb {
+    background: #cecece;
+    border-radius: 50px;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb:hover {
+    background: #c0c0c0;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb:active {
+    background: #b6b6b6;
+}
+
+.select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--main-600) !important;
+}
+
+.select2-container--open.select2-container--default .select2-selection--single .select2-selection__arrow b::before {
+    color: var(--main-600) !important;
+}
+
 /* ================================= Typography Css Start =========================== */
 * {
     margin: 0;
@@ -1774,6 +1959,10 @@ input:focus, input:focus-visible {
 /* Font Size Class Start */
 .text-inherit {
     font-size: inherit;
+}
+
+.tw-text-xxs {
+    font-size: 0.625rem;
 }
 
 .tw-text-xs {
@@ -3010,8 +3199,16 @@ input:focus, input:focus-visible {
     margin-inline-start: auto;
 }
 
+.tw--mt-6-px {
+    margin-block-start: -6px;
+}
+
 .tw-me-auto {
     margin-inline-end: auto;
+}
+
+.tw--me-6-px {
+    margin-inline-end: -6px;
 }
 
 .my-120 {
@@ -3118,6 +3315,10 @@ input:focus, input:focus-visible {
 
 .max-w-1290-px {
     max-width: 1290px;
+}
+
+.max-w-824-px {
+    max-width: 824px;
 }
 
 /* Max width Css Class End */
@@ -3876,6 +4077,10 @@ input:focus, input:focus-visible {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
 }
 
+.tw-pe-72-px {
+    padding-inline-end: 72px;
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -4254,11 +4459,6 @@ input:focus, input:focus-visible {
     transform: var(--translate-y-50);
 }
 
-.active--translate-y-scale-9:active {
-    transform: translateY(-4px) scale(0.94);
-    transition: 0.06s;
-}
-
 .hover--translate-y-05:hover {
     transform: translateY(-2px);
 }
@@ -4290,6 +4490,14 @@ input:focus, input:focus-visible {
 
 .hover--translate-x-2:hover {
     transform: translateX(-8px);
+}
+
+.active--translate-y-scale-9:active {
+    transform: translateY(0px) scale(0.94) !important;
+}
+
+.active--translate-y-50-scale-9:active {
+    transform: translateY(-50%) scale(0.94) !important;
 }
 
 /*================================== Translate Css End  ==================================*/
@@ -4743,8 +4951,8 @@ input:focus, input:focus-visible {
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 4px;
+    height: 4px;
     background-color: hsl(var(--white));
     mix-blend-mode: difference;
 }

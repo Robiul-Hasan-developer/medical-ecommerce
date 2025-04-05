@@ -16,13 +16,6 @@
     transform: var(--translate-y-50);
 }
 
-.active--translate-y-scale-9 {
-    &:active {
-        transform: translateY(-4px) scale(.94);
-        transition: .06s;
-    }
-}
-
 .hover--translate-y {
     &-05 {
         &:hover {
@@ -70,6 +63,19 @@
     &-2 {
         &:hover {
             transform: translateX(-8px);
+        }
+    }
+}
+
+.active--translate-y {
+    &-scale-9 {
+        &:active {
+            transform: translateY(0px) scale(.94) !important;
+        }
+    }
+    &-50-scale-9 {
+        &:active {
+            transform: translateY(-50%) scale(.94) !important;
         }
     }
 }

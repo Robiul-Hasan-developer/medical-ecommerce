@@ -11,6 +11,8 @@
     <title> Medical HTML Template</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Main css -->
@@ -162,7 +164,7 @@
                             <i class="ph-bold ph-caret-down"></i>
                         </span>
                     </button>
-                    <ul class="select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-start-0 tw-z-99 min-w-max tw-mt-2 invisible opacity-0 tw-duration-200 tw-max-h-400-px overflow-y-auto">
+                    <ul class="select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-end-0 tw-z-99 min-w-max tw-mt-2 invisible opacity-0 tw-duration-200 tw-max-h-400-px overflow-y-auto">
                         <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag1.png" alt="Flag" class=" tw-w-4 tw-h-3">
@@ -210,7 +212,7 @@
                             <i class="ph-bold ph-caret-down"></i>
                         </span>
                     </button>
-                    <ul class="select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-start-0 tw-z-99 min-w-max tw-mt-2 invisible opacity-0 tw-duration-200 tw-max-h-400-px overflow-y-auto">
+                    <ul class="select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-end-0 tw-z-99 min-w-max tw-mt-2 invisible opacity-0 tw-duration-200 tw-max-h-400-px overflow-y-auto">
                         <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag1.png" alt="Flag" class=" tw-w-4 tw-h-3">
@@ -256,8 +258,8 @@
 </div>
 <!-- ========================== Top Header End ============================== -->
     
-    <!-- ==================== Header Start Here ==================== -->
-<header class="header bg-neutral-100 transition-all">
+    <!-- ==================== Header Middle Start Here ==================== -->
+<header class="header bg-white transition-all tw-py-5">
     <div class="container container-two">
         <nav class="d-flex align-items-center justify-content-between">
             <!-- Logo Start -->
@@ -268,85 +270,63 @@
             </div>
             <!-- Logo End  -->
 
-            <!-- Menu Start  -->
-            <div class="header-menu d-lg-block d-none">
-                <!-- Nav menu Start -->
-<ul class="nav-menu d-lg-flex align-items-center tw-gap-6">
-    <li class="nav-menu__item has-submenu position-relative activePage">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">Home</a>
-        <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
-            <li class="nav-menu__item activePage">
-                <a href="index.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home One</a>
-            </li>
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home Two</a>
-            </li>
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home Three</a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-menu__item has-submenu position-relative">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">Pages</a>
-         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Property</a>
-            </li>
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> About Us</a>
-            </li>
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> FAQ</a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-menu__item has-submenu position-relative">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">Project</a>
-         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Project </a>
-            </li>
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">Project Details</a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-menu__item has-submenu position-relative">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">Blog</a>
-         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Blog Classic</a>
-            </li>
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Blog Details</a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-menu__item">
-        <a href="#" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-medium w-100">Contact</a>
-    </li>
-</ul>
-<!-- Nav menu End  -->
-
-            </div>
-            <!-- Menu End  -->
-
-            <!-- Header Right start -->
-             <div class="d-lg-block d-none">
-                <div class="d-flex align-items-center tw-gap-105 flex-shrink-0">   
-                    <a href="register.html" class="hover--translate-y-1 transition-all text-lg hover-underline text-neutral-600 hover-text-neutral-900">Login</a>
-                    <span>/</span>
-                    <a href="register.html" class="hover--translate-y-1 transition-all text-lg hover-underline text-neutral-600 hover-text-neutral-900">Register</a>
+            <div class="d-flex align-items-center tw-gap-5 flex-grow-1 justify-content-end">
+                <!-- form location Start -->
+                <form action="#" class="max-w-824-px w-100">
+                    <div class="text-heading d-flex align-items-center text-sm w-100 tw-gap-4 border border-neutral-200 tw-rounded tw-py-3 tw-ps-4 tw-pe-105">
+                        <div class="search-category d-sm-inline-flex d-none">
+                            <select class="category-select border border-neutral-40 border-end-0" name="state">
+                                <option value="1" selected disabled>All categories</option>
+                                <option value="1">Grocery</option>
+                                <option value="1">Breakfast & Dairy</option>
+                                <option value="1">Vegetables</option>
+                                <option value="1">Milks and Dairies</option>
+                                <option value="1">Pet Foods & Toy</option>
+                                <option value="1">Breads & Bakery</option>
+                                <option value="1">Fresh Seafood</option>
+                                <option value="1">Fronzen Foods</option>
+                                <option value="1">Noodles & Rice</option>
+                                <option value="1">Ice Cream</option>
+                            </select>
+                        </div>
+    
+                        <span class="tw-w-px tw-h-6 bg-neutral-300"></span>
+    
+                        <div class="position-relative flex-grow-1">
+                            <input type="text" class="border-0 focus-outline-0 bg-transparent placeholder-text-sm placeholder-text-neutral-500 tw-text-sm w-100 tw-pe-72-px" placeholder="Search for products, categories or brands...">
+                            <button type="submit" class="hover--translate-y-1 active--translate-y-50-scale-9 btn btn-main hover-style-one button--stroke d-flex align-items-center justify-content-center tw-gap-5 group p-0 fw-semibold tw-rounded tw-w-17 tw-h-11 tw-text-lg position-absolute top-50 translate-middle-y tw-end-0 tw-duration-200" data-block="button">
+                                <span class="button__flair"></span>
+                                <span class="button__label"><i class="ph ph-magnifying-glass"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!-- form location start -->
+              
+                <!-- Header Right start -->
+                <div class="d-flex align-items-center tw-gap-5 flex-shrink-0">
+                    <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center gap-4 tw-text-2xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9">
+                        <i class="ph-bold ph-user"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center gap-4 tw-text-2xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9 tw-me-105">
+                        <i class="ph-bold ph-heart"></i>
+                        <span class="tw-w-4 tw-h-4 d-flex align-items-center justify-content-center rounded-circle bg-main-600 text-white tw-text-xxs position-absolute top-0 tw-end-0 tw--me-6-px tw--mt-6-px">0</span>
+                    </a>
+                    <div class="d-flex align-items-center tw-gap-2">
+                        <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center gap-4 tw-text-2xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9 tw-me-105">
+                            <i class="ph ph-shopping-cart"></i>
+                            <span class="tw-w-4 tw-h-4 d-flex align-items-center justify-content-center rounded-circle bg-main-600 text-white tw-text-xxs position-absolute top-0 tw-end-0 tw--me-6-px tw--mt-6-px">0</span>
+                        </a>
+                        <span class="text-heading tw-text-sm flex-shrink-0 flex-grow-1">0 items <span class="text-main-600">$</span>0.00</span>
+                    </div>
                 </div>
-             </div>
-            <button type="button" class="toggle-mobileMenu leading-none d-lg-none ms-3 text-neutral-800 tw-text-9"> 
-                <i class="ph ph-list"></i>
-             </button>
-            <!-- Header Right End  -->
+                <!-- Header Right End  -->
+            </div>
+
         </nav>
     </div>
 </header>
-<!-- ==================== Header End Here ==================== -->
+<!-- ==================== Header Middle End Here ==================== -->
     
     <!-- ==================== Header Start Here ==================== -->
 <header class="header bg-neutral-100 transition-all">
@@ -621,11 +601,7 @@
                             <img src="assets/images/logo/logo-white.png" alt="Logo">
                         </a>
                     </div>
-<<<<<<< HEAD
                     <p class="text--white text-line-1 fw-normal aos-init" data-aos="zoom-in"> Copyright &copy; 2025 <span class="fw-semibold">Medical</span> All Rights Reserved.</p>
-=======
-                    <p class="text--white text-line-1 fw-normal aos-init" data-aos="zoom-in"> Copyright &copy; 2025 <span class="fw-semibold">EduAll</span> All Rights Reserved.</p>
->>>>>>> 970b922e8ea8a514d9ee4e37e709b88255fa609d
                     <ul class="d-flex align-items-center tw-gap-6 aos-init" data-aos="zoom-in-left">
                         <li>
                             <a href="https://www.facebook.com" class="text--white tw-text-2xl"><i class="ph-bold ph-facebook-logo"></i></a>
@@ -653,6 +629,8 @@
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <!-- phosphor Js -->
     <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Select2 Js -->
+    <script src="assets/js/select2.min.js"></script>
     <!-- Bootstrap Bundle Js -->
     <script src="assets/js/boostrap.bundle.min.js"></script>
 

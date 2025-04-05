@@ -21,6 +21,19 @@
         }
     }
 }
+
+
+.placeholder-text {
+    &-neutral-500::placeholder {
+        color: var(--neutral-500);
+    }
+}
+
+.placeholder-text {
+    &-sm::placeholder {
+        font-size: 14px !important;
+    }
+}
 /* input File End */
 
 /* Autofill Css */

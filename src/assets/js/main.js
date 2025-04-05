@@ -230,6 +230,13 @@
   // ========================= Custom Select Js Start =====================
 
   
+  // ========================== Select2 Js Start =================================
+  $(document).ready(function() {
+    $('.category-select').select2();
+  });
+    // ========================== Select2 Js End =================================
+  
+  
   // ================== Password Show Hide Js Start ==========
   // $(".toggle-password").on('click', function() {
   //   $(this).toggleClass("active");
