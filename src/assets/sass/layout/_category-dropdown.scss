@@ -1,0 +1,22 @@
+/* Category Dropdown Css Start */
+.category-dropdown {
+    transform: translateY(30px);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 420px;
+    &.active {
+        transform: translateY(0px);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 424px) {
+    .category-dropdown {
+        min-width: 320px;
+    }
+}
+.category-button.active .icon {
+    transform: rotate(180deg);
+}
+/* Category Dropdown Css End */

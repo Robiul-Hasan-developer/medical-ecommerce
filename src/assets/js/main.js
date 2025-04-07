@@ -234,7 +234,31 @@
   $(document).ready(function() {
     $('.category-select').select2();
   });
-    // ========================== Select2 Js End =================================
+  // ========================== Select2 Js End =================================
+
+  // ========================= Category Js Start ===================
+  let categoryButton = document.querySelector('.category-button');
+  let categoryDropdown = document.querySelector('.category-dropdown');
+
+  if(categoryButton && categoryDropdown) {
+    categoryButton.addEventListener('click', function (event) {
+      event.stopPropagation();
+      this.classList.toggle('active');
+      categoryDropdown.classList.toggle('active');
+    });
+    
+    categoryDropdown.addEventListener('click', function (event) {
+      event.stopPropagation();
+      categoryButton.classList.add('active');
+      categoryDropdown.classList.add('active');
+    });
+
+    document.querySelector('body').addEventListener('click', function () {
+      categoryButton.classList.remove('active');
+      categoryDropdown.classList.remove('active');
+    });
+  }
+  // ========================= Category Js End ===================
   
   
   // ================== Password Show Hide Js Start ==========
