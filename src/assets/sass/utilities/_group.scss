@@ -56,6 +56,9 @@
         .group-hover-item-text-invert {
             filter: brightness(0) invert(1);
         }
+        .group-hover-item-text-invert-black {
+            filter: brightness(0) invert(0);
+        }
     }
 }
 /* ======================== Group Css End =============================== */
