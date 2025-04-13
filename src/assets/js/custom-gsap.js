@@ -63,7 +63,7 @@ body.addEventListener('mousemove', function (event) {
 cursorBigs.forEach(cursorBig => {
   cursorBig.addEventListener('mouseenter', function () {
       gsap.to(dot, {
-          scale: 30,
+          scale: 46,
           backgroundColor: '#fff',
       });
       gsap.to(cursor, {
