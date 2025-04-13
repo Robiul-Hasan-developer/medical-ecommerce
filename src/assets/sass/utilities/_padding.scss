@@ -67,7 +67,7 @@
   }
 }
 
-.py-120 {
+.py-100 {
   padding-block-start: 60px;
   padding-block-end: 60px;
   @media (min-width: 576px) {
@@ -75,26 +75,26 @@
     padding-block-end: 80px;
   }
   @media (min-width: 992px) {
-    padding-block-start: 120px;
-    padding-block-end: 120px;
+    padding-block-start: 100px;
+    padding-block-end: 100px;
   }
 }
-.pt-120 {
+.pt-100 {
     padding-block-start: 60px;
     @media (min-width: 576px) {
       padding-block-start: 80px;
     }
     @media (min-width: 992px) {
-    padding-block-start: 120px;
+    padding-block-start: 100px;
   }
 }
-.pb-120 {
+.pb-100 {
     padding-block-end: 60px;
     @media (min-width: 576px) {
       padding-block-end: 80px;
     }
     @media (min-width: 992px) {
-      padding-block-end: 120px;
+      padding-block-end: 100px;
     }
 }
 .py-60 {

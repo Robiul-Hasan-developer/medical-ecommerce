@@ -3067,6 +3067,16 @@ input:focus, input:focus-visible {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.grid-col-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 767px) {
+    .grid-col-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .grid-cols-3-repeat {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
@@ -4735,54 +4745,54 @@ input:focus, input:focus-visible {
     padding-block: 80px;
 }
 
-.py-120 {
+.py-100 {
     padding-block-start: 60px;
     padding-block-end: 60px;
 }
 
 @media (min-width: 576px) {
-    .py-120 {
+    .py-100 {
         padding-block-start: 80px;
         padding-block-end: 80px;
     }
 }
 
 @media (min-width: 992px) {
-    .py-120 {
-        padding-block-start: 120px;
-        padding-block-end: 120px;
+    .py-100 {
+        padding-block-start: 100px;
+        padding-block-end: 100px;
     }
 }
 
-.pt-120 {
+.pt-100 {
     padding-block-start: 60px;
 }
 
 @media (min-width: 576px) {
-    .pt-120 {
+    .pt-100 {
         padding-block-start: 80px;
     }
 }
 
 @media (min-width: 992px) {
-    .pt-120 {
-        padding-block-start: 120px;
+    .pt-100 {
+        padding-block-start: 100px;
     }
 }
 
-.pb-120 {
+.pb-100 {
     padding-block-end: 60px;
 }
 
 @media (min-width: 576px) {
-    .pb-120 {
+    .pb-100 {
         padding-block-end: 80px;
     }
 }
 
 @media (min-width: 992px) {
-    .pb-120 {
-        padding-block-end: 120px;
+    .pb-100 {
+        padding-block-end: 100px;
     }
 }
 
