@@ -18,6 +18,15 @@
   }
 }
 
+.bg {
+  &-cyan-blue-600 {
+    background-color: #14A5CF14;
+  }
+  &-cyan-blue-40 {
+    background-color: #EDF8FC;
+  }
+}
+
 .hover-bg-white {
   &:hover {
     background-color: hsl(var(--white)) !important;

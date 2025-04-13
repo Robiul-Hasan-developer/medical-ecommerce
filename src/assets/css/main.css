@@ -1440,6 +1440,14 @@ input:focus, input:focus-visible {
     background-color: var(--danger-900) !important;
 }
 
+.bg-cyan-blue-600 {
+    background-color: #14A5CF14;
+}
+
+.bg-cyan-blue-40 {
+    background-color: #EDF8FC;
+}
+
 .hover-bg-white:hover {
     background-color: hsl(var(--white)) !important;
 }
@@ -3975,6 +3983,10 @@ input:focus, input:focus-visible {
 
 .max-w-1290-px {
     max-width: 1290px;
+}
+
+.max-w-1410-px {
+    max-width: 1410px;
 }
 
 .max-w-824-px {
