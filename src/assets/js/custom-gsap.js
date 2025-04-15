@@ -143,7 +143,7 @@ if ($(".splitTextStyleOne").length > 0) {
   character.forEach((character) => {
     let split_char = new SplitText(character, {
       type: "chars, words",
-      lineThreshold: 0.3,
+      lineThreshold: 0.4,
     });
     const tl2 = gsap.timeline({
       scrollTrigger: {
@@ -157,47 +157,14 @@ if ($(".splitTextStyleOne").length > 0) {
     });
     tl2.from(split_char.chars, {
       autoAlpha: 0,
-      y: 40,
-      duration: 0.3,
+      x: 40,
+      duration: 0.4,
       opacity: 0,
       stagger: 0.03,
       ease: "back.out(1.7)"
     });
   });
 }
-
-// if ($('.splitTextStyleOne').length > 0) {
-//   let splitTextLines = gsap.utils.toArray(".splitTextStyleOne");
-
-//   splitTextLines.forEach(splitTextLine => { 
-//     const tl = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: splitTextLine,
-//         start: 'top 99%',
-//         duration: .6,
-//         end: 'bottom 90%',
-//         scrub: false,
-//         markers: false,
-//         toggleActions: 'restart none none none'
-//       }
-//     });
-
-//     const itemSplitted = new SplitText(splitTextLine, { type: "lines" });
-
-//     gsap.set(splitTextLine, { perspective: 500 });
-//     itemSplitted.split({ type: "lines" })
-
-//     tl.from(itemSplitted.lines, { 
-//       duration: .6, 
-//       delay: 0.3, 
-//       opacity: 0, 
-//       rotationX: -80, 
-//       force3D: true, 
-//       transformOrigin: "top center -50",
-//       stagger: 0.1 
-//     });
-//   });
-// }
 // =================================== Custom Split text Js End =====================================
 
 
