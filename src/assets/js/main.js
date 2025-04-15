@@ -264,6 +264,15 @@
   AOS.init();
   // ========================= Aos Animation Js End ===================
   
+    
+  // ========================== Add Attribute For Bg Image Js Start ====================
+  $(".background-img").css('background', function () {
+    var bg = ('url(' + $(this).data("background-image") + ')');
+    return bg;
+  });
+  // ========================== Add Attribute For Bg Image Js End =====================
+
+
   
   // ================== Password Show Hide Js Start ==========
   // $(".toggle-password").on('click', function() {
@@ -340,14 +349,6 @@
   //    IO.observe(counter);
   //  }
    // ========================= Counter Up Js End ===================
-  
-  // ========================== Add Attribute For Bg Image Js Start ====================
-    // $(".background-img").css('background', function () {
-    //   var bg = ('url(' + $(this).data("background-image") + ')');
-    //   return bg;
-    // });
-  // ========================== Add Attribute For Bg Image Js End =====================
-
 
   });
   // ==========================================
