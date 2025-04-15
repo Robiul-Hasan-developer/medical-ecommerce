@@ -143,7 +143,7 @@ if ($(".splitTextStyleOne").length > 0) {
   character.forEach((character) => {
     let split_char = new SplitText(character, {
       type: "chars, words",
-      lineThreshold: 0.4,
+      lineThreshold: 1,
     });
     const tl2 = gsap.timeline({
       scrollTrigger: {
@@ -157,11 +157,11 @@ if ($(".splitTextStyleOne").length > 0) {
     });
     tl2.from(split_char.chars, {
       autoAlpha: 0,
-      x: 40,
-      duration: 0.4,
+      x: 50,
+      duration: 1,
       opacity: 0,
-      stagger: 0.03,
-      ease: "back.out(1.7)"
+      stagger: 0.04,
+      ease: "back.out(3.9)"
     });
   });
 }

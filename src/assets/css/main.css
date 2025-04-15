@@ -494,13 +494,17 @@ input[type=number] {
 /* Switch Css End */
 /* ================================= Form Css End =========================== */
 /* ================================= Tab Css Start =========================== */
-.common-tab .nav-item .nav-link.active {
-    color: hsl(var(--white)) !important;
-    border-color: hsl(var(--main)) !important;
+.active-text-success .nav-item .nav-link.active {
+    color: var(--success-600);
 }
 
-.common-tab .nav-item .nav-link:hover {
-    color: var(--main-600);
+.active-text-success .nav-item .nav-link.active:hover {
+    background-color: var(--success-600) !important;
+    color: #fff;
+}
+
+.active-text-success .nav-item .nav-link:hover {
+    color: var(--success-600);
 }
 
 /* ================================= Tab Css End =========================== */

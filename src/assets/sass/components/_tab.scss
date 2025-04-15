@@ -1,13 +1,16 @@
 /* ================================= Tab Css Start =========================== */
-.common-tab {
+.active-text-success {
     .nav-item {
         .nav-link {
             &.active {
-                color: hsl(var(--white)) !important; 
-                border-color: hsl(var(--main)) !important;
+                color: var(--success-600); 
+                &:hover {
+                    background-color: var(--success-600) !important;
+                    color: #fff;
+                }
             }
             &:hover {
-                color: var(--main-600);
+                color: var(--success-600);
             }
         }
     }
