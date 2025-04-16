@@ -18,6 +18,12 @@
     }
   }
 
+  .hover-border {
+    &-transparent:hover {
+      border-color: transparent !important;
+    }
+  }
+
 // focus border
 @each $color, $shades in $colors {
     @each $shade, $value in $shades {
