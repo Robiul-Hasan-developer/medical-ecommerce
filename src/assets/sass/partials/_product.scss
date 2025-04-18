@@ -1,0 +1,10 @@
+/* Product card css start */
+.activated {
+    background-color: var(--main-600) !important;
+    color: #fff !important;
+    &:hover {
+        background-color: var(--main-700) !important;
+        color: #fff !important;
+    }
+}
+/* Product card css End */

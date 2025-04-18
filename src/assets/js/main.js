@@ -272,6 +272,12 @@
   });
   // ========================== Add Attribute For Bg Image Js End =====================
 
+  // ========================== Toggle Active Js Start =====================
+  $(document).on('click', '.toggle-active', function () {
+    $(this).toggleClass('activated');
+  });
+  // ========================== Toggle Active Js End =====================
+
 
   
   // ================== Password Show Hide Js Start ==========

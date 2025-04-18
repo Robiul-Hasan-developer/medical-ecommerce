@@ -77,6 +77,7 @@
     --main-two-700: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.1));
     --main-two-800: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2));
     --main-two-900: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3));
+    --neutral-40: #F8F8F8;
     --neutral-50: #f9fafb;
     --neutral-100: #f3f4f6;
     --neutral-200: #e5e7eb;
@@ -261,6 +262,15 @@
     border-color: transparent;
 }
 
+.btn-neutral-100 {
+    background-color: var(--neutral-100);
+    color: var(--heading-color) !important;
+}
+
+.btn-neutral-100.button--stroke::after {
+    border-color: transparent;
+}
+
 .btn-white {
     background-color: hsl(var(--white));
     color: var(--success-600) !important;
@@ -293,6 +303,18 @@
 
 .hover-style-two .button__flair::before {
     background-color: var(--main-two-600);
+}
+
+.hover-style-three:hover, .hover-style-three:active {
+    color: #fff !important;
+}
+
+.hover-style-three:hover.button--stroke::after, .hover-style-three:active.button--stroke::after {
+    border-color: transparent;
+}
+
+.hover-style-three .button__flair::before {
+    background-color: var(--main-600);
 }
 
 /* =========================== Button Css End =================== */
@@ -1112,6 +1134,10 @@ input:focus, input:focus-visible {
     background-color: var(--main-two-900) !important;
 }
 
+.bg-neutral-40 {
+    background-color: var(--neutral-40) !important;
+}
+
 .bg-neutral-50 {
     background-color: var(--neutral-50) !important;
 }
@@ -1318,6 +1344,10 @@ input:focus, input:focus-visible {
 
 .hover-bg-main-two-900:hover {
     background-color: var(--main-two-900) !important;
+}
+
+.hover-bg-neutral-40:hover {
+    background-color: var(--neutral-40) !important;
 }
 
 .hover-bg-neutral-50:hover {
@@ -1561,6 +1591,10 @@ input:focus, input:focus-visible {
     border-color: var(--main-two-900) !important;
 }
 
+.border-neutral-40 {
+    border-color: var(--neutral-40) !important;
+}
+
 .border-neutral-50 {
     border-color: var(--neutral-50) !important;
 }
@@ -1767,6 +1801,10 @@ input:focus, input:focus-visible {
 
 .hover-border-main-two-900:hover {
     border-color: var(--main-two-900) !important;
+}
+
+.hover-border-neutral-40:hover {
+    border-color: var(--neutral-40) !important;
 }
 
 .hover-border-neutral-50:hover {
@@ -1979,6 +2017,10 @@ input:focus, input:focus-visible {
 
 .focus-border-main-two-900:focus {
     border-color: var(--main-two-900) !important;
+}
+
+.focus-border-neutral-40:focus {
+    border-color: var(--neutral-40) !important;
 }
 
 .focus-border-neutral-50:focus {
@@ -2196,6 +2238,10 @@ input:focus, input:focus-visible {
 
 .text-main-two-900 {
     color: var(--main-two-900);
+}
+
+.text-neutral-40 {
+    color: var(--neutral-40);
 }
 
 .text-neutral-50 {
@@ -2430,6 +2476,10 @@ input:focus, input:focus-visible {
 
 .hover-text-main-two-900:hover {
     color: var(--main-two-900) !important;
+}
+
+.hover-text-neutral-40:hover {
+    color: var(--neutral-40) !important;
 }
 
 .hover-text-neutral-50:hover {
@@ -2874,12 +2924,20 @@ input:focus, input:focus-visible {
     height: 92px;
 }
 
+.tw-h-188-px {
+    height: 188px;
+}
+
 .tw-min-h-184-px {
     min-height: 184px;
 }
 
 .tw-min-h-210-px {
     min-height: 210px !important;
+}
+
+.tw-min-h-428-px {
+    min-height: 428px;
 }
 
 /* Height Css Class End */
@@ -3028,6 +3086,10 @@ input:focus, input:focus-visible {
 
 .tw-invisible {
     visibility: hidden;
+}
+
+.group-item:hover .group-hover-item-absolute {
+    position: absolute;
 }
 
 .group-item:hover .group-hover-item-visible {
@@ -4961,6 +5023,11 @@ input:focus, input:focus-visible {
   /* 24px */
 }
 
+.hover-rounded-xl:hover {
+    border-radius: 0.75rem;
+  /* 12px */
+}
+
 /* Border Radius Css End */
 /* Rotate Css Start */
 .tw-hover-rotate-360:hover {
@@ -5099,7 +5166,7 @@ input:focus, input:focus-visible {
 }
 
 .hover-common-shadow-1:hover {
-    box-shadow: 0px 4px 32px 0px #0000000F;
+    box-shadow: 0px 4px 32px 0px #00000029;
 }
 
 /* Box shadow End */
@@ -5340,6 +5407,10 @@ input:focus, input:focus-visible {
 
 .tw-z-999 {
     z-index: 999;
+}
+
+.hover-z-1:hover {
+    z-index: 1;
 }
 
 /* Z index css End */
@@ -6007,4 +6078,16 @@ input:focus, input:focus-visible {
 }
 
 /* Category Dropdown Css End */
+/* Product card css start */
+.activated {
+    background-color: var(--main-600) !important;
+    color: #fff !important;
+}
+
+.activated:hover {
+    background-color: var(--main-700) !important;
+    color: #fff !important;
+}
+
+/* Product card css End */
 /*# sourceMappingURL=main.css.map */
