@@ -76,6 +76,16 @@
         }
     
     }
+    &-neutral-100 {
+        background-color: var(--neutral-100);
+        color: var(--heading-color) !important;
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    
+    }
     &-white {
         background-color: hsl(var(--white));
         color: var(--success-600) !important;
@@ -119,6 +129,21 @@
         .button__flair {
             &::before {
                 background-color: var(--main-two-600);
+            }
+        }
+    }
+    &-three {
+        &:hover, &:active {
+            color: #fff !important;
+            &.button--stroke {
+                &::after {
+                    border-color: transparent;
+                }
+            }
+        }
+        .button__flair {
+            &::before {
+                background-color: var(--main-600);
             }
         }
     }

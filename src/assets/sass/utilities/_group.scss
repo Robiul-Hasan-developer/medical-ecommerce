@@ -29,6 +29,9 @@
 
 .group-item  {
     &:hover {
+        .group-hover-item-absolute {
+            position: absolute;
+        }
         .group-hover-item-visible {
             visibility: visible;
         }
