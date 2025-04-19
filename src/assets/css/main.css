@@ -2928,6 +2928,10 @@ input:focus, input:focus-visible {
     height: 188px;
 }
 
+.tw-h-260-px {
+    height: 260px;
+}
+
 .tw-min-h-184-px {
     min-height: 184px;
 }
@@ -5182,6 +5186,18 @@ input:focus, input:focus-visible {
     transition-duration: 150ms;
 }
 
+.tw-delay-100 {
+    transition-delay: 0.1s;
+}
+
+.tw-delay-200 {
+    transition-delay: 0.2s;
+}
+
+.tw-delay-300 {
+    transition-delay: 0.3s;
+}
+
 /* transition Css Class End */
 .tw-duration-75 {
     transition-duration: 75ms;
@@ -5211,6 +5227,10 @@ input:focus, input:focus-visible {
 /* Translate X */
 .tw-translate-x-50 {
     transform: var(--translate-x-50);
+}
+
+.tw-translate-x-60-px {
+    transform: translateX(60px);
 }
 
 .tw--translate-x-full {
