@@ -8,4 +8,16 @@
         transition-duration: 150ms;
     }
 }
+
+.tw-delay {
+    &-100 {
+        transition-delay: .1s;
+    }
+    &-200 {
+        transition-delay: .2s;
+    }
+    &-300 {
+        transition-delay: .3s;
+    }
+}
 /* transition Css Class End */
