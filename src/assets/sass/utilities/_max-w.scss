@@ -1,5 +1,11 @@
 /* Max width Css Class Start */
 .max-w {
+    &-140-px {
+        max-width: 140px;
+    }
+    &-180-px {
+        max-width: 180px;
+    }
     &-200-px {
         max-width: 200px;
     }
