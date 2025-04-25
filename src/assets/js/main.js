@@ -302,6 +302,7 @@
   // ========================= Copy Coupon Code Js End ===================
 
   // ========================= Active Tab Background animation Js Start ===================
+  // ********************* Animate Border *********************
   function moveBackground(wrapper) { 
     var $activeTab = $(wrapper).find(".active").parent("li");
     var position = $activeTab.position();
@@ -314,8 +315,35 @@
   }
 
   // Move Background on page load for each tab group
-  $(".animate-background-wrapper").each(function() {
+  $(".animate-border-wrapper").each(function() {
       moveBackground(this);
+  });
+
+  // Move Background on tab click
+  $(".animate-border-wrapper .nav-link").on("click", function () {
+      var wrapper = $(this).closest(".animate-border-wrapper");
+      wrapper.find(".nav-link").removeClass("active");
+      $(this).addClass("active");
+      moveBackground(wrapper);
+  });
+
+
+
+  // ********************* Animate Background *********************
+  function moveBorder(wrapper) { 
+    var $activeTab = $(wrapper).find(".active").parent("li");
+    var position = $activeTab.position();
+    var width = $activeTab.width();
+    
+    $(wrapper).find(".animate-background").css({
+        "left": position.left + "px",
+        "width": width + "px"
+    });
+  }
+
+  // Move Background on page load for each tab group
+  $(".animate-background-wrapper").each(function() {
+      moveBorder(this);
   });
 
   // Move Background on tab click
@@ -323,32 +351,8 @@
       var wrapper = $(this).closest(".animate-background-wrapper");
       wrapper.find(".nav-link").removeClass("active");
       $(this).addClass("active");
-      moveBackground(wrapper);
+      moveBorder(wrapper);
   });
-
-  // function moveBackground(wrapper) { 
-  //   var $activeTab = $(wrapper).find(".active").parent("li");
-  //   var position = $activeTab.position();
-  //   var width = $activeTab.width();
-    
-  //   $(wrapper).find(".animate-background").css({
-  //       "left": position.left + "px",
-  //       "width": width + "px"
-  //   });
-  // }
-
-  // // Move Background on page load for each tab group
-  // $(".animate-background-wrapper").each(function() {
-  //     moveBackground(this);
-  // });
-
-  // // Move Background on tab click
-  // $(".animate-background-wrapper .nav-link").on("click", function () {
-  //     var wrapper = $(this).closest(".animate-background-wrapper");
-  //     wrapper.find(".nav-link").removeClass("active");
-  //     $(this).addClass("active");
-  //     moveBackground(wrapper);
-  // });
   // ========================= Active Tab Background animation Js End ===================
   
   

@@ -262,6 +262,19 @@
     border-color: transparent;
 }
 
+.btn-main-two {
+    background-color: var(--main-two-600);
+    color: var(--heading-color) !important;
+}
+
+.btn-main-two:hover {
+    background-color: var(--main-two-600);
+}
+
+.btn-main-two.button--stroke::after {
+    border-color: transparent;
+}
+
 .btn-neutral-100 {
     background-color: var(--neutral-100);
     color: var(--heading-color) !important;
@@ -548,7 +561,7 @@ input[type=number] {
 .animate-border {
     display: inline-block;
     width: 100%;
-    height: 1px;
+    height: 2px;
     border-radius: 3px;
     background-color: var(--main-600);
     position: absolute;
@@ -4094,6 +4107,14 @@ input:focus, input:focus-visible {
 
 /* Max Height Css Class End */
 /* Max width Css Class Start */
+.max-w-140-px {
+    max-width: 140px;
+}
+
+.max-w-180-px {
+    max-width: 180px;
+}
+
 .max-w-200-px {
     max-width: 200px;
 }
