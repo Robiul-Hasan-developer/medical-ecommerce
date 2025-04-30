@@ -13,6 +13,9 @@
         inset-inline-start: auto;
     }
 }
+
+
+
 .tw-end {
     &-0 {
         inset-inline-end: 0;
@@ -20,8 +23,39 @@
     &-100 {
         inset-inline-end: 100%;
     }
+    &-15 {
+        inset-inline-end: 15%;
+    }
+    &-28 {
+        inset-inline-end: 28px;
+    }
+    &-57-px {
+        inset-inline-end: 57px;
+    }
+    &--23 {
+        inset-inline-end: -23px;
+    }
     &-auto {
         inset-inline-end: auto;
+    }
+}
+.tw-block-start {
+    &-0 {
+        inset-block-start: 0;
+    }
+    &-40-px {
+        inset-block-start: 40px;
+    }
+}
+.tw-block-end {
+    &-0 {
+        inset-block-end: 0;
+    }
+    &-40-px {
+        inset-block-end: 40px;
+    }
+    &--18-px {
+        inset-block-end: -18px;
     }
 }
 /* Inset class End */

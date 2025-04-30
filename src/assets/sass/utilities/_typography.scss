@@ -110,4 +110,8 @@ button {
 input:focus, input:focus-visible {
   box-shadow: none;
 }
+
+.banner-two-clip-path-one {
+  clip-path: polygon(0% 0, 95% 0, 100% 50%, 95% 100%, 0% 100%, 0% 50%);
+}
 /* ================================= Typography Css End =========================== */
