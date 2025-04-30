@@ -7,6 +7,12 @@
     }
 }
 
+.border {
+  &-white-12 {
+    border: 1px solid #FFFFFF1A !important;
+  }
+}
+
 // hover border
 @each $color, $shades in $colors {
     @each $shade, $value in $shades {
@@ -35,6 +41,7 @@
     }
   }
 
+
   .tw-border {
     &-dashed {
       border-style: dashed !important;
@@ -45,3 +52,12 @@
     border-color: transparent !important;
   }
   
+.border-start-0 {
+    border-left: 0 !important;
+}
+.border-bottom-0 {
+    border-bottom: 0 !important;
+}
+.border-end-0 {
+    border-right: 0 !important;
+}
