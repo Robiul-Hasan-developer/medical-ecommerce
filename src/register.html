@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="@@pageClass">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- aos -->
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Main css -->
@@ -68,44 +70,61 @@
             <!-- Nav menu Start -->
 <ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
     <li class="nav-menu__item has-submenu position-relative activePage">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">Home</a>
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Home</a>
         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
             <li class="nav-menu__item activePage">
-                <a href="index.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home One</a>
+                <a href="index.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Medical Equipment</a>
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="index-2.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home Two</a>
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Pharmacy</a>
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home Three</a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-menu__item has-submenu position-relative">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">Shop</a>
-         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Shop</a>
-            </li>
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">Shop Details</a>
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Hospital</a>
             </li>
         </ul>
     </li>
     <li class="nav-menu__item">
-        <a href="#" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-medium w-100">Electronics & gadget </a>
-    </li>
-    <li class="nav-menu__item">
-        <a href="#" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-medium w-100">Camera & Videos</a>
+        <a href="about.html" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">About Us</a>
     </li>
     <li class="nav-menu__item has-submenu position-relative">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">All Pages</a>
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Service</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Cart </a>
+                <a href="service.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Service</a>
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">Diagnostic Bill</a>
+                <a href="service-details.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Service Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Case</a>
+         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="appointment.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Appointment</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="case.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Case</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="case-details.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Case Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Pages</a>
+         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Shop</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Shop Details</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Cart </a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Diagnostic Bill</a>
             </li>
         </ul>
     </li>
@@ -133,7 +152,7 @@
 
                 <!-- Dropdown Start -->
                 <div class="category-dropdown border border-main-two-200 shadow bg-white tw-p-4 tw-rounded-2xl w-100 max-w-472 position-absolute inset-block-start-100 inset-inline-start-0 tw-z-99 tw-duration-300 max-w-420-px">
-                    <div class="d-grid grid-cols-3-repeat tw-gap-1 max-h-350-px overflow-y-auto">
+                    <div class="d-grid grid-cols-3-repeat tw-gap-1 tw-max-h-350-px overflow-y-auto">
                         <a href="shop.html" class="tw-py-4 px-8 tw-rounded-lg hover-bg-main-50 d-flex flex-column align-items-center text-center border border-white hover-border-main-100">
                             <span class="">
                                 <img src="assets/images/icons/category-1.png" alt="Icon" class="tw-w-10">
@@ -200,44 +219,61 @@
                 <!-- Nav menu Start -->
 <ul class="nav-menu d-lg-flex align-items-center tw-gap-6">
     <li class="nav-menu__item has-submenu position-relative activePage">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">Home</a>
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Home</a>
         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
             <li class="nav-menu__item activePage">
-                <a href="index.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home One</a>
+                <a href="index.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Medical Equipment</a>
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="index-2.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home Two</a>
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Pharmacy</a>
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Home Three</a>
-            </li>
-        </ul>
-    </li>
-    <li class="nav-menu__item has-submenu position-relative">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">Shop</a>
-         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Shop</a>
-            </li>
-            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">Shop Details</a>
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Hospital</a>
             </li>
         </ul>
     </li>
     <li class="nav-menu__item">
-        <a href="#" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-medium w-100">Electronics & gadget </a>
-    </li>
-    <li class="nav-menu__item">
-        <a href="#" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-medium w-100">Camera & Videos</a>
+        <a href="about.html" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">About Us</a>
     </li>
     <li class="nav-menu__item has-submenu position-relative">
-        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-medium w-100">All Pages</a>
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Service</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Cart </a>
+                <a href="service.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Service</a>
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">Diagnostic Bill</a>
+                <a href="service-details.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Service Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Case</a>
+         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="appointment.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Appointment</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="case.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Case</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="case-details.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Case Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Pages</a>
+         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Shop</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Shop Details</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Cart </a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Diagnostic Bill</a>
             </li>
         </ul>
     </li>
@@ -354,131 +390,135 @@
     
     
 <!-- ==================== Footer Start Here ==================== -->
-<footer class="footer bg-neutral-900 position-relative z-1 mt-auto">
+<footer class="footer position-relative z-1 mt-auto tw-pt-16 overflow-hidden background-img bg-img" data-background-image="assets/images/bg/footer-bg.png">
+    <!-- Footer Top Start -->
+    <div class="container">
+
+    </div>
+    <!-- Footer Top End -->
+
     
-    <div class="py-120 ">
+    <div class="pt-100 tw-pb-15">
         <div class="container container-two">
-            <div class="row gy-5">
-                <div class="col-lg-3 col-sm-6 col-xs-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400">
+            <div class="row g-5">
+                <div class="col-lg-4 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="600">
                     <div class="">
-                        <h4 class="cursor-big fw-medium text--white tw-mb-8">Quick Link</h4>
-                        <ul class="d-flex flex-column tw-gap-4">
-                            <li>
-                                <a href="about.html" class="text--white hover-text-white hover-underline">About us</a>
-                            </li>
-                            <li>
-                                <a href="courses.html" class="text--white hover-text-white hover-underline">Courses</a>
-                            </li>
-                            <li>
-                                <a href="instructor.html" class="text--white hover-text-white hover-underline">Instructor</a>
-                            </li>
-                            <li>
-                                <a href="faq.html" class="text--white hover-text-white hover-underline">FAQs</a>
-                            </li>
-                            <li class="mb-0">
-                                <a href="blog.html" class="text--white hover-text-white hover-underline">Blogs</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
-                    <div class="">
-                        <h4 class="cursor-big fw-medium text--white tw-mb-8">Category</h4>
-                        <ul class="d-flex flex-column tw-gap-4">
-                            <li>
-                                <a href="courses.html" class="text--white hover-text-white hover-underline">UI/UX Design</a>
-                            </li>
-                            <li>
-                                <a href="courses.html" class="text--white hover-text-white hover-underline">Web Development</a>
-                            </li>
-                            <li>
-                                <a href="courses.html" class="text--white hover-text-white hover-underline">Python Development</a>
-                            </li>
-                            <li>
-                                <a href="courses.html" class="text--white hover-text-white hover-underline">Digital Marketing</a>
-                            </li>
-                            <li>
-                                <a href="courses.html" class="text--white hover-text-white hover-underline">Graphic Design</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
-                    <div class="">
-                        <h4 class="cursor-big fw-medium text--white tw-mb-8">Contact Us</h4>
-                        <div class="d-flex flex-column tw-gap-6">
-                            <div class="d-flex align-items-center tw-gap-5">
-                                <span class="d-flex tw-text-3xl text-main-600"><i class="ph ph-phone"></i></span>
-                                <div class="">
-                                    <a href="tel:(207)555-0119" class="text--white d-block mb-1">(207) 555-0119</a>
-                                    <a href="tel:(704)555-0127" class="text--white d-block mb-0">(704) 555-0127</a>
-                                </div>
+                        <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9 tw-mb-10">
+                            <img src="assets/images/logo/logo-white.png" alt="">
+                        </a>
+                        <form action="#" class="d-flex flex-md-row flex-column tw-gap-5 form-submit">
+                            <div class="position-relative flex-grow-1">
+                                <input type="email" class="tw-h-14 tw-rounded-lg bg-white-08 tw-ps-12 border border-white-12 focus-border-main-600 text-white focus-outline-0 w-100 tw-pe-6 placeholder-text-white-50" placeholder="Email Address" required>
+                                <span class="text-white tw-text-lg position-absolute top-50 tw-start-0 tw--translate-y-50 tw-ms-5 d-flex">
+                                    <i class="ph ph-envelope-simple"></i>
+                                </span>
                             </div>
-                            <div class="d-flex align-items-center tw-gap-5">
-                                <span class="d-flex tw-text-3xl text-main-600"><i class="ph ph-envelope-open"></i></span>
-                                <div class="">
-                                    <a href="mailto:dwallo@gmail.com" class="text--white d-block mb-1">dwallo@gmail.com</a>
-                                    <a href="mailto:medical@gmail.com" class="text--white d-block mb-0">medical@gmail.com</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center tw-gap-5 mb-0">
-                                <span class="d-flex tw-text-3xl text-main-600"><i class="ph ph-map-trifold"></i></span>
-                                <div class="">
-                                    <span class="text--white d-block mb-1">5488 srker Rd .</span>
-                                    <span class="text--white d-block mb-0">8745 doer Dr.</span>
-                                </div>
-                            </div>
+                            <button type="submit" class="btn btn btn-main-two hover-style-three button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-shrink-0 hover--translate-y-1 active--translate-y-scale-9" data-block="button">
+                                <span class="button__flair"></span>
+                                <span class="button__label">Sign Up</span>
+                                <span class="text-heading tw-text-base tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-text-main-600 tw-duration-500">
+                                    <i class="ph-bold ph-caret-right"></i>
+                                </span>
+                            </button>
+                        </form>
+                        <p class="tw-text-lg fw-light tw-mt-9 text-white">
+                            70 Washington Square South, New York, NY <span class="text-main-two-600">10012</span>, United States
+                        </p>
+                        <div class="tw-mt-8 d-flex align-items-center tw-gap-4">
+                            <a href="htttps://www.playstore.com" class="hover--translate-y-1 active--translate-y-scale-9">
+                                <img src="assets/images/icons/store-img1.png" alt="Play Store">
+                            </a>
+                            <a href="htttps://www.playstore.com" class="hover--translate-y-1 active--translate-y-scale-9">
+                                <img src="assets/images/icons/store-img2.png" alt="Play Store">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-xs-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+                <div class="col-lg-2 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="800">
                     <div class="">
-                        <h4 class="cursor-big fw-medium text--white tw-mb-8">Subscribe Here</h4>
-                        <p class="text--white ">Enter your email address to register to our newsletter subscription</p>
-                        <form action="#" class="tw-mt-6 position-relative">
-                            <input type="email" class="form-control bg-neutral-800 shadow-none border border-neutral-700 text--white rounded-pill tw-ps-6 tw-pe-13 focus-border-main-600 tw-h-12 text-white tw-placeholder-text-neutral-300 focus-tw-placeholder-text-hidden tw-placeholder-transition-2" placeholder="Email...">
+                        <h6 class="fw-medium text--white tw-mb-8">My account</h6>
+                        <ul class="d-flex flex-column tw-gap-4">
+                            <li>
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">About us</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Delivery information</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Sales</a>
+                            </li>
+                            <li class="mb-0">
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="">
+                        <h6 class="fw-medium text--white tw-mb-8">Service</h6>
+                        <ul class="d-flex flex-column tw-gap-4">
+                            <li>
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">My orders</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Account details</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Returns</a>
+                            </li>
+                            <li class="mb-0">
+                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Wishlist</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="">
+                        <h6 class="fw-medium text--white tw-mb-8">Locations</h6>
+                        <div class="d-flex align-items-center tw-gap-2">
+                            <span class="d-flex tw-text-2xl text-main-two-600">
+                                <i class="ph ph-map-pin-area"></i>
+                            </span>
+                            <div class="">
+                                <p class="text-neutral-300 d-block mb-1 max-w-232-px">55 Main Street, 2nd block
+                                    Malborne, Australia</p>
+                            </div>
+                        </div>
 
-                            <button type="submit" class="tw-w-9 tw-h-9 flex-center rounded-circle bg-main-600 text--white hover-bg-main-800 position-absolute top-50 tw--translate-y-50 tw-end-0 tw-me-2 transition-all">
-                                <i class="ph ph-paper-plane-tilt"></i>
-                            </button>
-                        </form>
+                        <h6 class="fw-medium text--white tw-mt-10 tw-mb-6">Contact</h6>
+                        <p class="text-neutral-300 d-block mb-1 max-w-232-px">
+                            Monday - Friday: 9:00 - 20:00
+                            Saturday: 9:00 - 15:00
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <div class="container">
         <!-- bottom Footer -->
-        <div class="border-top border-dashed border-neutral-600 border-0 tw-py-8">
+        <div class="border-top border-white-12 border-bottom-0 border-end-0 border-start-0 tw-py-8">
             <div class="container container-two">
                 <div class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
-                    <div class="mb-0 aos-init" data-aos="zoom-in-right">
-                        <a href="index.html" class=""> 
-                            <img src="assets/images/logo/logo-white.png" alt="Logo">
-                        </a>
+                    <p class="text--white text-line-1 fw-normal"> 
+                        &copy; 2025 <a href="https://themeforest.net/user/wowtheme7" class="fw-medium text-main-two-600 hover-text-main-two-600 hover-underline hover--translate-y-1 active--translate-y-scale-9">WowTheme7</a> - IT Services. All rights reserved.
+                    </p>
+                    <div class="">
+                        <img src="assets/images/thumbs/payment-method-img.png" alt="Payment Method Image">
                     </div>
-                    <p class="text--white text-line-1 fw-normal aos-init" data-aos="zoom-in"> Copyright &copy; 2025 <span class="fw-semibold">Medical</span> All Rights Reserved.</p>
-                    <ul class="d-flex align-items-center tw-gap-6 aos-init" data-aos="zoom-in-left">
-                        <li>
-                            <a href="https://www.facebook.com" class="text--white tw-text-2xl"><i class="ph-bold ph-facebook-logo"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com" class="text--white tw-text-2xl"> <i class="ph-bold ph-twitter-logo"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com" class="text--white tw-text-2xl"><i class="ph-bold ph-instagram-logo"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.com" class="text--white tw-text-2xl"><i class="ph-bold ph-pinterest-logo"></i></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 <!-- ==================== Footer End Here ==================== -->
-  
 
         <!-- Jquery js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
@@ -490,18 +530,18 @@
     <script src="assets/js/boostrap.bundle.min.js"></script>
     <!-- aos Js -->
     <script src="assets/js/aos.js"></script>
+    <!-- swiper Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- GSAP js -->
     <script src="assets/js/gsap.min.js"></script>
-    <!-- SplitText -->
-    <script src="assets/js/SplitText.min.js"></script>
     <!-- Scroll Trigger -->
     <script src="assets/js/ScrollTrigger.min.js"></script>
-    <!-- ScrollSmoother -->
-    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="assets/js/SplitText.min.js"></script>
     <!-- custom GSAP -->
     <script src="assets/js/custom-gsap.js"></script>
-
+    
     <!-- main js -->
     <script src="assets/js/main.js"></script>
 

@@ -272,7 +272,132 @@
   });
   // ========================== Add Attribute For Bg Image Js End =====================
 
+  // ========================== Toggle Active Js Start =====================
+  $(document).on('click', '.toggle-active', function () {
+    $(this).toggleClass('activated');
+  });
+  // ========================== Toggle Active Js End =====================
+    
+  // ========================= Copy Coupon Code Js Start ===================
+  let copyCouponBtn = document.querySelector('.copy-coupon-btn');
+  let copyText = document.querySelector('.copy-text');
 
+  if(copyCouponBtn && copyText) {
+    copyText.style.display = 'none';
+
+    copyCouponBtn.addEventListener('click', function () {
+      let text = this.textContent;
+      navigator.clipboard.writeText(text);
+      this.classList.add('copied'); 
+      copyText.innerHTML = 'Copied';
+      copyText.style.display = 'inline-block';
+
+      setTimeout(() => {
+        this.classList.remove('copied');
+        copyText.style.display = 'none';
+      }, 2000);
+
+    });
+  }
+  // ========================= Copy Coupon Code Js End ===================
+
+  // ========================= Active Tab Background animation Js Start ===================
+  // ********************* Animate Border *********************
+  function moveBackground(wrapper) { 
+    var $activeTab = $(wrapper).find(".active").parent("li");
+    var position = $activeTab.position();
+    var width = $activeTab.width();
+    
+    $(wrapper).find(".animate-border").css({
+        "left": position.left + "px",
+        "width": width + "px"
+    });
+  }
+
+  // Move Background on page load for each tab group
+  $(".animate-border-wrapper").each(function() {
+      moveBackground(this);
+  });
+
+  // Move Background on tab click
+  $(".animate-border-wrapper .nav-link").on("click", function () {
+      var wrapper = $(this).closest(".animate-border-wrapper");
+      wrapper.find(".nav-link").removeClass("active");
+      $(this).addClass("active");
+      moveBackground(wrapper);
+  });
+
+
+
+  // ********************* Animate Background *********************
+  function moveBorder(wrapper) { 
+    var $activeTab = $(wrapper).find(".active").parent("li");
+    var position = $activeTab.position();
+    var width = $activeTab.width();
+    
+    $(wrapper).find(".animate-background").css({
+        "left": position.left + "px",
+        "width": width + "px"
+    });
+  }
+
+  // Move Background on page load for each tab group
+  $(".animate-background-wrapper").each(function() {
+      moveBorder(this);
+  });
+
+  // Move Background on tab click
+  $(".animate-background-wrapper .nav-link").on("click", function () {
+      var wrapper = $(this).closest(".animate-background-wrapper");
+      wrapper.find(".nav-link").removeClass("active");
+      $(this).addClass("active");
+      moveBorder(wrapper);
+  });
+  // ========================= Active Tab Background animation Js End ===================
+
+  
+  // ========================= Testimonials slider Js Start ===================
+  var testimonialsSlider = new Swiper(".testimonials-slider", {
+    slidesPerView: 5,
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    speed: 6000,
+    autoplay: {
+      delay: 0,
+      enabled: true,
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1366: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
+      1600: {
+        slidesPerView: 5,
+        spaceBetween: 20
+      }
+    }
+  });
+  // ========================= Testimonials slider Js End ===================
+  
   
   // ================== Password Show Hide Js Start ==========
   // $(".toggle-password").on('click', function() {

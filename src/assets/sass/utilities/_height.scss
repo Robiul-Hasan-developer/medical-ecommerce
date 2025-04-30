@@ -23,6 +23,12 @@
   }
   &-44-px {
     height: 44px;
+
+  &-188-px {
+    height: 188px;
+  }
+  &-260-px {
+    height: 260px;
   }
 }
 
@@ -32,6 +38,9 @@
   }
   &-210-px {
     min-height: 210px !important;
+  }
+  &-428-px {
+    min-height: 428px;
   }
 }
 /* Height Css Class End */

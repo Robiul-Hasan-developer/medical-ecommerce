@@ -4,7 +4,6 @@
 
 var tl = gsap.timeline(); 
 gsap.registerPlugin(ScrollTrigger, SplitText);
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 
 // **************************** Nav Menu js Start ****************************
@@ -19,17 +18,6 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 //   });
 // });
 // **************************** Nav Menu js End ****************************
-
-
-// =================================== Smooth Scroller Js Start =====================================
-const smoother = ScrollSmoother.create({
-  content: "#scrollSmoother-container",
-  smooth: 1,
-  effects: true,
-  smoothTouch: 0.1,
-  ease: 'power4.out',
-});
-// =================================== Smooth Scroller End Start =====================================
 
 // =================================== Custom Cursor Js Start =====================================
 var body = document.body;

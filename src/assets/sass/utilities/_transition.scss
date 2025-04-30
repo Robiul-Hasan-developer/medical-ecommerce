@@ -8,10 +8,27 @@
         transition-duration: 150ms;
     }
 }
+
 .tw-transition-03s {
     transition: 0.3s;
 }
 .tw-transition-04s {
     transition: 0.4s;
+
+.tw-delay {
+    &-100 {
+        transition-delay: .1s;
+    }
+    &-200 {
+        transition-delay: .2s;
+    }
+    &-300 {
+        transition-delay: .3s;
+    }
+}
+
+.transition-timing-linear {
+    transition-timing-function: linear;
+
 }
 /* transition Css Class End */

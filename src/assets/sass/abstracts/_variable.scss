@@ -1,5 +1,5 @@
 /* Font Family*/
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 $colors: (
   "main": (
@@ -31,7 +31,7 @@ $colors: (
   
   "neutral": (
     "30": #F2F2F2,
-    "40": #F5F5F5,
+    "40": #F8F8F8,
     "50": #f9fafb,
     "100": #f3f4f6,
     "200": #e5e7eb,
@@ -153,7 +153,7 @@ $font-sizes: (
 :root {    
   /* Font Family Variable */
   --heading-font: "Plus Jakarta Sans", sans-serif;
-  --body-font: "Plus Jakarta Sans", sans-serif;
+  --body-font: "Nunito", sans-serif;
   
   /* Font Size Variable Start */
   --heading-one: clamp(2rem, -0.0733rem + 5.2vw, 4.25rem); // Min:32px - Max:68px
