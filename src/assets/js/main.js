@@ -354,6 +354,49 @@
       moveBorder(wrapper);
   });
   // ========================= Active Tab Background animation Js End ===================
+
+  
+  // ========================= Testimonials slider Js Start ===================
+  var testimonialsSlider = new Swiper(".testimonials-slider", {
+    slidesPerView: 5,
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    speed: 6000,
+    autoplay: {
+      delay: 0,
+      enabled: true,
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1366: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
+      1600: {
+        slidesPerView: 5,
+        spaceBetween: 20
+      }
+    }
+  });
+  // ========================= Testimonials slider Js End ===================
   
   
   // ================== Password Show Hide Js Start ==========

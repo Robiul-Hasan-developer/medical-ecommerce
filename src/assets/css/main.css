@@ -361,6 +361,10 @@
     color: var(--neutral-500);
 }
 
+.placeholder-text-white-50::placeholder {
+    color: #FFFFFF8C;
+}
+
 .placeholder-text-sm::placeholder {
     font-size: 14px !important;
 }
@@ -1779,6 +1783,10 @@ input:focus, input:focus-visible {
     border-color: var(--danger-900) !important;
 }
 
+.border-white-12 {
+    border: 1px solid #FFFFFF1A !important;
+}
+
 .hover-border-main-40:hover {
     border-color: var(--main-40) !important;
 }
@@ -2213,6 +2221,18 @@ input:focus, input:focus-visible {
 
 .border-transparent {
     border-color: transparent !important;
+}
+
+.border-start-0 {
+    border-left: 0 !important;
+}
+
+.border-bottom-0 {
+    border-bottom: 0 !important;
+}
+
+.border-end-0 {
+    border-right: 0 !important;
 }
 
 /* Colors class start */
@@ -4119,6 +4139,10 @@ input:focus, input:focus-visible {
     max-width: 200px;
 }
 
+.max-w-232-px {
+    max-width: 232px;
+}
+
 .max-w-420-px {
     max-width: 420px;
 }
@@ -5237,6 +5261,10 @@ input:focus, input:focus-visible {
     box-shadow: 0px 4px 32px 0px #0000000F;
 }
 
+.common-shadow-2 {
+    box-shadow: 0px 4px 18px 0px #00000014;
+}
+
 .hover-common-shadow-1:hover {
     box-shadow: 0px 4px 32px 0px #00000029;
 }
@@ -5264,6 +5292,10 @@ input:focus, input:focus-visible {
 
 .tw-delay-300 {
     transition-delay: 0.3s;
+}
+
+.transition-timing-linear {
+    transition-timing-function: linear;
 }
 
 /* transition Css Class End */
