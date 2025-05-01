@@ -64,6 +64,9 @@
     &-80-px {
       padding-block: 80px;
     }
+    &-200-px {
+      padding-block: clamp(6.25rem, 0.4808rem + 12.0192vw, 12.5rem);;
+    }
   }
 }
 

@@ -971,6 +971,13 @@ input[type=number] {
 }
 
 /* Clip Path Css End */
+/* =========================== Swiper Slider Css Start ============================== */
+.swiper-button-disabled {
+    opacity: 0.4;
+    cursor: no-drop;
+}
+
+/* =========================== Swiper Slider Css End ============================== */
 /* ================================= Typography Css Start =========================== */
 * {
     margin: 0;
@@ -4029,6 +4036,10 @@ input:focus, input:focus-visible {
     margin-inline-end: auto;
 }
 
+.tw-me-110-px {
+    margin-inline-end: clamp(1.5rem, -3.4615rem + 10.3365vw, 6.875rem);
+}
+
 .tw--me-6-px {
     margin-inline-end: -6px;
 }
@@ -4155,6 +4166,10 @@ input:focus, input:focus-visible {
     max-width: 520px;
 }
 
+.max-w-670-px {
+    max-width: 670px;
+}
+
 .max-w-1140-px {
     max-width: 1140px;
 }
@@ -4169,6 +4184,10 @@ input:focus, input:focus-visible {
 
 .max-w-1650-px {
     max-width: 1650px;
+}
+
+.max-w-1800-px {
+    max-width: 1800px;
 }
 
 .max-w-824-px {
@@ -4939,6 +4958,10 @@ input:focus, input:focus-visible {
     padding-block: 80px;
 }
 
+.tw-py-200-px {
+    padding-block: clamp(6.25rem, 0.4808rem + 12.0192vw, 12.5rem);
+}
+
 .py-100 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -5300,6 +5323,30 @@ input:focus, input:focus-visible {
 
 .tw-delay-300 {
     transition-delay: 0.3s;
+}
+
+.tw-delay-04 {
+    transition-delay: 400ms !important;
+}
+
+.tw-delay-06 {
+    transition-delay: 600ms !important;
+}
+
+.tw-delay-08 {
+    transition-delay: 800ms !important;
+}
+
+.tw-delay-10 {
+    transition-delay: 1000ms !important;
+}
+
+.tw-delay-12 {
+    transition-delay: 1200ms !important;
+}
+
+.tw-delay-15 {
+    transition-delay: 1500ms !important;
 }
 
 .transition-timing-linear {
@@ -5866,6 +5913,61 @@ input:focus, input:focus-visible {
 }
 
 /* ======================== Animation Css End ==================================== */
+/* Letter Spacing Css start */
+.tw-tracking-widest {
+    letter-spacing: 1.6px;
+}
+
+/* Letter Spacing Css End */
+/* ========================== Gradient BG Css Start =============================== */
+.gradient-overlay-one {
+    position: relative;
+}
+
+.gradient-overlay-one::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(96.93deg, rgba(232, 243, 255, 0.94) 39.21%, rgba(232, 243, 255, 0.188637) 60.01%, rgba(232, 243, 255, 0.107717) 72.42%, rgba(232, 243, 255, 0) 102.69%);
+    z-index: -1;
+    top: 0;
+    inset-inline-start: 0;
+}
+
+/* ========================== Gradient BG Css End =============================== */
+/* ======================================= Animation in slider Css start ================================= */
+.animate-left-right {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+    transition: 0.4s linear;
+}
+
+.swiper-slide-active .animate-left-right {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.animate-scale {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 0.4s linear;
+}
+
+.swiper-slide-active .animate-scale {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* ======================================= Animation in slider Css End ================================= */
 /* ================================= preload Css Start =========================== */
 .preloader {
     background-color: hsl(var(--white));

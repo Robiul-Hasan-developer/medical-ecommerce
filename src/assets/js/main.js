@@ -397,7 +397,30 @@
     }
   });
   // ========================= Testimonials slider Js End ===================
+
   
+
+/********************************************************************************************************
+                                        Home Three Js Start 
+*********************************************************************************************************/
+// Banner Three js start
+var bannerThreeSlider = new Swiper(".banner-three-slider", {
+  effect: "fade",
+  navigation: {
+    nextEl: ".banner-three-slider-button-next",
+    prevEl: ".banner-three-slider-button-prev",
+  },
+});
+// Banner Three js End
+ 
+
+/********************************************************************************************************
+                                        Home Three Js End 
+*********************************************************************************************************/
+
+  
+
+
   
   // ================== Password Show Hide Js Start ==========
   // $(".toggle-password").on('click', function() {
