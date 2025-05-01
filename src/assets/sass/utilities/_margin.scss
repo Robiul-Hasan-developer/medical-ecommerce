@@ -57,6 +57,9 @@
     &-auto {
       margin-inline-end: auto;
     }
+    &-110-px {
+      margin-inline-end: clamp(1.5rem, -3.4615rem + 10.3365vw, 6.875rem);;
+    }
   }
   &--me {
     &-6-px {

@@ -19,6 +19,24 @@
     &-300 {
         transition-delay: .3s;
     }
+    &-04 {
+        transition-delay: 400ms !important;
+    }
+    &-06 {
+        transition-delay: 600ms !important;
+    }
+    &-08 {
+        transition-delay: 800ms !important;
+    }
+    &-10 {
+        transition-delay: 1000ms !important;
+    }
+    &-12 {
+        transition-delay: 1200ms !important;
+    }
+    &-15 {
+        transition-delay: 1500ms !important;
+    }
 }
 
 .transition-timing-linear {
