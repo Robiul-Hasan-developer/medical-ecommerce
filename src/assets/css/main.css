@@ -1,5 +1,5 @@
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
@@ -99,16 +99,16 @@
     --success-700: #249E67;
     --success-800: #1E8055;
     --success-900: #186243;
-    --danger-50: #f9fafb;
-    --danger-100: #f3f4f6;
-    --danger-200: #e5e7eb;
-    --danger-300: #d1d5db;
-    --danger-400: #9ca3af;
-    --danger-500: #6b7280;
+    --danger-50: #FFF5F5;
+    --danger-100: #FFE5E5;
+    --danger-200: #FBB8B8;
+    --danger-300: #F28282;
+    --danger-400: #E94C4C;
+    --danger-500: #E0252A;
     --danger-600: #ED1D24;
-    --danger-700: #da171d;
-    --danger-800: #bd070d;
-    --danger-900: #262222;
+    --danger-700: #C71A1F;
+    --danger-800: #A31518;
+    --danger-900: #701012;
     --font-xxs: 0.625rem;
     --font-xs: 0.75rem;
     --font-sm: 0.875rem;
@@ -3140,6 +3140,10 @@ input:focus, input:focus-visible {
 
 .tw-gap-56-px {
     gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
+}
+
+.tw-gap-72-px {
+    gap: clamp(1rem, -2.2308rem + 6.7308vw, 4.5rem);
 }
 
 .tw-gap-74-px {
@@ -6214,4 +6218,47 @@ input:focus, input:focus-visible {
 }
 
 /* Product card css End */
+/* =========================== Dark Cyan Css Style Start =========================== */
+.dark-cyan:root {
+    --main-h: 198;
+    --main-s: 74%;
+    --main-l: 14%;
+    --main: var(--main-h) var(--main-s) var(--main-l);
+}
+
+/* =========================== Dark Cyan Css Style End =========================== */
+/* ========================== Header Three Css start ================================== */
+.nav-menu-link-white .nav-menu__link {
+    color: #fff !important;
+}
+
+.nav-menu-link-white .nav-menu__item.activePage > a {
+    color: var(--main-two-600) !important;
+}
+
+.nav-menu-link-white .nav-menu__item.activePage > a::before {
+    color: var(--main-two-600) !important;
+}
+
+.nav-menu-link-white .has-submenu > a::before {
+    color: var(--neutral-300) !important;
+}
+
+/* ========================== Header Three Css end ================================== */
+/* ========================== page style three Start ==========================  */
+.page-style-three:root {
+  /* Font Family Variable */
+    --heading-font: "Space Grotesk", sans-serif;
+    --body-font: "Satoshi", sans-serif;
+  /* Font Size Variable Start */
+    --heading-one: clamp(2rem, -1.1899rem + 6.6456vw, 4.625rem);
+    --heading-two: clamp(1.75rem, -0.3766rem + 4.4304vw, 3.5rem);
+    --heading-three: clamp(1.5rem, -0.3228rem + 3.7975vw, 3rem);
+    --heading-four: clamp(1.25rem, 0.0348rem + 2.5316vw, 2.25rem);
+    --heading-five: clamp(1.125rem, 0.6693rem + 0.9494vw, 1.5rem);
+    --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
+  /* Font Size End */
+}
+
+/* ========================== page style three End ==========================  */
 /*# sourceMappingURL=main.css.map */

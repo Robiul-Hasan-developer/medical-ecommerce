@@ -1,0 +1,10 @@
+/* =========================== Dark Cyan Css Style Start =========================== */
+.dark-cyan {
+    &:root {
+        --main-h: 198;
+        --main-s: 74%;
+        --main-l: 14%;
+        --main: var(--main-h) var(--main-s) var(--main-l);
+    }
+}
+/* =========================== Dark Cyan Css Style End =========================== */

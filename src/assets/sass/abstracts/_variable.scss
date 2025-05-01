@@ -1,5 +1,6 @@
 /* Font Family*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
 
 $colors: (
   "main": (
@@ -55,16 +56,16 @@ $colors: (
     "900": #186243
   ),
   "danger": (
-    "50": #f9fafb,
-    "100": #f3f4f6,
-    "200": #e5e7eb,
-    "300": #d1d5db,
-    "400": #9ca3af,
-    "500": #6b7280,
+    "50": #FFF5F5,
+    "100": #FFE5E5,
+    "200": #FBB8B8,
+    "300": #F28282,
+    "400": #E94C4C,
+    "500": #E0252A,
     "600": #ED1D24,
-    "700": #da171d,
-    "800": #bd070d,
-    "900": #262222,
+    "700": #C71A1F,
+    "800": #A31518,
+    "900": #701012,
   ),
 );
 
