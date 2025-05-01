@@ -1,0 +1,18 @@
+/* ========================== Header Three Css start ================================== */
+.nav-menu-link-white {
+    .nav-menu__link {
+        color: #fff !important;
+    }
+    
+    .nav-menu__item.activePage > a {
+        color: var(--main-two-600) !important;
+        &::before {
+            color: var(--main-two-600) !important
+        }
+    }
+
+    .has-submenu > a::before {
+        color: var(--neutral-300) !important;
+    }
+}
+/* ========================== Header Three Css end ================================== */
