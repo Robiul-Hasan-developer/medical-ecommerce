@@ -987,6 +987,10 @@ input[type=number] {
     cursor: no-drop;
 }
 
+.transition-timing-linear {
+    transition-timing-function: linear;
+}
+
 /* =========================== Swiper Slider Css End ============================== */
 /* ================================= Typography Css Start =========================== */
 * {
@@ -2752,10 +2756,18 @@ input:focus, input:focus-visible {
     opacity: 0.1;
 }
 
+.filter-grayscale-1 {
+    filter: grayscale(1);
+}
+
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {
     font-size: inherit;
+}
+
+.text-100-px {
+    font-size: clamp(2rem, -1.6347rem + 7.5724vw, 6.25rem);
 }
 
 .tw-text-xxs {
@@ -3179,6 +3191,10 @@ input:focus, input:focus-visible {
 /* ======================== Group Css Start =============================== */
 .group:hover .group-hover-text-white {
     color: hsl(var(--white)) !important;
+}
+
+.group:hover .group-hover-text-heading {
+    color: hsl(var(--heading-color)) !important;
 }
 
 .group:hover .group-hover-text-main-600 {
@@ -4054,6 +4070,14 @@ input:focus, input:focus-visible {
     margin-block-start: -6px;
 }
 
+.tw--mt-110-px {
+    margin-block-start: -110px;
+}
+
+.tw--mb-6-px {
+    margin-block-end: -6px;
+}
+
 .tw-me-auto {
     margin-inline-end: auto;
 }
@@ -4160,6 +4184,14 @@ input:focus, input:focus-visible {
 
 .tw-max-h-350-px {
     max-height: 350px;
+}
+
+.tw-max-h-460-px {
+    max-height: 460px;
+}
+
+.tw-max-h-796-px {
+    max-height: 796px;
 }
 
 /* Max Height Css Class End */
@@ -4992,18 +5024,6 @@ input:focus, input:focus-visible {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
 }
 
-.tw-pe-72-px {
-    padding-inline-end: 72px;
-}
-
-.tw-ps-52-px {
-    padding-inline-start: clamp(1.25rem, -12.1677rem + 32.9177vw, 3.25rem);
-}
-
-.tw-pt-90-px {
-    padding-block-start: 90px;
-}
-
 .tw-px-40-px {
     padding-inline: clamp(1.25rem, -12.1677rem + 32.9177vw, 2.5rem);
 }
@@ -5014,6 +5034,30 @@ input:focus, input:focus-visible {
 
 .tw-px-60-px {
     padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+}
+
+.tw-px-86-px {
+    padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 5.375rem);
+}
+
+.tw-pe-72-px {
+    padding-inline-end: 72px;
+}
+
+.tw-pb-152-px {
+    padding-block-end: 152px;
+}
+
+.tw-ps-52-px {
+    padding-inline-start: clamp(1.25rem, -12.1677rem + 32.9177vw, 3.25rem);
+}
+
+.tw-ps-84-px {
+    padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 5.25rem);
+}
+
+.tw-pt-90-px {
+    padding-block-start: 90px;
 }
 
 .tw-py-80-px {
@@ -5420,6 +5464,10 @@ input:focus, input:focus-visible {
 
 .common-shadow-4 {
     box-shadow: 0px 10px 37px 0px #0000000F;
+}
+
+.common-shadow-5 {
+    box-shadow: 0px 10px 100px 0px #00000014;
 }
 
 .hover-common-shadow-1:hover {
@@ -6054,12 +6102,12 @@ input:focus, input:focus-visible {
     background: linear-gradient(181.44deg, #E8F3FF 1.22%, rgba(232, 244, 255, 0) 117.41%);
 }
 
-.gradient-overlay-one, .gradient-overlay-two, .gradient-overlay-three {
+.gradient-overlay-one, .gradient-overlay-two, .gradient-overlay-three, .gradient-overlay-four {
     position: relative;
     z-index: 1;
 }
 
-.gradient-overlay-one::before, .gradient-overlay-two::before, .gradient-overlay-three::before {
+.gradient-overlay-one::before, .gradient-overlay-two::before, .gradient-overlay-three::before, .gradient-overlay-four::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -6088,11 +6136,20 @@ input:focus, input:focus-visible {
     transform: translateX(-50%);
 }
 
+.gradient-overlay-four::before {
+    background: linear-gradient(96.78deg, rgba(3, 19, 35, 0.94) 35.21%, rgba(3, 19, 35, 0.188637) 60.34%, rgba(3, 19, 35, 0) 72.87%, rgba(3, 19, 35, 0) 102.76%);
+}
+
 @media (max-width: 992px) {
     .gradient-lg-full::before {
         background: var(--main-40);
     }
 }
+
+.style-full::before {
+    max-width: 100%;
+}
+
 /* ========================== Gradient BG Css End =============================== */
 /* ======================================= Animation in slider Css start ================================= */
 .animate-left-right {

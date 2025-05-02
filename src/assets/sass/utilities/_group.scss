@@ -5,6 +5,9 @@
             &-white {
                 color: hsl(var(--white)) !important;
             }
+            &-heading {
+                color: hsl(var(--heading-color)) !important;
+            }
             &-main-600 {
                 color: var(--main-600) !important;
             }

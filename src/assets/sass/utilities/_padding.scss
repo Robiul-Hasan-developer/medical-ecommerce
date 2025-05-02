@@ -54,24 +54,7 @@
     }
   }
 
-  &-pe {
-    &-72-px {
-      padding-inline-end: 72px;
-    }
-  }
-
-  &-ps {
-    &-52-px {
-      padding-inline-start: clamp(1.25rem, -12.1677rem + 32.9177vw, 3.25rem);
-    }
-  }
-
-  &-pt {
-    &-90-px {
-      padding-block-start: 90px;
-    }
-  }
-
+  
   &-px {
     &-40-px {
       padding-inline: clamp(1.25rem, -12.1677rem + 32.9177vw, 2.5rem);
@@ -82,7 +65,38 @@
     &-60-px {
       padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
     }
+    &-86-px {
+      padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 5.375rem);
+    }
   }
+  
+  &-pe {
+    &-72-px {
+      padding-inline-end: 72px;
+    }
+  }
+
+  &-pb {
+    &-152-px {
+      padding-block-end: 152px;
+    }
+  }
+
+  &-ps {
+    &-52-px {
+      padding-inline-start: clamp(1.25rem, -12.1677rem + 32.9177vw, 3.25rem);
+    }
+    &-84-px {
+      padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 5.25rem);
+    }
+  }
+
+  &-pt {
+    &-90-px {
+      padding-block-start: 90px;
+    }
+  }
+
 
   &-py {
     &-80-px {

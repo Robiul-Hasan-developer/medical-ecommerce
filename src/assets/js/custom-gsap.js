@@ -251,6 +251,23 @@ buttonElements.forEach((buttonElement) => {
 // **************************** Position Aware button hover js End ****************************
 
 
+// **************************** Blog js start ****************************
+if($('.line').length) {   
+  gsap.to(".line", {
+      ease: "bounce.out",
+      width: '100%',
+      duration: 2,
+      stagger: 0.12,
+      scrollTrigger: {
+        trigger: ".blog-three",
+        start: "top 90%",
+        toggleActions: "restart none restart none",
+      }
+  });
+}
+// **************************** Blog js End ****************************
+
+
 
 
 /* **************************************************************************** 

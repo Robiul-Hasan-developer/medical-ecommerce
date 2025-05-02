@@ -3,6 +3,9 @@
   &-inherit {
       font-size: inherit;
   }
+  &-100-px {
+    font-size: clamp(2rem, -1.6347rem + 7.5724vw, 6.25rem);
+  }
 }
 
 @each $property, $value in $font-sizes {

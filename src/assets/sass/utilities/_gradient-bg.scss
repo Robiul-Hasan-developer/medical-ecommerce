@@ -9,7 +9,8 @@
 .gradient-overlay {
     &-one,
     &-two, 
-    &-three {
+    &-three, 
+    &-four {
         position: relative;
         z-index: 1;
         &::before {
@@ -39,6 +40,9 @@
         inset-inline-start: 50%;
         transform: translateX(-50%);
     }
+    &-four::before {
+        background: linear-gradient(96.78deg, rgba(3, 19, 35, 0.94) 35.21%, rgba(3, 19, 35, 0.188637) 60.34%, rgba(3, 19, 35, 0) 72.87%, rgba(3, 19, 35, 0) 102.76%);
+    }
 }
 
 .gradient-lg-full {
@@ -46,6 +50,12 @@
         @media (max-width: 992px) {
             background: var(--main-40);
         }
+    }
+}
+
+.style-full {
+    &::before {
+        max-width: 100%;
     }
 }
 /* ========================== Gradient BG Css End =============================== */
