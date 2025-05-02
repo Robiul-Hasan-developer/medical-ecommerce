@@ -460,6 +460,47 @@ var bannerThreeSlider = new Swiper(".banner-three-slider", {
   });
   // ========================= Clickable Accordion Js End ===================
 
+// ========================== About Two Js Start =====================
+var testimonialsSliderOne = new Swiper(".testimonials-slider-one", {
+	slidesPerView: 2,
+  grabCursor: true,
+	loop: true,
+	centeredSlides: true,
+	direction: "vertical",
+  spaceBetween: 24,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true
+	},
+	speed: 6000,
+  autoplay: {
+		delay: 0,
+		enabled: true,
+	}
+});
+
+var testimonialsSliderTwo = new Swiper(".testimonials-slider-two", {
+	slidesPerView: 2,
+  grabCursor: true,
+	loop: true,
+	centeredSlides: true,
+	direction: "vertical",
+  spaceBetween: 24,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true
+	},
+	speed: 6000,
+  autoplay: {
+		delay: 0,
+		enabled: true,
+    reverseDirection: true,
+    disableOnInteraction: false,
+	}
+});
+// ========================== About Two Js End =====================
+  
+  
   
 /********************************************************************************************************
                                         Home Three Js End 
