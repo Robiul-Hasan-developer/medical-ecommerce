@@ -405,6 +405,14 @@
 *********************************************************************************************************/
 // Banner Three js start
 var bannerThreeSlider = new Swiper(".banner-three-slider", {
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false
+  },
+  autoplay: true,
+  speed: 1500,
+  grabCursor: true,
+  loop: true,
   effect: "fade",
   navigation: {
     nextEl: ".banner-three-slider-button-next",
@@ -412,8 +420,47 @@ var bannerThreeSlider = new Swiper(".banner-three-slider", {
   },
 });
 // Banner Three js End
- 
 
+
+  // ========================= Counter Up Js End ===================
+  const counterUp = window.counterUp.default;
+
+  const callback = (entries) => {
+    entries.forEach((entry) => {
+      const el = entry.target;
+      if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+        counterUp(el, {
+          duration: 3500,
+          delay: 16,
+        });
+        el.classList.add('is-visible');
+      }
+    });
+  };
+  const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+  // statistics Counter
+  const statisticsCounter = document.querySelectorAll('.counter');
+  if (statisticsCounter.length > 0) {
+    statisticsCounter.forEach((counterNumber) => {
+      IO.observe(counterNumber);
+    });
+  }
+  // ========================= Counter Up Js End ===================
+
+  
+  // ========================= Clickable Accordion Js Start ===================
+  $(document).on('click', '.clickable-item', function () {
+    const isActive = $(this).hasClass('active'); 
+    $('.clickable-item').removeClass('active');
+  
+    if (!isActive) {
+      $(this).addClass('active'); 
+    }
+  });
+  // ========================= Clickable Accordion Js End ===================
+
+  
 /********************************************************************************************************
                                         Home Three Js End 
 *********************************************************************************************************/
@@ -440,14 +487,14 @@ var bannerThreeSlider = new Swiper(".banner-three-slider", {
   
   // // ================================= Brand slider Start =========================
   // var brandSlider = new Swiper('.brand-slider', {
-  //   autoplay: {
-  //     delay: 2000,
-  //     disableOnInteraction: false
-  //   },
-  //   autoplay: true,
-  //   speed: 1500,
-  //   grabCursor: true,
-  //   loop: true,
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false
+    // },
+    // autoplay: true,
+    // speed: 1500,
+    // grabCursor: true,
+    // loop: true,
   //   slidesPerView: 7,
   //   breakpoints: {
   //       300: {
@@ -473,31 +520,6 @@ var bannerThreeSlider = new Swiper(".banner-three-slider", {
   // // ================================= Brand slider End =========================
   
   
-  // ========================= Counter Up Js End ===================
-  //  const counterUp = window.counterUp.default;
-
-  //  const callback = (entries) => {
-  //    entries.forEach((entry) => {
-  //      const el = entry.target;
-  //      if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-  //        counterUp(el, {
-  //          duration: 2000,
-  //          delay: 16,
-  //        });
-  //        el.classList.add('is-visible');
-  //      }
-  //    });
-  //  };
- 
-  //  const IO = new IntersectionObserver(callback, { threshold: 1 });
- 
-  //  // Counter
-  //  const counter = document.querySelector('.counter');
-  //  if (counter) {
-  //    IO.observe(counter);
-  //  }
-   // ========================= Counter Up Js End ===================
-
   });
   // ==========================================
   //      End Document Ready function

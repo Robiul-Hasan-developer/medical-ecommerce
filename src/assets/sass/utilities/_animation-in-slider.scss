@@ -2,16 +2,9 @@
 .animate-left-right {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translateX(-40px);
-    transform: translateX(-40px);
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
     transition: 0.4s linear;
-}
-
-.swiper-slide-active .animate-left-right {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
 }
 
 .animate-scale {
@@ -20,6 +13,13 @@
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     transition: 0.4s linear;
+}
+
+.swiper-slide-active .animate-left-right {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
 }
 
 .swiper-slide-active .animate-scale {

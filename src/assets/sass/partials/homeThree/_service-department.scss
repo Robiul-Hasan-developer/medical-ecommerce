@@ -1,0 +1,39 @@
+/* =========================== service department css start =========================== */
+.clickable-item {
+    border-bottom: 1px solid var(--neutral-200);
+    &.active {
+        align-items: start !important;
+        background-color: var(--main-600);
+        border-radius: 16px !important;
+        .clickable-item__content {
+            display: block  !important;
+        }
+    }
+}
+.active-text-white {
+    &.active {
+        color: #fff !important;
+        h1, h2, h3, h4, h5, h6, p, span {
+            color: #fff !important;
+        }
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+.active-bg-main-600 {
+    &.active {
+        background-color: var(--main-600);
+    }
+}
+.active-bg-white {
+    &.active {
+        background-color: hsl(var(--white));
+    }
+}
+.active-border-0 {
+    &.active {
+        border-color: transparent !important;
+    }
+}
+/* =========================== service department css End =========================== */

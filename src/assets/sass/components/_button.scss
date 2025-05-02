@@ -76,6 +76,14 @@
         }
     
     }
+    &-outline-main {
+        background-color: transparent;
+        border: 1px solid var(--main-600);
+        color: var(--main-600);
+        &:hover {
+            border-color: var(--main-600) !important;
+        }
+    }
     &-main-two {
         background-color: var(--main-two-600);
         color: var(--heading-color) !important;

@@ -24,6 +24,11 @@
    }
 }
 
+.rounded-t-36-px {
+   border-top-left-radius: 36px;
+   border-top-right-radius: 36px;
+}
+
 .hover-rounded {
    &-xl:hover {
       border-radius: 0.75rem; /* 12px */
