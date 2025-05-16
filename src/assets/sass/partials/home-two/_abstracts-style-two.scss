@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+.page-style-two {
+    &:root {
+            --heading-one: clamp(1.5rem, 0.4786rem + 2.8571vw, 2.25rem); // Min:24px - Max:36px
+            --heading-two: clamp(1.625rem, 1.1143rem + 1.4286vw, 2rem); // Min: 26px - Max: 32px
+            --heading-three: clamp(1.5rem, -0.3228rem + 3.7975vw, 3rem); // Min: 24px - Max: 48px
+            --heading-four: clamp(1.125rem, 0.6143rem + 1.4286vw, 1.5rem); // Min: 18px - Max: 24px
+            --heading-five: clamp(0.875rem, 0.7048rem + 0.4762vw, 1rem); // Min: 14px - Max: 16px
+            --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem); // Min: 16px - Max-20px
+        }
+}

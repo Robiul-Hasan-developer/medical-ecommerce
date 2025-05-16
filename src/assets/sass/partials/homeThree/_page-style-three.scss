@@ -15,4 +15,16 @@
         /* Font Size End */
     }
 }
+
+.body-bg-neutral-40 {
+    body {
+        background-color: var(--neutral-40);
+    }
+}
+
+.header-bg-blue-dark {
+    .header .container > .bg-main-600 {
+        background-color: hsl(var(--heading-color)) !important;
+    }
+}
 /* ========================== page style three End ==========================  */

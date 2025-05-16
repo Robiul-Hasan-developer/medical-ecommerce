@@ -1,0 +1,46 @@
+// category dropdown
+/* ==================== max width css start ======================== */ 
+.max-w {
+    &-390 {
+      max-width: 390px;
+    }
+    &-300 {
+      max-width: 300px;
+    }
+    
+  }
+/* ==================== max width css end ======================== */ 
+
+/* ====================== border css start =================== */ 
+.border-top-neutral-30 {
+    border-top: 1px solid #F2F2F2;
+  }
+  .border-bottom-neutral-30 {
+    border-bottom: 1px solid #F2F2F2;
+  }
+  .border-left-neutral-30 {
+    border-left: 1px solid #F2F2F2;
+  }
+  .border-right-neutral-30 {
+    border-right: 1px solid #F2F2F2;
+  }
+  .border-neutral-35 {
+    border: 1px solid #E0E0E0;
+  }
+  .tw-border-neutral-35 {
+    border: 1px solid #EFEFEF;
+  }
+/* ====================== border css end =================== */ 
+
+/* ===================== color css start ===================== */ 
+.text-title-600 {
+    color: #092D3C !important;
+  }
+/* ===================== color css end ===================== */ 
+
+
+/* ===================== margin css start ===================== */ 
+.tw-mb--19px {
+    margin-bottom: -19px;
+  }
+/* ===================== margin css end ===================== */ 

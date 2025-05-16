@@ -1,0 +1,26 @@
+/* ===================== grid css start ===================== */ 
+.tw-gird-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-grow: 1;
+  }
+/* ===================== grid css end ===================== */ 
+
+
+.tw-gird-col {
+    @media (max-width: 900px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-grow: 1;
+    }
+    @media (max-width: 425px) {
+        grid-template-columns: 1fr;
+        display: grid;
+        flex-grow: 1;
+    }
+}
+.tw-border-md-none {
+    @media (max-width: 900px) {
+        border-color: transparent !important;
+    }
+}
