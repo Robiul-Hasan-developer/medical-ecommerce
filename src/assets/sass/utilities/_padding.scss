@@ -54,7 +54,6 @@
     }
   }
 
-  
   &-px {
     &-32-px {
       padding-inline: clamp(1.25rem, -12.1677rem + 32.9177vw, 2rem);
@@ -75,10 +74,13 @@
       padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 5.375rem);
     }
   }
-  
+
   &-pe {
-    &-72-px {
+    &-84-px {
       padding-inline-end: 72px;
+    }
+    &-84-px {
+      padding-inline-end: 84px;
     }
     &-110-px {
       padding-inline-end: clamp(1.5rem, -12.1677rem + 32.9177vw, 6.875rem);
@@ -112,13 +114,12 @@
     }
   }
 
-
   &-py {
     &-80-px {
       padding-block: 80px;
     }
     &-200-px {
-      padding-block: clamp(6.25rem, 0.4808rem + 12.0192vw, 12.5rem);;
+      padding-block: clamp(6.25rem, 0.4808rem + 12.0192vw, 12.5rem);
     }
   }
 }
@@ -136,22 +137,22 @@
   }
 }
 .pt-120 {
-    padding-block-start: 60px;
-    @media (min-width: 576px) {
-      padding-block-start: 80px;
-    }
-    @media (min-width: 992px) {
+  padding-block-start: 60px;
+  @media (min-width: 576px) {
+    padding-block-start: 80px;
+  }
+  @media (min-width: 992px) {
     padding-block-start: 120px;
   }
 }
 .pb-120 {
-    padding-block-end: 60px;
-    @media (min-width: 576px) {
-      padding-block-end: 80px;
-    }
-    @media (min-width: 992px) {
-      padding-block-end: 120px;
-    }
+  padding-block-end: 60px;
+  @media (min-width: 576px) {
+    padding-block-end: 80px;
+  }
+  @media (min-width: 992px) {
+    padding-block-end: 120px;
+  }
 }
 
 .py-100 {
@@ -167,51 +168,51 @@
   }
 }
 .pt-100 {
-    padding-block-start: 60px;
-    @media (min-width: 576px) {
-      padding-block-start: 80px;
-    }
-    @media (min-width: 992px) {
+  padding-block-start: 60px;
+  @media (min-width: 576px) {
+    padding-block-start: 80px;
+  }
+  @media (min-width: 992px) {
     padding-block-start: 100px;
   }
 }
 .pb-100 {
-    padding-block-end: 60px;
-    @media (min-width: 576px) {
-      padding-block-end: 80px;
-    }
-    @media (min-width: 992px) {
-      padding-block-end: 100px;
-    }
+  padding-block-end: 60px;
+  @media (min-width: 576px) {
+    padding-block-end: 80px;
+  }
+  @media (min-width: 992px) {
+    padding-block-end: 100px;
+  }
 }
 .py-60 {
-    padding-block-start: 30px;
-    padding-block-end: 30px;
-    @media (min-width: 576px) {
-      padding-block-start: 40px;
-      padding-block-end: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-start: 60px;
-      padding-block-end: 60px;
-    }
+  padding-block-start: 30px;
+  padding-block-end: 30px;
+  @media (min-width: 576px) {
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+  }
+  @media (min-width: 992px) {
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+  }
 }
 .pt-60 {
-    padding-block-start: 30px;
-    @media (min-width: 576px) {
-      padding-block-start: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-start: 60px;
-    }
+  padding-block-start: 30px;
+  @media (min-width: 576px) {
+    padding-block-start: 40px;
+  }
+  @media (min-width: 992px) {
+    padding-block-start: 60px;
+  }
 }
-  .pb-60 {
-    padding-block-end: 30px;
-    @media (min-width: 576px) {
-      padding-block-end: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-end: 60px;
-    }
+.pb-60 {
+  padding-block-end: 30px;
+  @media (min-width: 576px) {
+    padding-block-end: 40px;
+  }
+  @media (min-width: 992px) {
+    padding-block-end: 60px;
+  }
 }
 /* ================================= Padding Css End =========================== */

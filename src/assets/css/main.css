@@ -3218,7 +3218,7 @@ input:focus, input:focus-visible {
     gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
 }
 
-.tw-gap-72-px {
+.tw-gap-84-px {
     gap: clamp(1rem, -2.2308rem + 6.7308vw, 4.5rem);
 }
 
@@ -5259,8 +5259,12 @@ input:focus, input:focus-visible {
     padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 5.375rem);
 }
 
-.tw-pe-72-px {
+.tw-pe-84-px {
     padding-inline-end: 72px;
+}
+
+.tw-pe-84-px {
+    padding-inline-end: 84px;
 }
 
 .tw-pe-110-px {
