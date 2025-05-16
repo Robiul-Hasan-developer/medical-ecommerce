@@ -261,7 +261,9 @@
   // ========================= Category Js End ===================
 
   // ========================= Aos Animation Js Start ===================
-  AOS.init();
+  AOS.init({ 
+    once: true 
+  })
   // ========================= Aos Animation Js End ===================
   
     
@@ -367,7 +369,7 @@
       el: ".swiper-pagination",
       clickable: true
     },
-    speed: 6000,
+    speed: 16000,
     autoplay: {
       delay: 0,
       enabled: true,
@@ -399,6 +401,148 @@
   // ========================= Testimonials slider Js End ===================
 
   
+
+/********************************************************************************************************
+                                        Home Two Js Start 
+*********************************************************************************************************/
+// product Category slider start
+var productCategoryTwoSlider = new Swiper(".product-category-two-slider", {
+  slidesPerView: 6,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
+  },
+  speed: 1600,
+  grabCursor: true,
+  loop: true,
+  navigation: {
+    nextEl: ".product-category-two-button-next",
+    prevEl: ".product-category-two-button-prev",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    425: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 6,
+    },
+  },
+});
+// product Category slider End 
+
+// essential medicine slider start
+var essentialMedicineSlider = new Swiper(".essential-medicine-slider", {
+  slidesPerView: 4,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
+  },
+  speed: 1600,
+  grabCursor: true,
+  loop: true,
+  navigation: {
+    nextEl: ".essential-medicine-two-button-next",
+    prevEl: ".essential-medicine-two-button-prev",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    425: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1364: {
+      slidesPerView: 3,
+    },
+    1500: {
+      slidesPerView: 4,
+    },
+  },
+});
+// essential medicine slider End 
+
+// OTC medicine slider start
+var otcMedicineSlider = new Swiper(".otc-medicine-slider", {
+  slidesPerView: 4,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
+  },
+  speed: 1600,
+  grabCursor: true,
+  loop: true,
+  navigation: {
+    nextEl: ".otc-medicine-two-button-next",
+    prevEl: ".otc-medicine-two-button-prev",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    425: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1364: {
+      slidesPerView: 3,
+    },
+    1500: {
+      slidesPerView: 4,
+    },
+  },
+});
+// OTC medicine slider End 
+
+// Testimonials Two slider start
+var testimonialsTwoSlider = new Swiper(".testimonials-two-slider", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
+  },
+  speed: 1600,
+  grabCursor: true,
+  loop: true,
+  navigation: {
+    nextEl: ".testimonials-two-button-next",
+    prevEl: ".testimonials-two-button-prev",
+  },
+});
+// Testimonials Two slider End 
+
+
+/********************************************************************************************************
+                                        Home Two Js End 
+*********************************************************************************************************/
+  
+
 
 /********************************************************************************************************
                                         Home Three Js Start 
@@ -472,7 +616,7 @@ var testimonialsSliderOne = new Swiper(".testimonials-slider-one", {
 		el: ".swiper-pagination",
 		clickable: true
 	},
-	speed: 6000,
+	speed: 16000,
   autoplay: {
 		delay: 0,
 		enabled: true,
@@ -490,7 +634,7 @@ var testimonialsSliderTwo = new Swiper(".testimonials-slider-two", {
 		el: ".swiper-pagination",
 		clickable: true
 	},
-	speed: 6000,
+	speed: 16000,
   autoplay: {
 		delay: 0,
 		enabled: true,
@@ -499,11 +643,29 @@ var testimonialsSliderTwo = new Swiper(".testimonials-slider-two", {
 	}
 });
 // ========================== About Two Js End =====================
+
+  
+/********************************************************************************************************
+                                        Home Three Js End 
+*********************************************************************************************************/
+
+  
+  
+/********************************************************************************************************
+                                        Other Pages Js Start 
+*********************************************************************************************************/
+// ========================= magnific Popup Js Start =====================
+$('.play-button').magnificPopup({
+  type:'iframe',
+  removalDelay: 300,
+  mainClass: 'mfp-fade',
+});
+// ========================= magnific Popup Js End =====================
   
   
   
 /********************************************************************************************************
-                                        Home Three Js End 
+                                        Other Pages Js End 
 *********************************************************************************************************/
 
   

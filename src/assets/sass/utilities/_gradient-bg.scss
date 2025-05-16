@@ -10,7 +10,9 @@
     &-one,
     &-two, 
     &-three, 
-    &-four {
+    &-four, 
+    &-five, 
+    &-six {
         position: relative;
         z-index: 1;
         &::before {
@@ -42,6 +44,12 @@
     }
     &-four::before {
         background: linear-gradient(96.78deg, rgba(3, 19, 35, 0.94) 35.21%, rgba(3, 19, 35, 0.188637) 60.34%, rgba(3, 19, 35, 0) 72.87%, rgba(3, 19, 35, 0) 102.76%);
+    }
+    &-five::before {
+        background: linear-gradient(96.93deg, #C2DFFC 39.21%, rgba(194, 223, 252, 0.188637) 53.01%, rgba(194, 223, 252, 0.107717) 72.42%, rgba(194, 223, 252, 0) 102.69%);
+    }
+    &-six::before {
+        background: #042E50C7;
     }
 }
 

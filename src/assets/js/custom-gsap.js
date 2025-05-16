@@ -87,24 +87,25 @@ mmm.add("(max-width: 991px)", () => {
   mtl.to('.side-overlay', {
     opacity: 1,
     visibility: 'visible',
-    duration: .3, 
+    duration: .15, 
   });
   
   mtl.to('.mobile-menu', {
     x: 0,
+    duration: .15,
   });
   
   mtl.from('.nav-menu__item', {
     opacity: 0,
-    duration: .3,
+    duration: .2,
     y: -60,
-    stagger: .12,
+    stagger: .08,
   });
 
   mtl.from('.close-button', {
     opacity: 0,
     scale: 0,
-    duration: .2,
+    duration: .15,
   });
 
   toggleMobileMenu.addEventListener('click', function () {

@@ -8,7 +8,7 @@
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title> Medical HTML Template</title>
+    <title> Medicol - Hospital, Medicine & Healthcare Center  HTML Template </title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <!-- Select2 -->
@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Satoshi -->
     <link rel="stylesheet" href="assets/css/satoshi.css">
+    <!-- magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head> 
@@ -85,9 +87,6 @@
             </li>
         </ul>
     </li>
-    <li class="nav-menu__item">
-        <a href="about.html" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">About Us</a>
-    </li>
     <li class="nav-menu__item has-submenu position-relative">
         <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Service</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
@@ -114,8 +113,22 @@
         </ul>
     </li>
     <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Blog</a>
+         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Blog</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Blog Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
         <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Pages</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="about.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> About Us</a>
+            </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
                 <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Shop</a>
             </li>
@@ -127,6 +140,9 @@
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
                 <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Diagnostic Bill</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="contact.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Contact Us</a>
             </li>
         </ul>
     </li>
@@ -143,7 +159,7 @@
 <div class="top-header-three tw-pt-1 tw-pb-2">
     <div class="container max-w-1650-px">
         <div class="d-flex align-items-center justify-content-between flex-wrap tw-gap-4">
-            <div class="border rounded-pill border-neutral-100 bg-neutral-50 tw-px-6 tw-py-3 d-xl-flex d-none align-items-center tw-gap-6">
+            <div class="border rounded-pill border-neutral-200 bg-neutral-50 tw-px-6 tw-py-3 d-xl-flex d-none align-items-center tw-gap-6">
                 <div class="d-flex align-items-center tw-gap-2">
                     <span class="fw-medium tw-text-md tw-leading-none text-heading d-flex">
                         <i class="ph-bold ph-envelope-simple"></i>
@@ -167,18 +183,18 @@
                         </span>
                     </button>
                     <div class="select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-end-0 tw-z-99 min-w-max tw-mt-2 tw-duration-200 tw-max-h-400-px overflow-y-auto shadow invisible opacity-0">
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium">Radiology</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium">Blood Test</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium">Urine Test</span>
-                        </button>
+                        </div>
                     </div>
                 </div>  
-                <div class="border rounded-pill border-neutral-100 bg-neutral-50 tw-px-6 tw-py-3 d-flex align-items-center tw-gap-6">
+                <div class="border rounded-pill border-neutral-200 bg-neutral-50 tw-px-6 tw-py-3 d-flex align-items-center tw-gap-6">
                     <div class="d-sm-flex align-items-center tw-gap-2 d-none">
                         <span class="fw-medium tw-text-md tw-leading-none text-heading d-flex">
                             <i class="ph-bold ph-chat-circle-dots"></i>
@@ -199,42 +215,42 @@
                             </span>
                         </button>
                         <div class="select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-end-0 tw-z-99 min-w-max tw-mt-2 tw-duration-200 tw-max-h-400-px overflow-y-auto shadow invisible opacity-0">
-                            <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                            <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                                 <span class="select-dropdown__flag">
                                     <img src="assets/images/thumbs/flag1.png" alt="Flag" class=" tw-w-4 tw-h-3">
                                 </span>
                                 <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium">USD</span>
-                            </button>
-                            <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                            </div>
+                            <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                                 <span class="select-dropdown__flag">
                                     <img src="assets/images/thumbs/flag2.png" alt="Flag" class=" tw-w-4 tw-h-3">
                                 </span>
                                 <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium">YEN</span>
-                            </button>
-                            <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                            </div>
+                            <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                                 <span class="select-dropdown__flag">
                                     <img src="assets/images/thumbs/flag3.png" alt="Flag" class=" tw-w-4 tw-h-3">
                                 </span>
                                 <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium">FRANC</span>
-                            </button>
-                            <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                            </div>
+                            <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                                 <span class="select-dropdown__flag">
                                     <img src="assets/images/thumbs/flag4.png" alt="Flag" class=" tw-w-4 tw-h-3">
                                 </span>
                                 <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium">EURO</span>
-                            </button>
-                            <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                            </div>
+                            <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                                 <span class="select-dropdown__flag">
                                     <img src="assets/images/thumbs/flag5.png" alt="Flag" class=" tw-w-4 tw-h-3">
                                 </span>
                                 <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium">WON</span>
-                            </button>
-                            <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                            </div>
+                            <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                                 <span class="select-dropdown__flag">
                                     <img src="assets/images/thumbs/flag6.png" alt="Flag" class=" tw-w-4 tw-h-3">
                                 </span>
                                 <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-medium"> BDT</span>
-                            </button>
+                            </div>
                         </div>
                     </div>    
                 </div>
@@ -275,9 +291,6 @@
             </li>
         </ul>
     </li>
-    <li class="nav-menu__item">
-        <a href="about.html" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">About Us</a>
-    </li>
     <li class="nav-menu__item has-submenu position-relative">
         <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Service</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
@@ -304,8 +317,22 @@
         </ul>
     </li>
     <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Blog</a>
+         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Blog</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Blog Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
         <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Pages</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="about.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> About Us</a>
+            </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
                 <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Shop</a>
             </li>
@@ -317,6 +344,9 @@
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
                 <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Diagnostic Bill</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="contact.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Contact Us</a>
             </li>
         </ul>
     </li>
@@ -374,7 +404,7 @@
                                 </div>
                                 <p class="tw-text-lg tw-mt-5 text-neutral-600 tw-delay-08 animate-left-right">In today's competitive business, the demand for efficient and cost-effective IT solutions has never been more critical.</p>
                                 <div class="tw-mt-10 tw-delay-10 animate-left-right">
-                                    <a href="doctor-list.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main-two hover-style-three button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group tw-py-5 tw-px-9 fw-semibold tw-rounded-lg tw-text-sm tw-end-0 tw-duration-200 text-success-600 group-item text-capitalize" data-block="button">
+                                    <a href="appointment.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main-two hover-style-three button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group tw-py-5 tw-px-9 fw-semibold tw-rounded-lg tw-text-sm tw-end-0 tw-duration-200 text-success-600 group-item text-capitalize" data-block="button">
                                         <span class="button__flair"></span> 
                                         <span class="button__label">Book An Appointment</span>
                                         <span class="z-1 position-relative group-hover-item-text-invert tw-leading-none d-flex">
@@ -399,7 +429,7 @@
                                 </div>
                                 <p class="tw-text-lg tw-mt-5 text-neutral-600 tw-delay-08 animate-left-right">In a fast-paced world, reliable and affordable healthcare solutions are more essential than ever</p>
                                 <div class="tw-mt-10 tw-delay-10 animate-left-right">
-                                    <a href="doctor-list.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main-two hover-style-three button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group tw-py-5 tw-px-9 fw-semibold tw-rounded-lg tw-text-sm tw-end-0 tw-duration-200 text-success-600 group-item text-capitalize" data-block="button">
+                                    <a href="appointment.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main-two hover-style-three button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group tw-py-5 tw-px-9 fw-semibold tw-rounded-lg tw-text-sm tw-end-0 tw-duration-200 text-success-600 group-item text-capitalize" data-block="button">
                                         <span class="button__flair"></span> 
                                         <span class="button__label">Book An Appointment</span>
                                         <span class="z-1 position-relative group-hover-item-text-invert tw-leading-none d-flex">
@@ -1358,7 +1388,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1384,7 +1414,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1414,7 +1444,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1440,7 +1470,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1470,7 +1500,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1507,7 +1537,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1533,7 +1563,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1563,7 +1593,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1589,7 +1619,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1619,7 +1649,7 @@
                                                 <div class="d-inline-flex align-items-center tw-gap-1 bg-main-two-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                                     <span class="text-heading fw-bold tw-text-sm">4.9</span>
                                                     <span class="text-heading d-flex">
-                                                        <img src="assets/images/icons/star-black.svg" alt="">
+                                                        <img src="assets/images/icons/star-black.svg" alt="Thumbnail">
                                                     </span>
                                                 </div>
                                             </div>
@@ -1912,7 +1942,7 @@
                 <div class="col-xl-3 col-md-6">
                     <div class="">
                         <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9 tw-mb-6">
-                            <img src="assets/images/logo/logo-white.png" alt="">
+                            <img src="assets/images/logo/logo-white.png" alt="Thumbnail">
                         </a>
                         <p class="text-white">A new way to make the payments easy, reliable and 100% secure. claritatem</p>
                         <div class="tw-mt-16 tw-pt-14 d-flex align-items-center tw-gap-4">
@@ -1980,25 +2010,25 @@
                         <h6 class="fw-medium text--white tw-mb-8">Opening houres</h6>
                         <ul class="d-flex flex-column tw-gap-4">
                             <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white active--translate-y-scale-9">Monday :08.00 - 10.00</span>
+                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
                             </li>
                             <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white active--translate-y-scale-9">Monday :08.00 - 10.00</span>
+                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
                             </li>
                             <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white active--translate-y-scale-9">Monday :08.00 - 10.00</span>
+                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
                             </li>
                             <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white active--translate-y-scale-9">Monday :08.00 - 10.00</span>
+                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
                             </li>
                             <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white active--translate-y-scale-9">Monday :08.00 - 10.00</span>
+                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
                             </li>
                             <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white active--translate-y-scale-9">Monday :08.00 - 10.00</span>
+                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
                             </li>
                             <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white active--translate-y-scale-9">Monday :08.00 - 10.00</span>
+                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
                             </li>
                         </ul>
                     </div>
@@ -2039,6 +2069,10 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- counter up Js -->
     <script src="assets/js/counterup.min.js"></script>
+    <!-- Magnific Popup Js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- count down Js -->
+    <script src="assets/js/count-down.js"></script>
 
     <!-- GSAP js -->
     <script src="assets/js/gsap.min.js"></script>

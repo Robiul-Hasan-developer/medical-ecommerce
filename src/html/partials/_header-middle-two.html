@@ -1,0 +1,44 @@
+<!-- ==================== Header Middle Start Here ==================== -->
+<header class="header bg-white transition-all tw-py-5">
+    <div class="container container-two">
+        <nav class="d-flex align-items-center justify-content-between tw-gap-4">
+            <!-- Logo Start -->
+            <div class="logo">
+                <a href="index.html" class="link active-scale-09">
+                    <img src="assets/images/logo/logo.png" alt="Logo" class="max-w-200-px">
+                </a>
+            </div>
+            <!-- Logo End  -->
+
+            <!-- Menu Start  -->
+            <div class="header-menu d-lg-block d-none">
+                @@include('../partials/_nav-menu.html', {
+                    "class" : "tw-gap-6"
+                })
+            </div>
+            <!-- Menu End  -->
+
+
+            <!-- Header Right start -->
+            <div class="d-flex align-items-center tw-gap-5 flex-shrink-0">
+                <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center gap-4 tw-text-2xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9">
+                    <i class="ph-bold ph-user"></i>
+                </a>
+                <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center gap-4 tw-text-2xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9 tw-me-105">
+                    <i class="ph-bold ph-heart"></i>
+                    <span class="tw-w-4 tw-h-4 d-flex align-items-center justify-content-center rounded-circle bg-main-600 text-white tw-text-xxs position-absolute top-0 tw-end-0 tw--me-6-px tw--mt-6-px">0</span>
+                </a>
+                <div class="d-flex align-items-center tw-gap-2">
+                    <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center gap-4 tw-text-2xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9 tw-me-105">
+                        <i class="ph ph-shopping-cart"></i>
+                        <span class="tw-w-4 tw-h-4 d-flex align-items-center justify-content-center rounded-circle bg-main-600 text-white tw-text-xxs position-absolute top-0 tw-end-0 tw--me-6-px tw--mt-6-px">0</span>
+                    </a>
+                    <span class="text-heading tw-text-sm flex-shrink-0 flex-grow-1 d-lg-flex d-none">0 items <span class="text-main-600">$</span>0.00</span>
+                </div>
+            </div>
+            <!-- Header Right End  -->
+
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header Middle End Here ==================== -->

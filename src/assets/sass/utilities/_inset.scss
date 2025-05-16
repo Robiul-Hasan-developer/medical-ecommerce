@@ -12,6 +12,15 @@
     &-auto {
         inset-inline-start: auto;
     }
+    &-69-px {
+        inset-inline-start: 69px;
+    }
+    &-95-px {
+        inset-inline-start: 95px;
+    }
+    &-8-px {
+        inset-inline-start: 8px;
+    }
 }
 .tw-end {
     &-0 {
@@ -22,6 +31,73 @@
     }
     &-auto {
         inset-inline-end: auto;
+    }
+    &-20 {
+        inset-inline-end: 20%;
+    }
+    &-15 {
+        inset-inline-end: 15%;
+    }
+    &-35-px {
+        inset-inline-end: 35px;
+    }
+    &-204-px {
+        inset-inline-end: 204px;
+    }
+    &-115-px {
+        inset-inline-end: 115px;
+    }
+    &-147-px {
+        inset-inline-end: 147px;
+    }
+    &-28 {
+        inset-inline-end: 28px;
+    }
+    &-57-px {
+        inset-inline-end: 57px;
+    }
+    &--23 {
+        inset-inline-end: -23px;
+    }
+}
+.tw-block-start {
+    &-0 {
+        inset-block-start: 0;
+    }
+    &-256-px {
+        inset-block-start: 256px;
+    }
+    &-58-px {
+        inset-block-start: 58px;
+    }
+    &-10-px {
+        inset-block-start: 10px;
+    }
+    &-30-px {
+        inset-block-start: 30px;
+    }
+    &-40-px {
+        inset-block-start: 40px;
+    }
+}
+.tw-block-end {
+    &-0 {
+        inset-block-end: 0;
+    }
+    &--546-px {
+        inset-block-end: -546px;
+    }
+    &-167-px {
+        inset-block-end: 167px;
+    }
+    &-40-px {
+        inset-block-end: 40px;
+    }
+    &--11-px {
+        inset-block-end: -11px;
+    }
+    &--18-px {
+        inset-block-end: -18px;
     }
 }
 /* Inset class End */

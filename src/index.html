@@ -8,7 +8,7 @@
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title> Medical HTML Template</title>
+    <title> Medicol - Hospital, Medicine & Healthcare Center  HTML Template </title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <!-- Select2 -->
@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Satoshi -->
     <link rel="stylesheet" href="assets/css/satoshi.css">
+    <!-- magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head> 
@@ -85,9 +87,6 @@
             </li>
         </ul>
     </li>
-    <li class="nav-menu__item">
-        <a href="about.html" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">About Us</a>
-    </li>
     <li class="nav-menu__item has-submenu position-relative">
         <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Service</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
@@ -114,8 +113,22 @@
         </ul>
     </li>
     <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Blog</a>
+         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Blog</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Blog Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
         <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Pages</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="about.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> About Us</a>
+            </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
                 <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Shop</a>
             </li>
@@ -127,6 +140,9 @@
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
                 <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Diagnostic Bill</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="contact.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Contact Us</a>
             </li>
         </ul>
     </li>
@@ -175,42 +191,42 @@
                         </span>
                     </button>
                     <div class="select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-end-0 tw-z-99 min-w-max tw-mt-2 invisible opacity-0 tw-duration-200 tw-max-h-400-px overflow-y-auto shadow">
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag1.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">English</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag2.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">Japan</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag3.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">French</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag4.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">Germany</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag5.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">Korea</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag6.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600"> Bangladesh</span>
-                        </button>
+                        </div>
                     </div>
                 </div>
                 <span class="tw-w-px tw-h-4 bg-white-3 d-sm-flex d-none"></span>
@@ -223,42 +239,42 @@
                         </span>
                     </button>
                     <div class="select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-end-0 tw-z-99 min-w-max tw-mt-2 invisible opacity-0 tw-duration-200 tw-max-h-400-px overflow-y-auto shadow">
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag1.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">USD</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag2.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">YEN</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag3.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">FRANC</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag4.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">EURO</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag5.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600">WON</span>
-                        </button>
-                        <button type="button" class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
+                        </div>
+                        <div class="select-dropdown__item d-flex align-items-center tw-gap-205 tw-py-1 tw-px-205 tw-rounded tw-duration-200 hover-bg-neutral-200 w-100">
                             <span class="select-dropdown__flag">
                                 <img src="assets/images/thumbs/flag6.png" alt="Flag" class=" tw-w-4 tw-h-3">
                             </span>
                             <span class="select-dropdown__text text-capitalize tw-text-sm text-neutral-600"> BDT</span>
-                        </button>
+                        </div>
                     </div>
                 </div>
 
@@ -433,9 +449,6 @@
             </li>
         </ul>
     </li>
-    <li class="nav-menu__item">
-        <a href="about.html" class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">About Us</a>
-    </li>
     <li class="nav-menu__item has-submenu position-relative">
         <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Service</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
@@ -462,8 +475,22 @@
         </ul>
     </li>
     <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Blog</a>
+         <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Blog</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Blog Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
         <a href="javascript:void(0)" class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100">Pages</a>
          <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="about.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> About Us</a>
+            </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
                 <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded"> Shop</a>
             </li>
@@ -475,6 +502,9 @@
             </li>
             <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
                 <a href="#" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Diagnostic Bill</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="contact.html" class="nav-submenu__link hover-bg-neutral-300 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded">Contact Us</a>
             </li>
         </ul>
     </li>
@@ -2044,14 +2074,14 @@
             <div class="col-md-6" data-aos="fade-up" data-aos-duration="800">
                 <div class="tw-py-12 max-w-520-px">
                     <div class="d-flex align-items-center tw-gap-205 flex-sm-nowrap flex-wrap tw-mb-4">
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <span class="tw-w-8 tw-h-8 bg-danger-600 fw-semibold tw-text-base text-white tw-rounded d-flex justify-content-center align-items-center">02</span>
+                        <div class="d-flex align-items-center tw-gap-2" id="countdown2">
+                            <span class="tw-w-8 tw-h-8 bg-danger-600 fw-semibold tw-text-base text-white tw-rounded d-flex justify-content-center align-items-center days">02</span>
                             <span class="text-heading tw-text-xl">:</span>
-                            <span class="tw-w-8 tw-h-8 bg-danger-600 fw-semibold tw-text-base text-white tw-rounded d-flex justify-content-center align-items-center">24</span>
+                            <span class="tw-w-8 tw-h-8 bg-danger-600 fw-semibold tw-text-base text-white tw-rounded d-flex justify-content-center align-items-center hours">24</span>
                             <span class="text-heading tw-text-xl">:</span>
-                            <span class="tw-w-8 tw-h-8 bg-danger-600 fw-semibold tw-text-base text-white tw-rounded d-flex justify-content-center align-items-center">05</span>
+                            <span class="tw-w-8 tw-h-8 bg-danger-600 fw-semibold tw-text-base text-white tw-rounded d-flex justify-content-center align-items-center minutes">05</span>
                             <span class="text-heading tw-text-xl">:</span>
-                            <span class="tw-w-8 tw-h-8 bg-danger-600 fw-semibold tw-text-base text-white tw-rounded d-flex justify-content-center align-items-center">59</span>
+                            <span class="tw-w-8 tw-h-8 bg-danger-600 fw-semibold tw-text-base text-white tw-rounded d-flex justify-content-center align-items-center seconds">59</span>
                             <span class="text-heading tw-text-xl">:</span>
                         </div>
                         <p class="text-neutral-500 tw-text-sm">Remains until the end of the offer</p>
@@ -3123,7 +3153,7 @@
                             <div class="d-inline-flex align-items-center tw-gap-1 bg-main-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                 <span class="text-white fw-bold tw-text-sm">4.9</span>
                                 <span class="text-white d-flex">
-                                    <img src="assets/images/icons/star.svg" alt="">
+                                    <img src="assets/images/icons/star.svg" alt="Thumbnail">
                                 </span>
                             </div>
                         </div>
@@ -3149,7 +3179,7 @@
                             <div class="d-inline-flex align-items-center tw-gap-1 bg-main-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                 <span class="text-white fw-bold tw-text-sm">4.2</span>
                                 <span class="text-white d-flex">
-                                    <img src="assets/images/icons/star.svg" alt="">
+                                    <img src="assets/images/icons/star.svg" alt="Thumbnail">
                                 </span>
                             </div>
                         </div>
@@ -3179,7 +3209,7 @@
                             <div class="d-inline-flex align-items-center tw-gap-1 bg-main-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                 <span class="text-white fw-bold tw-text-sm">4.3</span>
                                 <span class="text-white d-flex">
-                                    <img src="assets/images/icons/star.svg" alt="">
+                                    <img src="assets/images/icons/star.svg" alt="Thumbnail">
                                 </span>
                             </div>
                         </div>
@@ -3205,7 +3235,7 @@
                             <div class="d-inline-flex align-items-center tw-gap-1 bg-main-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                 <span class="text-white fw-bold tw-text-sm">4.5</span>
                                 <span class="text-white d-flex">
-                                    <img src="assets/images/icons/star.svg" alt="">
+                                    <img src="assets/images/icons/star.svg" alt="Thumbnail">
                                 </span>
                             </div>
                         </div>
@@ -3235,7 +3265,7 @@
                             <div class="d-inline-flex align-items-center tw-gap-1 bg-main-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                 <span class="text-white fw-bold tw-text-sm">4.7</span>
                                 <span class="text-white d-flex">
-                                    <img src="assets/images/icons/star.svg" alt="">
+                                    <img src="assets/images/icons/star.svg" alt="Thumbnail">
                                 </span>
                             </div>
                         </div>
@@ -3258,7 +3288,7 @@
                             <div class="d-inline-flex align-items-center tw-gap-1 bg-main-600 tw-py-05 tw-px-3 rounded-pill flex-shrink-0">
                                 <span class="text-white fw-bold tw-text-sm">4.9</span>
                                 <span class="text-white d-flex">
-                                    <img src="assets/images/icons/star.svg" alt="">
+                                    <img src="assets/images/icons/star.svg" alt="Thumbnail">
                                 </span>
                             </div>
                         </div>
@@ -3286,7 +3316,7 @@
                 <div class="col-lg-4 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="600">
                     <div class="">
                         <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9 tw-mb-10">
-                            <img src="assets/images/logo/logo-white.png" alt="">
+                            <img src="assets/images/logo/logo-white.png" alt="Thumbnail">
                         </a>
                         <form action="#" class="d-flex flex-md-row flex-column tw-gap-5 form-submit">
                             <div class="position-relative flex-grow-1">
@@ -3416,6 +3446,10 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- counter up Js -->
     <script src="assets/js/counterup.min.js"></script>
+    <!-- Magnific Popup Js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- count down Js -->
+    <script src="assets/js/count-down.js"></script>
 
     <!-- GSAP js -->
     <script src="assets/js/gsap.min.js"></script>
