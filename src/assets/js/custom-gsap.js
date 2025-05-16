@@ -2,12 +2,11 @@
                           Custom GSAP js start 
 ****************************************************************************  */
 
-var tl = gsap.timeline(); 
+var tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-
 // **************************** Nav Menu js Start ****************************
-// let mm = gsap.matchMedia(); 
+// let mm = gsap.matchMedia();
 
 // mm.add("(min-width: 992px)", () => {
 //   gsap.from('.nav-menu__item', {
@@ -19,144 +18,95 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // });
 // **************************** Nav Menu js End ****************************
 
-// =================================== Custom Cursor Js Start =====================================
 var body = document.body;
-var cursor = document.querySelector('.cursor');
-var dot = document.querySelector('.dot');
-var cursorSmalls = document.querySelectorAll('.cursor-small');
-var cursorBigs = document.querySelectorAll('.cursor-big');
-
-body.addEventListener('mousemove', function (event) {
-    gsap.to(cursor, {
-        x: event.x,
-        y: event.y,
-        duration: 2, 
-        delay: 0.1,
-        visibility: 'visible',
-        ease: "expo.out",
-    });
-});
-
-body.addEventListener('mousemove', function (event) {
-    gsap.to(dot, {
-        x: event.x,
-        y: event.y,
-        duration: 1.5,
-        visibility: 'visible',
-        ease: "expo.out",
-    });
-});
-
-// Big Cursor
-cursorBigs.forEach(cursorBig => {
-  cursorBig.addEventListener('mouseenter', function () {
-      gsap.to(dot, {
-          scale: 46,
-          backgroundColor: '#fff',
-      });
-      gsap.to(cursor, {
-          visibility: 'hidden',
-          opacity: 0
-      });
-  });
-  
-  cursorBig.addEventListener('mouseleave', function () {
-      gsap.to(dot, {
-          scale: 1,
-          backgroundColor: '#fff',
-      });
-      gsap.to(cursor, {
-        visibility: 'visible',
-        opacity: 1
-      });
-  });
-});
-// =================================== Custom Cursor Js End =====================================
-
 
 // **************************** Mobile Menu js Start ****************************
-var mmm = gsap.matchMedia(); 
-var mtl = gsap.timeline({paused: true}); 
+var mmm = gsap.matchMedia();
+var mtl = gsap.timeline({ paused: true });
 
-const toggleMobileMenu = document.querySelector('.toggle-mobileMenu');
-const closeButton = document.querySelector('.close-button');
-const mobileSideOverlay = document.querySelector('.side-overlay');
+const toggleMobileMenu = document.querySelector(".toggle-mobileMenu");
+const closeButton = document.querySelector(".close-button");
+const mobileSideOverlay = document.querySelector(".side-overlay");
 
 mmm.add("(max-width: 991px)", () => {
-  
-  mtl.to('.side-overlay', {
+  mtl.to(".side-overlay", {
     opacity: 1,
-    visibility: 'visible',
-    duration: .15, 
+    visibility: "visible",
+    duration: 0.15,
   });
-  
-  mtl.to('.mobile-menu', {
+
+  mtl.to(".mobile-menu", {
     x: 0,
-    duration: .15,
+    duration: 0.15,
   });
-  
-  mtl.from('.nav-menu__item', {
+
+  mtl.from(".nav-menu__item", {
     opacity: 0,
-    duration: .2,
+    duration: 0.2,
     y: -60,
-    stagger: .08,
+    stagger: 0.08,
   });
 
-  mtl.from('.close-button', {
-    opacity: 0,
-    scale: 0,
-    duration: .15,
-  });
-
-  toggleMobileMenu.addEventListener('click', function () {
+  toggleMobileMenu.addEventListener("click", function () {
     mtl.play();
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = "hidden";
   });
 
-  closeButton.addEventListener('click', function () {
+  closeButton.addEventListener("click", function () {
     mtl.reverse();
-    document.body.style.overflow = ''
+    document.body.style.overflow = "";
   });
 
-  mobileSideOverlay.addEventListener('click', function () {
+  mobileSideOverlay.addEventListener("click", function () {
     mtl.reverse();
-    document.body.style.overflow = ''
+    document.body.style.overflow = "";
   });
-
 });
 // **************************** Mobile Menu js End ****************************
 
 // =================================== Custom Split text Js Start =====================================
-if ($(".splitTextStyleOne").length > 0) {
-  let character = gsap.utils.toArray(".splitTextStyleOne");
-  character.forEach((character) => {
-    let split_char = new SplitText(character, {
-      type: "chars, words",
-      lineThreshold: 1,
-    });
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: character,
-        start: "top 90%",
-        end: "bottom 60%",
-        scrub: false,
-        markers: false,
-        toggleActions: "play none none none",
-      },
-    });
-    tl2.from(split_char.chars, {
-      autoAlpha: 0,
-      x: 50,
-      duration: 1,
-      opacity: 0,
-      stagger: 0.04,
-      ease: "back.out(3.9)"
+if ($(".splitTextStyleOne").length) {
+  window.addEventListener("load", () => {
+    document.querySelectorAll(".splitTextStyleOne").forEach((element) => {
+      splitAndAnimate(element);
     });
   });
+
+  function splitAndAnimate(element) {
+    if (!element) return;
+
+    const originalText = element.innerText;
+    let newText = "";
+
+    for (let i = 0; i < originalText.length; i++) {
+      const char = originalText[i];
+      newText += `<div>${char === " " ? "&nbsp;" : char}</div>`;
+    }
+
+    element.innerHTML = newText;
+
+    gsap.fromTo(
+      element.querySelectorAll("div"),
+      {
+        opacity: 0,
+        y: 0,
+      },
+      {
+        duration: 2,
+        opacity: 1,
+        y: 0,
+        stagger: 0.04,
+        ease: "elastic(1.2, 0.5)",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 98%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }
 }
 // =================================== Custom Split text Js End =====================================
-
-
 
 // **************************** Position Aware button hover js start ****************************
 class Button {
@@ -171,7 +121,7 @@ class Button {
 
     this.DOM = {
       button: this.block,
-      flair: el(".button__flair")
+      flair: el(".button__flair"),
     };
 
     this.xSet = gsap.quickSetter(this.DOM.flair, "xPercent");
@@ -179,12 +129,8 @@ class Button {
   }
 
   getXY(e) {
-    const {
-      left,
-      top,
-      width,
-      height
-    } = this.DOM.button.getBoundingClientRect();
+    const { left, top, width, height } =
+      this.DOM.button.getBoundingClientRect();
 
     const xTransformer = gsap.utils.pipe(
       gsap.utils.mapRange(0, width, 0, 100),
@@ -198,7 +144,7 @@ class Button {
 
     return {
       x: xTransformer(e.clientX - left),
-      y: yTransformer(e.clientY - top)
+      y: yTransformer(e.clientY - top),
     };
   }
 
@@ -212,7 +158,7 @@ class Button {
       gsap.to(this.DOM.flair, {
         scale: 1,
         duration: 0.9,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     });
 
@@ -226,7 +172,7 @@ class Button {
         yPercent: y > 90 ? y + 20 : y < 10 ? y - 20 : y,
         scale: 0,
         duration: 0.9,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     });
 
@@ -237,7 +183,7 @@ class Button {
         xPercent: x,
         yPercent: y,
         duration: 0.9,
-        ease: "power2"
+        ease: "power2",
       });
     });
   }
@@ -251,25 +197,21 @@ buttonElements.forEach((buttonElement) => {
 
 // **************************** Position Aware button hover js End ****************************
 
-
 // **************************** Blog js start ****************************
-if($('.line').length) {   
+if ($(".line").length) {
   gsap.to(".line", {
-      ease: "bounce.out",
-      width: '100%',
-      duration: 2,
-      stagger: 0.12,
-      scrollTrigger: {
-        trigger: ".blog-three",
-        start: "top 90%",
-        toggleActions: "restart none restart none",
-      }
+    ease: "bounce.out",
+    width: "100%",
+    duration: 2,
+    stagger: 0.12,
+    scrollTrigger: {
+      trigger: ".blog-three",
+      start: "top 90%",
+      toggleActions: "restart none restart none",
+    },
   });
 }
 // **************************** Blog js End ****************************
-
-
-
 
 /* **************************************************************************** 
                           Custom GSAP js start 

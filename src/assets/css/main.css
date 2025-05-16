@@ -1030,12 +1030,18 @@ span {
     display: inline-block;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
     margin: 0;
     font-family: var(--heading-font);
     color: hsl(var(--heading-color));
@@ -1043,27 +1049,33 @@ h6, .h6 {
     font-weight: 700;
 }
 
-h1, .h1 {
+h1,
+.h1 {
     font-size: var(--heading-one);
 }
 
-h2, .h2 {
+h2,
+.h2 {
     font-size: var(--heading-two);
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: var(--heading-three);
 }
 
-h4, .h4 {
+h4,
+.h4 {
     font-size: var(--heading-four);
 }
 
-h5, .h5 {
+h5,
+.h5 {
     font-size: var(--heading-five);
 }
 
-h6, .h6 {
+h6,
+.h6 {
     font-size: var(--heading-six);
 }
 
@@ -1126,8 +1138,13 @@ button:focus {
     box-shadow: none;
 }
 
-input:focus, input:focus-visible {
+input:focus,
+input:focus-visible {
     box-shadow: none;
+}
+
+.splitTextStyleOne div {
+    display: inline-block;
 }
 
 /* ================================= Typography Css End =========================== */
@@ -3084,6 +3101,10 @@ input:focus, input:focus-visible {
     height: 260px;
 }
 
+.tw-h-370-px {
+    height: 370px;
+}
+
 .tw-min-h-184-px {
     min-height: 184px;
 }
@@ -3220,6 +3241,10 @@ input:focus, input:focus-visible {
 
 .tw-gap-84-px {
     gap: clamp(1rem, -2.2308rem + 6.7308vw, 4.5rem);
+}
+
+.tw-gap-72-px {
+    gap: clamp(1.5rem, -24.8393rem + 28.0952vw, 4.5rem);
 }
 
 .tw-gap-74-px {
@@ -6441,6 +6466,22 @@ input:focus, input:focus-visible {
     transform: scale(1);
 }
 
+/* Bottom to top */
+.animate-bottom-top {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    transition: 0.4s linear;
+}
+
+.swiper-slide-active .animate-bottom-top {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
 /* ======================================= Animation in slider Css End ================================= */
 /* Play Animation css start */
 .bg-inherit-animation::before {
@@ -7012,12 +7053,36 @@ input:focus, input:focus-visible {
     --heading-font: "Space Grotesk", sans-serif;
     --body-font: "Satoshi", sans-serif;
   /* Font Size Variable Start */
-    --heading-one: clamp(2rem, -1.1899rem + 6.6456vw, 4.625rem);
-    --heading-two: clamp(1.75rem, -0.3766rem + 4.4304vw, 3.5rem);
-    --heading-three: clamp(1.5rem, -0.3228rem + 3.7975vw, 3rem);
-    --heading-four: clamp(1.25rem, 0.0348rem + 2.5316vw, 2.25rem);
-    --heading-five: clamp(1.125rem, 0.6693rem + 0.9494vw, 1.5rem);
-    --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
+    --heading-one: clamp(
+    2rem,
+    -1.1899rem + 6.6456vw,
+    4.625rem
+  );
+    --heading-two: clamp(
+    1.75rem,
+    -0.3766rem + 4.4304vw,
+    3.375rem
+  );
+    --heading-three: clamp(
+    1.5rem,
+    -0.3228rem + 3.7975vw,
+    3rem
+  );
+    --heading-four: clamp(
+    1.25rem,
+    0.0348rem + 2.5316vw,
+    2.25rem
+  );
+    --heading-five: clamp(
+    1.125rem,
+    0.6693rem + 0.9494vw,
+    1.5rem
+  );
+    --heading-six: clamp(
+    1rem,
+    0.769rem + 0.6813vw,
+    1.25rem
+  );
   /* Font Size End */
 }
 

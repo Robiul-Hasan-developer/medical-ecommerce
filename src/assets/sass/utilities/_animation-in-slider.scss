@@ -1,31 +1,48 @@
 /* ======================================= Animation in slider Css start ================================= */
 .animate-left-right {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    transition: 0.4s linear;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px);
+  transition: 0.4s linear;
 }
 
 .animate-scale {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    transition: 0.4s linear;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 0.4s linear;
 }
 
 .swiper-slide-active .animate-left-right {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .swiper-slide-active .animate-scale {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
+
+/* Bottom to top */
+.animate-bottom-top {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  transition: 0.4s linear;
+}
+
+.swiper-slide-active .animate-bottom-top {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
 /* ======================================= Animation in slider Css End ================================= */

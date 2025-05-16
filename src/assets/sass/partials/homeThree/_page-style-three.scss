@@ -1,30 +1,54 @@
 /* ========================== page style three Start ==========================  */
 .page-style-three {
-    &:root {
-        /* Font Family Variable */
-        --heading-font: "Space Grotesk", sans-serif;
-        --body-font: "Satoshi", sans-serif;
-        
-        /* Font Size Variable Start */
-        --heading-one: clamp(2rem, -1.1899rem + 6.6456vw, 4.625rem); // Min:32px - Max:74px
-        --heading-two: clamp(1.75rem, -0.3766rem + 4.4304vw, 3.5rem); // Min: 28px - Max: 56px
-        --heading-three: clamp(1.5rem, -0.3228rem + 3.7975vw, 3rem); // Min: 24px - Max: 48px
-        --heading-four: clamp(1.25rem, 0.0348rem + 2.5316vw, 2.25rem); // Min: 20px - Max: 36px
-        --heading-five: clamp(1.125rem, 0.6693rem + 0.9494vw, 1.5rem); // Min: 18px - Max: 24px
-        --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem); // Min: 16px - Max-20px
-        /* Font Size End */
-    }
+  &:root {
+    /* Font Family Variable */
+    --heading-font: "Space Grotesk", sans-serif;
+    --body-font: "Satoshi", sans-serif;
+
+    /* Font Size Variable Start */
+    --heading-one: clamp(
+      2rem,
+      -1.1899rem + 6.6456vw,
+      4.625rem
+    ); // Min:32px - Max:74px
+    --heading-two: clamp(
+      1.75rem,
+      -0.3766rem + 4.4304vw,
+      3.375rem
+    ); // Min: 28px - Max: 56px
+    --heading-three: clamp(
+      1.5rem,
+      -0.3228rem + 3.7975vw,
+      3rem
+    ); // Min: 24px - Max: 48px
+    --heading-four: clamp(
+      1.25rem,
+      0.0348rem + 2.5316vw,
+      2.25rem
+    ); // Min: 20px - Max: 36px
+    --heading-five: clamp(
+      1.125rem,
+      0.6693rem + 0.9494vw,
+      1.5rem
+    ); // Min: 18px - Max: 24px
+    --heading-six: clamp(
+      1rem,
+      0.769rem + 0.6813vw,
+      1.25rem
+    ); // Min: 16px - Max-20px
+    /* Font Size End */
+  }
 }
 
 .body-bg-neutral-40 {
-    body {
-        background-color: var(--neutral-40);
-    }
+  body {
+    background-color: var(--neutral-40);
+  }
 }
 
 .header-bg-blue-dark {
-    .header .container > .bg-main-600 {
-        background-color: hsl(var(--heading-color)) !important;
-    }
+  .header .container > .bg-main-600 {
+    background-color: hsl(var(--heading-color)) !important;
+  }
 }
 /* ========================== page style three End ==========================  */
