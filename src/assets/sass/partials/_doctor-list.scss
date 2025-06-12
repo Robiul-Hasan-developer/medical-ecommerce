@@ -1,0 +1,15 @@
+/* ======================= Doctor list section css start =============================== */
+.show-socials-icons {
+  &.active {
+    .show-socials-icons__item {
+      transform: scale(1);
+    }
+  }
+}
+
+.show-social-icon-button.active {
+  transform: rotate(45deg);
+  background-color: var(--main-two-600) !important;
+  color: var(--main-600) !important;
+}
+/* ======================= Doctor list section css end =============================== */

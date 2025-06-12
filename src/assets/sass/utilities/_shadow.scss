@@ -1,9 +1,8 @@
-
 /* Box shadow start */
 .common-shadow {
-  box-shadow: 0 6px 30px 0px #0000000a;  
+  box-shadow: 0 6px 30px 0px #0000000a;
   &-1 {
-    box-shadow: 0px 4px 32px 0px #0000000F;
+    box-shadow: 0px 4px 32px 0px #0000000f;
   }
   &-2 {
     box-shadow: 0px 4px 18px 0px #00000014;
@@ -12,13 +11,16 @@
     box-shadow: 0px 1px 1px 0px #12142024;
   }
   &-4 {
-    box-shadow: 0px 10px 37px 0px #0000000F;
+    box-shadow: 0px 10px 37px 0px #0000000f;
   }
   &-5 {
     box-shadow: 0px 10px 100px 0px #00000014;
   }
   &-6 {
-    box-shadow: 0px 5px 23px -5px #1212120D;
+    box-shadow: 0px 5px 23px -5px #1212120d;
+  }
+  &-7 {
+    box-shadow: 0px 9px 24px 0px #0000000d;
   }
 }
 
@@ -27,7 +29,7 @@
     box-shadow: 0px 4px 32px 0px #00000029;
   }
   &-2:hover {
-    box-shadow: 0px 4px 18px 0px #0000001A;
+    box-shadow: 0px 4px 18px 0px #0000001a;
   }
 }
 /* Box shadow End */

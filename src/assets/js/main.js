@@ -625,7 +625,6 @@
       loop: true,
       centeredSlides: true,
       direction: "vertical",
-      // spaceBetween: 24,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -672,6 +671,13 @@
       mainClass: "mfp-fade",
     });
     // ========================= magnific Popup Js End =====================
+
+    // ========================= Doctor List Js Start =====================
+    $(document).on("click", ".show-social-icon-button", function () {
+      $(this).toggleClass("active");
+      $(this).closest("div").find(".show-socials-icons").toggleClass("active");
+    });
+    // ========================= Doctor List Js End =====================
 
     /********************************************************************************************************
                                         Other Pages Js End 

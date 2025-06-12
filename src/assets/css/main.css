@@ -4242,6 +4242,10 @@ input:focus-visible {
     margin-block-start: -6px;
 }
 
+.tw--mt-20-px {
+    margin-block-start: -20px;
+}
+
 .tw--mt-110-px {
     margin-block-start: -110px;
 }
@@ -5585,6 +5589,10 @@ input:focus-visible {
 
 /* Rotate Css End */
 /* Hover Scale Css start */
+.tw-scale-0 {
+    transform: scale(0);
+}
+
 .tw-scale-04 {
     transform: scale(0.4);
 }
@@ -5711,7 +5719,7 @@ input:focus-visible {
 }
 
 .common-shadow-1 {
-    box-shadow: 0px 4px 32px 0px #0000000F;
+    box-shadow: 0px 4px 32px 0px #0000000f;
 }
 
 .common-shadow-2 {
@@ -5723,7 +5731,7 @@ input:focus-visible {
 }
 
 .common-shadow-4 {
-    box-shadow: 0px 10px 37px 0px #0000000F;
+    box-shadow: 0px 10px 37px 0px #0000000f;
 }
 
 .common-shadow-5 {
@@ -5731,7 +5739,11 @@ input:focus-visible {
 }
 
 .common-shadow-6 {
-    box-shadow: 0px 5px 23px -5px #1212120D;
+    box-shadow: 0px 5px 23px -5px #1212120d;
+}
+
+.common-shadow-7 {
+    box-shadow: 0px 9px 24px 0px #0000000d;
 }
 
 .hover-common-shadow-1:hover {
@@ -5739,7 +5751,7 @@ input:focus-visible {
 }
 
 .hover-common-shadow-2:hover {
-    box-shadow: 0px 4px 18px 0px #0000001A;
+    box-shadow: 0px 4px 18px 0px #0000001a;
 }
 
 /* Box shadow End */
@@ -7153,4 +7165,16 @@ input:focus-visible {
 }
 
 /* =========================== service department css End =========================== */
+/* ======================= Doctor list section css start =============================== */
+.show-socials-icons.active .show-socials-icons__item {
+    transform: scale(1);
+}
+
+.show-social-icon-button.active {
+    transform: rotate(45deg);
+    background-color: var(--main-two-600) !important;
+    color: var(--main-600) !important;
+}
+
+/* ======================= Doctor list section css end =============================== */
 /*# sourceMappingURL=main.css.map */
