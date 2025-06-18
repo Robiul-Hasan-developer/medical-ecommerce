@@ -4254,6 +4254,10 @@ input:focus-visible {
     margin-block-end: -6px;
 }
 
+.tw--mb-132-px {
+    margin-block-end: -132px;
+}
+
 .tw-me-auto {
     margin-inline-end: auto;
 }
@@ -5302,6 +5306,10 @@ input:focus-visible {
 
 .tw-pb-152-px {
     padding-block-end: 152px;
+}
+
+.tw-pb-205-px {
+    padding-block-end: 205px;
 }
 
 .tw-ps-52-px {
@@ -6390,12 +6398,12 @@ input:focus-visible {
     background: linear-gradient(181.44deg, #E8F3FF 1.22%, rgba(232, 244, 255, 0) 117.41%);
 }
 
-.gradient-overlay-one, .gradient-overlay-two, .gradient-overlay-three, .gradient-overlay-four, .gradient-overlay-five, .gradient-overlay-six {
+.gradient-overlay-one, .gradient-overlay-two, .gradient-overlay-three, .gradient-overlay-four, .gradient-overlay-five, .gradient-overlay-six, .gradient-overlay-seven {
     position: relative;
     z-index: 1;
 }
 
-.gradient-overlay-one::before, .gradient-overlay-two::before, .gradient-overlay-three::before, .gradient-overlay-four::before, .gradient-overlay-five::before, .gradient-overlay-six::before {
+.gradient-overlay-one::before, .gradient-overlay-two::before, .gradient-overlay-three::before, .gradient-overlay-four::before, .gradient-overlay-five::before, .gradient-overlay-six::before, .gradient-overlay-seven::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -6434,6 +6442,10 @@ input:focus-visible {
 
 .gradient-overlay-six::before {
     background: #042E50C7;
+}
+
+.gradient-overlay-seven::before {
+    background: linear-gradient(96.3deg, #092D3C 19.41%, rgba(9, 45, 60, 0.858685) 46.55%, rgba(9, 45, 60, 0.188637) 78.88%, rgba(9, 45, 60, 0.107717) 91.6%, rgba(9, 45, 60, 0) 103.01%);
 }
 
 @media (max-width: 992px) {
