@@ -4299,6 +4299,10 @@ input:focus-visible {
     margin-block-start: 70px;
 }
 
+.tw-mt-80-px {
+    margin-block-start: 80px;
+}
+
 .tw--mt-6-px {
     margin-block-start: -6px;
 }
@@ -4575,6 +4579,10 @@ input:focus-visible {
 
 .max-w-264-px {
     max-width: 264px;
+}
+
+.max-w-548-px {
+    max-width: 548px;
 }
 
 /* Max width Css Class End */
@@ -5329,6 +5337,10 @@ input:focus-visible {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
 }
 
+.tw-p-54-px {
+    padding: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+}
+
 .tw-p-60-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
 }
@@ -5367,6 +5379,10 @@ input:focus-visible {
 
 .tw-pe-110-px {
     padding-inline-end: clamp(1.5rem, -12.1677rem + 32.9177vw, 6.875rem);
+}
+
+.tw-pb-80-px {
+    padding-block-end: 80px;
 }
 
 .tw-pb-152-px {

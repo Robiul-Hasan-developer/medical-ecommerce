@@ -75,18 +75,25 @@ if ($(".splitTextStyleOne").length) {
   function splitAndAnimate(element) {
     if (!element) return;
 
-    const originalText = element.innerText;
-    let newText = "";
+    const originalText = element.innerText.trim();
+    let newHTML = "";
 
-    for (let i = 0; i < originalText.length; i++) {
-      const char = originalText[i];
-      newText += `<div>${char === " " ? "&nbsp;" : char}</div>`;
-    }
+    const words = originalText.split(" ");
+    words.forEach((word, wordIndex) => {
+      newHTML += `<span class="word">`;
+      for (let i = 0; i < word.length; i++) {
+        newHTML += `<span class="char">${word[i]}</span>`;
+      }
+      newHTML += `</span>`;
+      if (wordIndex < words.length - 1) {
+        newHTML += `<span class="space">&nbsp;</span>`;
+      }
+    });
 
-    element.innerHTML = newText;
+    element.innerHTML = newHTML;
 
     gsap.fromTo(
-      element.querySelectorAll("div"),
+      element.querySelectorAll(".char"),
       {
         opacity: 0,
         y: 0,
@@ -106,6 +113,7 @@ if ($(".splitTextStyleOne").length) {
     );
   }
 }
+
 // =================================== Custom Split text Js End =====================================
 
 // **************************** Position Aware button hover js start ****************************

@@ -49,6 +49,9 @@
     &-48-px {
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
     }
+    &-54-px {
+      padding: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+    }
     &-60-px {
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
     }
@@ -88,6 +91,9 @@
   }
 
   &-pb {
+    &-80-px {
+      padding-block-end: 80px;
+    }
     &-152-px {
       padding-block-end: 152px;
     }
