@@ -797,6 +797,67 @@ input[type=number] {
 /* Toast Message Css End  */
 /* Custom Select Css Start */
 /* Custom Select Css End */
+/* Floating Progress css start */
+.progress-container, .progress {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    position: relative;
+    height: 8px;
+    width: 100%;
+}
+
+.progress {
+    background-color: var(--main-600);
+    width: 0;
+    -webkit-transition: 0.8s linear;
+    transition: 0.8s linear;
+    height: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1px;
+}
+
+.progress.active {
+    width: 0 !important;
+}
+
+.percentage {
+    background-color: var(--main-600);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 4px 5px #00000033;
+    box-shadow: 0 4px 5px #00000033;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+    position: absolute;
+    bottom: 20px;
+    inset-inline-start: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 40px;
+    text-align: center;
+    -webkit-transition: 0.8s linear;
+    transition: 0.8s linear;
+}
+
+.percentage::after {
+    background-color: var(--main-600);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+}
+
+.progress.active, .percentage.active {
+    inset-inline-start: 0 !important;
+}
+
+/* Floating Progress css end */
 /* ======================= Select 2 Css Start =========================== */
 .select2-container--default .select2-selection--single {
     border: 0;
@@ -6575,45 +6636,75 @@ input:focus-visible {
 }
 /* Play Animation css end */
 /* ================================= preload Css Start =========================== */
+/* Preloader full screen */
 .preloader {
-    background-color: hsl(var(--white));
-    inset-block-end: 0;
-    inset-inline-start: 0;
     position: fixed;
-    inset-inline-end: 0;
-    inset-block-start: 0;
+    inset: 0;
+    background-color: #fff;
+  /* light background */
     z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.preloader .loader {
-    background: var(--main-600);
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    inset-inline-start: 50%;
-    margin-inline-start: -23px;
-    margin-block-start: -14px;
+.heart-rate {
+    max-width: 180px;
+    height: 73px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fade-in {
     position: absolute;
-    inset-block-start: 50%;
-    animation: load 0.75s linear infinite;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    right: 0;
+    animation: heartRateIn 4.5s linear infinite;
 }
 
-.preloader .loader:after {
-    content: "";
+.fade-out {
     position: absolute;
-    width: 69px;
-    height: 69px;
-    inset-block-start: 3px;
-    inset-inline-end: 0;
-    inset-inline-start: 0;
-    margin: auto;
-    background: hsl(var(--white));
-    border-radius: 50%;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 4.5s linear infinite;
+    background: white;
+    background: -moz-linear-gradient(left, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, white 0%, white 80%, rgba(255, 255, 255, 0) 100%);
 }
 
-@keyframes load {
-    to {
-        transform: rotate(360deg);
+@keyframes heartRateIn {
+    0% {
+        width: 100%;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes heartRateOut {
+    0% {
+        left: -120%;
+    }
+
+    30% {
+        left: -120%;
+    }
+
+    100% {
+        left: 0;
     }
 }
 /* ================================= preload Css End ===========================  */
