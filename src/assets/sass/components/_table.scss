@@ -1,27 +1,48 @@
 /* ======================= Common Table Css Start ======================= */
 .table {
-    &>:not(caption)>*>* {
-        border-bottom: 0;
+  & > :not(caption) > * > * {
+    border-bottom: 0;
+  }
+  tr {
+    th {
+      &:first-child {
+        padding-inline-start: 0;
+      }
+      &:last-child {
+        padding-inline-end: 0;
+      }
     }
+    th,
+    td {
+      vertical-align: middle;
+      &:first-child {
+        text-align: left;
+      }
+      &:last-child {
+        text-align: right;
+        padding-inline-end: 0;
+      }
+    }
+  }
+}
+
+.table-style-one {
+  min-width: max-content;
+  th {
+    border-bottom: 1px solid #ddd !important;
+    padding: 18px 44px !important;
+  }
+  td {
+    padding: 18px 44px !important;
+  }
+  tbody {
     tr {
-        th {
-            &:first-child {
-                padding-inline-start: 0;
-            }
-            &:last-child {
-                padding-inline-end: 0;
-            }
+      &:nth-child(even) {
+        td {
+          background-color: #fff !important;
         }
-        th, td {
-            vertical-align: middle;
-            &:first-child {
-                text-align: left;
-            }
-            &:last-child {
-                text-align: right;
-                padding-inline-end: 0;
-            }
-        }
+      }
     }
+  }
 }
 /* ======================= Common Table Css End ======================= */

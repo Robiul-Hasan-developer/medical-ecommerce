@@ -620,17 +620,37 @@ input[type=number] {
     padding-inline-end: 0;
 }
 
-.table tr th, .table tr td {
+.table tr th,
+.table tr td {
     vertical-align: middle;
 }
 
-.table tr th:first-child, .table tr td:first-child {
+.table tr th:first-child,
+.table tr td:first-child {
     text-align: left;
 }
 
-.table tr th:last-child, .table tr td:last-child {
+.table tr th:last-child,
+.table tr td:last-child {
     text-align: right;
     padding-inline-end: 0;
+}
+
+.table-style-one {
+    min-width: max-content;
+}
+
+.table-style-one th {
+    border-bottom: 1px solid #ddd !important;
+    padding: 18px 44px !important;
+}
+
+.table-style-one td {
+    padding: 18px 44px !important;
+}
+
+.table-style-one tbody tr:nth-child(even) td {
+    background-color: #fff !important;
 }
 
 /* ======================= Common Table Css End ======================= */
