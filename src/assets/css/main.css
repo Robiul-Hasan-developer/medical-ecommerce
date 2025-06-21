@@ -3194,6 +3194,10 @@ input:focus-visible {
     min-height: 210px !important;
 }
 
+.tw-min-h-290-px {
+    min-height: 290px;
+}
+
 .tw-min-h-226-px {
     min-height: 226px;
 }
@@ -3412,6 +3416,10 @@ input:focus-visible {
 
 .group-item:hover .group-hover-item-text-invert-black {
     filter: brightness(0) invert(0);
+}
+
+.group-item:hover .group-hover-item-translate-x-0 {
+    transform: translateX(0);
 }
 
 /* ======================== Group Css End =============================== */
@@ -5859,6 +5867,10 @@ input:focus-visible {
     box-shadow: 0px 4px 14px 0px #00000012;
 }
 
+.common-shadow-8 {
+    box-shadow: 0px 4px 21px 0px #0000000d;
+}
+
 .hover-common-shadow-1:hover {
     box-shadow: 0px 4px 32px 0px #00000029;
 }
@@ -6007,6 +6019,10 @@ input:focus-visible {
 
 .active--translate-y-50-scale-9:active {
     transform: translateY(-50%) scale(0.94) !important;
+}
+
+.translate-x-100-16 {
+    transform: translateX(calc(100% + 16px));
 }
 
 /*================================== Translate Css End  ==================================*/

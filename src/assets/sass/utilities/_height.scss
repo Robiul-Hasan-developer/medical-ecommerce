@@ -1,8 +1,8 @@
 /* Height Css Class Start */
 @each $property, $value in $spaces {
-    .tw-h-#{$property} {
-      height: $value;
-    }
+  .tw-h-#{$property} {
+    height: $value;
+  }
 }
 
 .tw-h {
@@ -41,6 +41,9 @@
   }
   &-210-px {
     min-height: 210px !important;
+  }
+  &-290-px {
+    min-height: 290px;
   }
   &-226-px {
     min-height: 226px;
