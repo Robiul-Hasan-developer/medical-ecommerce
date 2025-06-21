@@ -4569,6 +4569,10 @@ input:focus-visible {
     max-width: 446px;
 }
 
+.max-w-490-px {
+    max-width: 490px;
+}
+
 .max-w-264-px {
     max-width: 264px;
 }
@@ -5813,6 +5817,10 @@ input:focus-visible {
 
 .common-shadow-7 {
     box-shadow: 0px 9px 24px 0px #0000000d;
+}
+
+.common-shadow-8 {
+    box-shadow: 0px 4px 14px 0px #00000012;
 }
 
 .hover-common-shadow-1:hover {
@@ -7280,4 +7288,17 @@ input:focus-visible {
 }
 
 /* ======================= Doctor list section css end =============================== */
+/* triangle-shape */
+.triangle-shape {
+    position: relative;
+}
+
+.triangle-shape::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    background-color: var(--main-two-600);
+}
 /*# sourceMappingURL=main.css.map */
