@@ -7289,6 +7289,14 @@ input:focus-visible {
 
 /* ======================= Doctor list section css end =============================== */
 /* triangle-shape */
+.case-studies-item__content {
+    inset-block-end: -100%;
+}
+
+.case-studies-item:hover .case-studies-item__content {
+    inset-block-end: 0;
+}
+
 .triangle-shape {
     position: relative;
 }
@@ -7296,9 +7304,12 @@ input:focus-visible {
 .triangle-shape::before {
     position: absolute;
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
     background-color: var(--main-two-600);
+    inset-inline-start: 0;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
 }
 /*# sourceMappingURL=main.css.map */
