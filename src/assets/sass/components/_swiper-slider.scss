@@ -1,10 +1,15 @@
 /* =========================== Swiper Slider Css Start ============================== */
 .swiper-button-disabled {
-    opacity: .4;
-    cursor: no-drop;
+  opacity: 0.4;
+  cursor: no-drop;
 }
 
 .transition-timing-linear {
-    transition-timing-function: linear;
+  transition-timing-function: linear;
 }
+
+.shop-small-thumbs .swiper-slide.swiper-slide-thumb-active > div {
+  border-color: var(--main-600) !important;
+}
+
 /* =========================== Swiper Slider Css End ============================== */

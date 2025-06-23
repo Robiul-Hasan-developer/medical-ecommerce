@@ -1,33 +1,53 @@
-
 /* Colors class start */
 @each $color, $shades in $colors {
-    @each $shade, $value in $shades {
-      .text-#{$color}-#{$shade} {
-        color: var(--#{$color}-#{$shade});
-      }
+  @each $shade, $value in $shades {
+    .text-#{$color}-#{$shade} {
+      color: var(--#{$color}-#{$shade});
     }
   }
-  
+}
+
 .text {
-    &--white {
-      color: hsl(var(--white));
-    }
-    &-heading {
-      color: hsl(var(--heading-color));
-    }
-    &-body {
-      color: hsl(var(--body-color));
-    }
-    &-main {
-      color: var(--main-600);
-    }
+  &--white {
+    color: hsl(var(--white));
+  }
+  &-heading {
+    color: hsl(var(--heading-color));
+  }
+  &-body {
+    color: hsl(var(--body-color));
+  }
+  &-main {
+    color: var(--main-600);
+  }
 }
 .text-white {
   &-43 {
-    color: hsl(var(--white)/.43);
+    color: hsl(var(--white) / 0.43);
   }
   &-83 {
-    color: hsl(var(--white)/.83);
+    color: hsl(var(--white) / 0.83);
   }
 }
+
+.product-bg-1 {
+  background-color: #c4c4c4;
+}
+
+.product-bg-2 {
+  background-color: #0b5fb5;
+}
+
+.product-bg-3 {
+  background-color: #00a651;
+}
+
+.product-bg-4 {
+  background-color: #fee496;
+}
+
+.product-bg-5 {
+  background-color: #bc25bf;
+}
+
 /* Colors class End */

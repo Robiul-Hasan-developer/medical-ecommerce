@@ -1,0 +1,255 @@
+@@include('../partials/_template-top.html', {
+    pageClass: 'header-bg-blue-dark page-style-three'
+})
+
+    @@include('../partials/_top-header-three.html')
+    
+    @@include('../partials/_header-three.html')
+    
+    @@include('../partials/_breadcrumb.html', {
+        'startText': 'Cart ',
+        'middleText': 'Page',
+        'endText': ''
+    })
+
+
+     <!-- ======================== Cart Page Start ========================== -->
+    <section class="bg-white py-120">
+        <div class="container">
+            <div class="row">
+            <div class="col-xxl-11">
+                <div class="row gy-4">
+                    <div class="col-lg-8 pe-lg-5">
+                        <div class="table-responsive">
+                            <table class="table border border-neutral-200 min-w-max">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="fw-semibold tw-text-base important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">Product</th>
+                                        <th scope="col" class="fw-semibold tw-text-base important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">Price</th>
+                                        <th scope="col" class="fw-semibold tw-text-base important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">Quantity</th>
+                                        <th scope="col" class="fw-semibold tw-text-base important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="delete-item">
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <div class="d-flex align-items-center tw-gap-4 group-item">
+                                                <div class="position-relative max-w-74-px tw-h-84-px w-100">
+                                                    <a href="shop-details.html" class="d-flex justify-content-center align-items-center position-relative d-block">
+                                                        <img src="assets/images/thumbs/cart-img1.png" alt="Thumb" class="group-hover-item-scale-12 tw-duration-300">
+                                                    </a>
+                                                    <button type="button" class="text-danger tw-text-xl hover-scale-14 position-absolute top-0 tw-end-0 tw-duration-300 tw--mt-8-px tw--me-8-px delete-button">
+                                                        <i class="ph-fill ph-x-circle"></i>
+                                                    </button>
+                                                </div>
+                                                <a href="shop-details.html" class="fw-bold tw-text-base text-heading hover-text-main-600 line-clamp-1">Apple Watch</a>
+                                            </div>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <span class="fw-bold tw-text-base text-heading">$12.00</span>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <div class="d-flex">
+                                                <button type="button" class="text-heading hover-text-main-600 active-scale-09 tw-text-xl tw-w-11 tw-h-11 border border-neutral-200 tw-leading-none decrement-btn">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <input type="text" class="border border-neutral-200 bg-neutral-200 tw-w-11 tw-h-11 text-center focus-outline-0 text-heading fw-bold tw-w-11 input-value" value="0">
+                                                <button type="button" class="text-heading hover-text-main-600 active-scale-09 tw-text-xl tw-w-11 tw-h-11 border border-neutral-200 tw-leading-none increment-btn">
+                                                    <i class="ph-bold ph-plus"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <span class="fw-bold tw-text-base text-heading">$60.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="delete-item">
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <div class="d-flex align-items-center tw-gap-4 group-item">
+                                                <div class="position-relative max-w-74-px tw-h-84-px w-100">
+                                                    <a href="shop-details.html" class="d-flex justify-content-center align-items-center position-relative d-block">
+                                                        <img src="assets/images/thumbs/cart-img2.png" alt="Thumb" class="group-hover-item-scale-12 tw-duration-300">
+                                                    </a>
+                                                    <button type="button" class="text-danger tw-text-xl hover-scale-14 position-absolute top-0 tw-end-0 tw-duration-300 tw--mt-8-px tw--me-8-px delete-button">
+                                                        <i class="ph-fill ph-x-circle"></i>
+                                                    </button>
+                                                </div>
+                                                <a href="shop-details.html" class="fw-bold tw-text-base text-heading hover-text-main-600 line-clamp-1">Sumsang Hand Set</a>
+                                            </div>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <span class="fw-bold tw-text-base text-heading">$34.00</span>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <div class="d-flex">
+                                                <button type="button" class="text-heading hover-text-main-600 active-scale-09 tw-text-xl tw-w-11 tw-h-11 border border-neutral-200 tw-leading-none decrement-btn">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <input type="text" class="border border-neutral-200 bg-neutral-200 tw-w-11 tw-h-11 text-center focus-outline-0 text-heading fw-bold tw-w-11 input-value" value="0">
+                                                <button type="button" class="text-heading hover-text-main-600 active-scale-09 tw-text-xl tw-w-11 tw-h-11 border border-neutral-200 tw-leading-none increment-btn">
+                                                    <i class="ph-bold ph-plus"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <span class="fw-bold tw-text-base text-heading">$68.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="delete-item">
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <div class="d-flex align-items-center tw-gap-4 group-item">
+                                                <div class="position-relative max-w-74-px tw-h-84-px w-100">
+                                                    <a href="shop-details.html" class="d-flex justify-content-center align-items-center position-relative d-block">
+                                                        <img src="assets/images/thumbs/cart-img3.png" alt="Thumb" class="group-hover-item-scale-12 tw-duration-300">
+                                                    </a>
+                                                    <button type="button" class="text-danger tw-text-xl hover-scale-14 position-absolute top-0 tw-end-0 tw-duration-300 tw--mt-8-px tw--me-8-px delete-button">
+                                                        <i class="ph-fill ph-x-circle"></i>
+                                                    </button>
+                                                </div>
+                                                <a href="shop-details.html" class="fw-bold tw-text-base text-heading hover-text-main-600 line-clamp-1">Tata Brand Car</a>
+                                            </div>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <span class="fw-bold tw-text-base text-heading">$345.00</span>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <div class="d-flex">
+                                                <button type="button" class="text-heading hover-text-main-600 active-scale-09 tw-text-xl tw-w-11 tw-h-11 border border-neutral-200 tw-leading-none decrement-btn">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <input type="text" class="border border-neutral-200 bg-neutral-200 tw-w-11 tw-h-11 text-center focus-outline-0 text-heading fw-bold tw-w-11 input-value" value="0">
+                                                <button type="button" class="text-heading hover-text-main-600 active-scale-09 tw-text-xl tw-w-11 tw-h-11 border border-neutral-200 tw-leading-none increment-btn">
+                                                    <i class="ph-bold ph-plus"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <span class="fw-bold tw-text-base text-heading">$345.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="delete-item">
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <div class="d-flex align-items-center tw-gap-4 group-item">
+                                                <div class="position-relative max-w-74-px tw-h-84-px w-100">
+                                                    <a href="shop-details.html" class="d-flex justify-content-center align-items-center position-relative d-block">
+                                                        <img src="assets/images/thumbs/cart-img4.png" alt="Thumb" class="group-hover-item-scale-12 tw-duration-300">
+                                                    </a>
+                                                    <button type="button" class="text-danger tw-text-xl hover-scale-14 position-absolute top-0 tw-end-0 tw-duration-300 tw--mt-8-px tw--me-8-px delete-button">
+                                                        <i class="ph-fill ph-x-circle"></i>
+                                                    </button>
+                                                </div>
+                                                <a href="shop-details.html" class="fw-bold tw-text-base text-heading hover-text-main-600 line-clamp-1">Sumsang Hand Set</a>
+                                            </div>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <span class="fw-bold tw-text-base text-heading">$34.00</span>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <div class="d-flex">
+                                                <button type="button" class="text-heading hover-text-main-600 active-scale-09 tw-text-xl tw-w-11 tw-h-11 border border-neutral-200 tw-leading-none decrement-btn">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <input type="text" class="border border-neutral-200 bg-neutral-200 tw-w-11 tw-h-11 text-center focus-outline-0 text-heading fw-bold tw-w-11 input-value" value="0">
+                                                <button type="button" class="text-heading hover-text-main-600 active-scale-09 tw-text-xl tw-w-11 tw-h-11 border border-neutral-200 tw-leading-none increment-btn">
+                                                    <i class="ph-bold ph-plus"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="important-tw-py-5 important-tw-px-9 border-bottom border-neutral-200">
+                                            <span class="fw-bold tw-text-base text-heading">$68.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4" class="important-tw-py-5 important-tw-px-9 border-top border-neutral-200 text-center">
+                                            <div class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
+                                                <a href="shop.html" class="tw-py-3 tw-px-6 rounded-pill border border-neutral-200 text-neutral-600 fw-semibold tw-text-sm text-capitalize hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300">Return to Shop</a>
+                                                <button type="button" class="tw-py-3 tw-px-6 rounded-pill border border-neutral-200 text-neutral-600 fw-semibold tw-text-sm text-capitalize hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300">Update Cart</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="important-tw-py-5 important-tw-px-9 border-top border-neutral-200 text-center">
+                                            <div class="d-flex align-items-center tw-gap-10">
+                                                <span class="fw-bold tw-text-base text-heading line-clamp-1">Coupon Code</span>
+                                                <form action="#" class="d-flex tw-gap-5 form-submit flex-grow-1">
+                                                    <div class="position-relative flex-grow-1">
+                                                        <input type="text" class="tw-h-14 tw-rounded-lg bg-white tw-ps-12 border border-neutral-200 focus-border-main-600 text-heading focus-outline-0 w-100 tw-pe-6 common-shadow-twenty" placeholder="Email Address">
+                                                        <span class="text-heading tw-text-base position-absolute top-50 tw-start-0 tw--translate-y-50 tw-ms-5 d-flex">
+                                                            <i class="ph ph-envelope-simple"></i>
+                                                        </span>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-shrink-0 hover--translate-y-1 active--translate-y-scale-9 tw-px-10" data-block="button">
+                                                        <span class="button__flair"></span>
+                                                        <span class="button__label">Apply Coupon</span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="border border-neutral-200 tw-p-5">
+                            <h5 class="text-center tw-text-base tw-mb-10">Calculate Shipping</h5>
+                            <div class="d-flex flex-column tw-gap-4">
+                                <div class="border tw-rounded tw-py-3 tw-px-5 text-heading d-flex align-items-center justify-content-between">
+                                    <span class="fw-semibold tw-text-base text-capitalize">Bangladesh</span>
+                                    <span class="fw-medium tw-text-base text-capitalize text-neutral-600">country</span>
+                                </div>
+                                <div class="border tw-rounded tw-py-3 tw-px-5 text-heading d-flex align-items-center justify-content-between">
+                                    <span class="fw-semibold tw-text-base text-capitalize">Mirpur Dohs </span>
+                                    <span class="fw-medium tw-text-base text-capitalize text-neutral-600">Dhaka-1200</span>
+                                </div>
+                                <div class="border tw-rounded tw-py-3 tw-px-5 text-heading d-flex align-items-center justify-content-between">
+                                    <span class="fw-semibold tw-text-base text-capitalize">Postal Code</span>
+                                    <span class="fw-medium tw-text-base text-capitalize text-neutral-600">3215</span>
+                                </div>
+                                <div class="border tw-rounded tw-py-3 tw-px-5 text-heading d-flex align-items-center justify-content-between">
+                                    <span class="fw-semibold tw-text-base text-capitalize">Bangladesh</span>
+                                    <span class="fw-medium tw-text-base text-capitalize text-neutral-600">country</span>
+                                </div>
+                            </div>
+                            <div class="tw-mt-6">
+                                <a href="checkout.html" class="tw-rounded-md tw-py-3 tw-px-6 bg-neutral-200 text-heading fw-bold w-100 text-center hover-bg-main-600 hover-text-white active-scale-094 tw-duration-200">Calculate Shipping</a>
+                            </div>
+                        </div>
+                        <div class="border border-neutral-200 tw-p-5 tw-mt-10">
+                            <h5 class="text-center tw-text-base tw-mb-10">Total Cart</h5>
+                            <div class="d-flex flex-column tw-gap-4">
+                                <div class="border tw-rounded tw-py-3 tw-px-5 text-heading d-flex align-items-center justify-content-between">
+                                    <span class="fw-semibold tw-text-base text-uppercase">Subtotal</span>
+                                    <span class="fw-medium tw-text-base text-capitalize text-heading">$345.00</span>
+                                </div>
+                                <div class="border tw-rounded tw-py-3 tw-px-5 text-heading d-flex align-items-center justify-content-between">
+                                    <span class="fw-semibold tw-text-base text-uppercase">Total</span>
+                                    <span class="fw-semibold tw-text-base text-capitalize text-heading">$450.00</span>
+                                </div>
+                            </div>
+                            <div class="tw-mt-6">
+                                <a href="checkout.html" class="hover--translate-y-1 bg-crm active--translate-y-scale-9 btn button--stroke  tw-gap-5 group active--translate-y-2 px-xxl-5 px-xl-4 px-3 tw-py-405 fw-medium btn-main-two hover-style-three w-100" data-block="button">
+                                    <span class="button__flair"></span>
+                                    <span class="button__label">Proceed to checkout</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================== Cart Page End ========================== -->
+    
+    
+    @@include('../partials/_map.html')
+
+    @@include('../partials/_footer-three.html')
+
+    @@include('../partials/_template-bottom.html')
+
+    </body>
+</html>

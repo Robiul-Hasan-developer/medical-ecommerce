@@ -66,4 +66,12 @@
     border-radius: 50rem;
     pointer-events: none;
 }
+
+.style-border .nav-link.active,
+.style-border .show > .nav-link {
+  background-color: transparent !important;
+  color: var(--black);
+  border-color: var(--neutral-300) !important;
+}
+
 /* ================================= Tab Css End =========================== */

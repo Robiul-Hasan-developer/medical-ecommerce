@@ -678,49 +678,192 @@
       $(this).closest("div").find(".show-socials-icons").toggleClass("active");
     });
     // ========================= Doctor List Js End =====================
-    
-// ================================ Floating Progress js start =================================
-  const progressContainers = document.querySelectorAll('.progress-container');
 
-  function setPercentage(progressContainer) {
-      const percentage = progressContainer.getAttribute('data-percentage') + '%';
-      
-      const progressEl = progressContainer.querySelector('.progress');
-      const percentageEl = progressContainer.querySelector('.percentage');
-      
+    // ================================ Floating Progress js start =================================
+    const progressContainers = document.querySelectorAll(".progress-container");
+
+    function setPercentage(progressContainer) {
+      const percentage =
+        progressContainer.getAttribute("data-percentage") + "%";
+
+      const progressEl = progressContainer.querySelector(".progress");
+      const percentageEl = progressContainer.querySelector(".percentage");
+
       progressEl.style.width = percentage;
       percentageEl.innerText = percentage;
       percentageEl.style.insetInlineStart = percentage;
-  }
+    }
 
-  // Intersection Observer to trigger progress animation when section is in view
-  const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+    // Intersection Observer to trigger progress animation when section is in view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-              // Element is in view, start the progress animation
-              const progressContainer = entry.target;
-              setPercentage(progressContainer);
-              progressContainer.querySelector('.progress').classList.remove('active');
-              progressContainer.querySelector('.percentage').classList.remove('active');
-              observer.unobserve(progressContainer); // Stop observing once animation is triggered
+            // Element is in view, start the progress animation
+            const progressContainer = entry.target;
+            setPercentage(progressContainer);
+            progressContainer
+              .querySelector(".progress")
+              .classList.remove("active");
+            progressContainer
+              .querySelector(".percentage")
+              .classList.remove("active");
+            observer.unobserve(progressContainer); // Stop observing once animation is triggered
           }
-      });
-  }, {
-      threshold: 0.5 // Adjust this value as needed (0.5 means half the section needs to be visible)
-  });
+        });
+      },
+      {
+        threshold: 0.5, // Adjust this value as needed (0.5 means half the section needs to be visible)
+      }
+    );
 
-  // Start observing all progress containers
-  progressContainers.forEach(progressContainer => {
+    // Start observing all progress containers
+    progressContainers.forEach((progressContainer) => {
       observer.observe(progressContainer);
-});
-// ================================ Floating Progress js End =================================
+    });
+    // ================================ Floating Progress js End =================================
 
+    // ========================= List gird View Js Start =====================
+    $(document).on("click", ".list-view-btn", function () {
+      const $btn = $(this);
+      const $gridViewBtn = $(".grid-view-btn");
+      const $body = $("body");
 
+      $body.removeClass("grid-view");
+      $btn.removeClass("text-heading").addClass("text-main-two-600");
+      $gridViewBtn.removeClass("text-main-two-600");
+    });
+
+    $(document).on("click", ".grid-view-btn", function () {
+      const $btn = $(this);
+      const $listViewBtn = $(".list-view-btn");
+      const $body = $("body");
+
+      $body.addClass("grid-view");
+      $btn.removeClass("text-heading").addClass("text-main-two-600");
+      $listViewBtn.removeClass("text-main-two-600");
+    });
+    // ========================= List gird View Js End =====================
+
+    // ========================= Range Slider Js Start =====================
+    $(document).ready(function () {
+      var $rangeInput = $(".range-input input"),
+        $priceInput = $(".price-input input"),
+        $range = $(".slider .progressbar"),
+        priceGap = 1000;
+
+      // Update the range and price inputs when the price input fields change
+      $priceInput.on("input", function () {
+        var minPrice = parseInt($priceInput.eq(0).val(), 10),
+          maxPrice = parseInt($priceInput.eq(1).val(), 10);
+
+        if (
+          maxPrice - minPrice >= priceGap &&
+          maxPrice <= parseInt($rangeInput.eq(1).attr("max"), 10)
+        ) {
+          if ($(this).hasClass("input-min")) {
+            $rangeInput.eq(0).val(minPrice);
+            $range.css(
+              "inset-inline-start",
+              (minPrice / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 +
+                "%"
+            );
+          } else {
+            $rangeInput.eq(1).val(maxPrice);
+            $range.css(
+              "inset-inline-end",
+              100 -
+                (maxPrice / parseInt($rangeInput.eq(1).attr("max"), 10)) * 100 +
+                "%"
+            );
+          }
+        }
+      });
+
+      // Update the price input fields and range visual when the range slider is dragged
+      $rangeInput.on("input", function () {
+        var minVal = parseInt($rangeInput.eq(0).val(), 10),
+          maxVal = parseInt($rangeInput.eq(1).val(), 10);
+
+        if (maxVal - minVal < priceGap) {
+          if ($(this).hasClass("range-min")) {
+            $rangeInput.eq(0).val(maxVal - priceGap);
+          } else {
+            $rangeInput.eq(1).val(minVal + priceGap);
+          }
+        } else {
+          $priceInput.eq(0).val(minVal);
+          $priceInput.eq(1).val(maxVal);
+          $range.css(
+            "inset-inline-start",
+            (minVal / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 + "%"
+          );
+          $range.css(
+            "inset-inline-end",
+            100 -
+              (maxVal / parseInt($rangeInput.eq(1).attr("max"), 10)) * 100 +
+              "%"
+          );
+        }
+      });
+    });
+    // ========================= Range Slider Js End =====================
+
+    // ========================= Shop Details Slider Js Start =====================
+    var shopSmallThumbs = new Swiper(".shop-small-thumbs", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var shopThumbs = new Swiper(".shop-thumbs", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: shopSmallThumbs,
+      },
+    });
+    // ========================= Shop Details Slider Js End =====================
+
+     // ========================= Color Picker Js Start =====================
+    $(document).on("click", ".color-picker", function () {
+      $(".color-picker__color").css("transform", "scale(1)");
+
+      $(this).find(".color-picker__color").css("transform", "scale(2)");
+    });
+    // ========================= Color Picker Js End =====================
+
+    // ========================= Size Picker Js Start =====================
+    $(document).on("click", ".size-btn", function () {
+      $(".size-btn").removeClass("bg-main-600 text-white border-main-600");
+
+      $(this).addClass("bg-main-600 text-white border-main-600");
+    });
+    // ========================= Size Picker Js End =====================
+    
+    // ========================= Increment & Decrement Js Start =====================
+    $(document).on("click", ".increment-btn", function () {
+      const $input = $(this).siblings(".input-value");
+      let count = parseInt($input.val(), 10);
+      $input.val(count + 1);
+    });
+
+    $(document).on("click", ".decrement-btn", function () {
+      const $input = $(this).siblings(".input-value");
+      let count = parseInt($input.val(), 10);
+      if (count > 0) {
+        $input.val(count - 1);
+      }
+    });
+    // ========================= Increment & Decrement Js End =====================
     /********************************************************************************************************
                                         Other Pages Js End 
 *********************************************************************************************************/
-
-
 
     // ================== Password Show Hide Js Start ==========
     // $(".toggle-password").on('click', function() {
