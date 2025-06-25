@@ -1,0 +1,17 @@
+/* ========================== page style four Start ==========================  */
+.page-style-four {
+  &:root {
+    /* template main color */
+    --main-h: 198;
+    --main-s: 74%;
+    --main-l: 14%;
+    --main: var(--main-h) var(--main-s) var(--main-l);
+  }
+}
+
+.header-bg-blue-dark {
+  .header .container > .bg-main-600 {
+    background-color: var(--main-600) !important;
+  }
+}
+/* ========================== page style four End ==========================  */

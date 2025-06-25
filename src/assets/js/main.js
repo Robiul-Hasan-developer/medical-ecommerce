@@ -206,7 +206,7 @@
     }
     // ========================= Form Submit Js End ===================
 
-    // ========================= Custom Select Js Start =====================
+    // ========================= Custom Select with flag Js Start =====================
     let selectDropdownWrappers = document.querySelectorAll(
       ".select-dropdown-wrapper"
     );
@@ -277,7 +277,7 @@
         selectButtonArrow.style.transform = "rotate(0deg)";
       });
     });
-    // ========================= Custom Select Js Start =====================
+    // ========================= Custom Select with flag Js Start =====================
 
     // ========================== Select2 Js Start =================================
     $(document).ready(function () {
