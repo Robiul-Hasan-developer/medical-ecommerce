@@ -311,6 +311,10 @@
     border-color: transparent;
 }
 
+.btn-white.text-heading {
+    color: hsl(var(--heading-color)) !important;
+}
+
 .hover-style-one:hover.button--stroke::after, .hover-style-one:active.button--stroke::after {
     border-color: transparent;
 }
@@ -6640,15 +6644,15 @@ input:focus-visible {
 /* Letter Spacing Css End */
 /* ========================== Gradient BG Css Start =============================== */
 .gradient-bg-1 {
-    background: linear-gradient(181.44deg, #E8F3FF 1.22%, rgba(232, 244, 255, 0) 117.41%);
+    background: linear-gradient(181.44deg, #e8f3ff 1.22%, rgba(232, 244, 255, 0) 117.41%);
 }
 
-.gradient-overlay-one, .gradient-overlay-two, .gradient-overlay-three, .gradient-overlay-four, .gradient-overlay-five, .gradient-overlay-six, .gradient-overlay-seven {
+.gradient-overlay-one, .gradient-overlay-two, .gradient-overlay-three, .gradient-overlay-four, .gradient-overlay-five, .gradient-overlay-six, .gradient-overlay-seven, .gradient-overlay-eight {
     position: relative;
     z-index: 1;
 }
 
-.gradient-overlay-one::before, .gradient-overlay-two::before, .gradient-overlay-three::before, .gradient-overlay-four::before, .gradient-overlay-five::before, .gradient-overlay-six::before, .gradient-overlay-seven::before {
+.gradient-overlay-one::before, .gradient-overlay-two::before, .gradient-overlay-three::before, .gradient-overlay-four::before, .gradient-overlay-five::before, .gradient-overlay-six::before, .gradient-overlay-seven::before, .gradient-overlay-eight::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -6682,15 +6686,19 @@ input:focus-visible {
 }
 
 .gradient-overlay-five::before {
-    background: linear-gradient(96.93deg, #C2DFFC 39.21%, rgba(194, 223, 252, 0.188637) 53.01%, rgba(194, 223, 252, 0.107717) 72.42%, rgba(194, 223, 252, 0) 102.69%);
+    background: linear-gradient(96.93deg, #c2dffc 39.21%, rgba(194, 223, 252, 0.188637) 53.01%, rgba(194, 223, 252, 0.107717) 72.42%, rgba(194, 223, 252, 0) 102.69%);
 }
 
 .gradient-overlay-six::before {
-    background: #042E50C7;
+    background: #042e50c7;
 }
 
 .gradient-overlay-seven::before {
-    background: linear-gradient(96.3deg, #092D3C 19.41%, rgba(9, 45, 60, 0.858685) 46.55%, rgba(9, 45, 60, 0.188637) 78.88%, rgba(9, 45, 60, 0.107717) 91.6%, rgba(9, 45, 60, 0) 103.01%);
+    background: linear-gradient(96.3deg, #092d3c 19.41%, rgba(9, 45, 60, 0.858685) 46.55%, rgba(9, 45, 60, 0.188637) 78.88%, rgba(9, 45, 60, 0.107717) 91.6%, rgba(9, 45, 60, 0) 103.01%);
+}
+
+.gradient-overlay-eight::before {
+    background: linear-gradient(96.93deg, #c1dee3 39.21%, rgba(193, 222, 227, 0.188637) 53.01%, rgba(193, 222, 227, 0.107717) 72.42%, rgba(193, 222, 227, 0) 102.69%);
 }
 
 @media (max-width: 992px) {
@@ -7406,6 +7414,10 @@ input:focus-visible {
 
 /* ========================== page style three End ==========================  */
 /* ========================== Header Three Css start ================================== */
+.full-header {
+    background-color: #092d3c;
+}
+
 .nav-menu-link-white .nav-menu__link {
     color: #fff !important;
 }
@@ -7463,6 +7475,23 @@ input:focus-visible {
 }
 
 /* =========================== service department css End =========================== */
+/* Banner four css start  */
+.banner-four {
+    padding: 200px 0 180px;
+}
+
+@media (max-width: 1300px) {
+    .banner-four {
+        padding: 160px 0 160px;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-four {
+        padding: 100px 0 100px;
+    }
+}
+/* Banner four css end  */
 /* ======================= Doctor list section css start =============================== */
 .show-socials-icons.active .show-socials-icons__item {
     transform: scale(1);

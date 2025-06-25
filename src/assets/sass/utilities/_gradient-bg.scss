@@ -1,72 +1,120 @@
 /* ========================== Gradient BG Css Start =============================== */
 .gradient-bg {
-    &-1 {
-        background: linear-gradient(181.44deg, #E8F3FF 1.22%, rgba(232, 244, 255, 0) 117.41%);
-    }
+  &-1 {
+    background: linear-gradient(
+      181.44deg,
+      #e8f3ff 1.22%,
+      rgba(232, 244, 255, 0) 117.41%
+    );
+  }
 }
 
-
 .gradient-overlay {
-    &-one,
-    &-two, 
-    &-three, 
-    &-four, 
-    &-five, 
-    &-six, 
-    &-seven {
-        position: relative;
-        z-index: 1;
-        &::before {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            top: 0;
-            inset-inline-start: 0;
-        }
+  &-one,
+  &-two,
+  &-three,
+  &-four,
+  &-five,
+  &-six,
+  &-seven,
+  &-eight {
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      inset-inline-start: 0;
     }
-    &-one::before {
-        background: linear-gradient(96deg, rgba(232, 243, 255, 0.94) 39.21%, rgba(232, 243, 255, 0.188637) 60.01%, rgba(232, 243, 255, 0.107717) 42%, rgba(232, 243, 255, 0) 102.69%);
-    }
-    &-two::before {
-        background: linear-gradient(280deg, rgba(232, 243, 255, 0.94) 39.17%, rgba(232, 243, 255, 0.188637) 81.99%, rgba(232, 243, 255, 0) 85.94%, rgba(232, 243, 255, 0.107717) 113.18%);
-    }
-    &-three::before {
-        background: linear-gradient(181.44deg, #e8f3ff 1.22%, rgb(232 244 255 / 0%) 100.41%);
-        height: calc(100% - 90px);
-        top: auto;
-        bottom: 0;
-        border-radius: 24px;
-        max-width: 1840px;
-        inset-inline-start: 50%;
-        transform: translateX(-50%);
-    }
-    &-four::before {
-        background: linear-gradient(96.78deg, rgba(3, 19, 35, 0.94) 35.21%, rgba(3, 19, 35, 0.188637) 60.34%, rgba(3, 19, 35, 0) 72.87%, rgba(3, 19, 35, 0) 102.76%);
-    }
-    &-five::before {
-        background: linear-gradient(96.93deg, #C2DFFC 39.21%, rgba(194, 223, 252, 0.188637) 53.01%, rgba(194, 223, 252, 0.107717) 72.42%, rgba(194, 223, 252, 0) 102.69%);
-    }
-    &-six::before {
-        background: #042E50C7;
-    }
-    &-seven::before {
-        background: linear-gradient(96.3deg, #092D3C 19.41%, rgba(9, 45, 60, 0.858685) 46.55%, rgba(9, 45, 60, 0.188637) 78.88%, rgba(9, 45, 60, 0.107717) 91.6%, rgba(9, 45, 60, 0) 103.01%);
-    }
+  }
+  &-one::before {
+    background: linear-gradient(
+      96deg,
+      rgba(232, 243, 255, 0.94) 39.21%,
+      rgba(232, 243, 255, 0.188637) 60.01%,
+      rgba(232, 243, 255, 0.107717) 42%,
+      rgba(232, 243, 255, 0) 102.69%
+    );
+  }
+  &-two::before {
+    background: linear-gradient(
+      280deg,
+      rgba(232, 243, 255, 0.94) 39.17%,
+      rgba(232, 243, 255, 0.188637) 81.99%,
+      rgba(232, 243, 255, 0) 85.94%,
+      rgba(232, 243, 255, 0.107717) 113.18%
+    );
+  }
+  &-three::before {
+    background: linear-gradient(
+      181.44deg,
+      #e8f3ff 1.22%,
+      rgb(232 244 255 / 0%) 100.41%
+    );
+    height: calc(100% - 90px);
+    top: auto;
+    bottom: 0;
+    border-radius: 24px;
+    max-width: 1840px;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+  }
+  &-four::before {
+    background: linear-gradient(
+      96.78deg,
+      rgba(3, 19, 35, 0.94) 35.21%,
+      rgba(3, 19, 35, 0.188637) 60.34%,
+      rgba(3, 19, 35, 0) 72.87%,
+      rgba(3, 19, 35, 0) 102.76%
+    );
+  }
+  &-five::before {
+    background: linear-gradient(
+      96.93deg,
+      #c2dffc 39.21%,
+      rgba(194, 223, 252, 0.188637) 53.01%,
+      rgba(194, 223, 252, 0.107717) 72.42%,
+      rgba(194, 223, 252, 0) 102.69%
+    );
+  }
+  &-six::before {
+    background: #042e50c7;
+  }
+  &-seven::before {
+    background: linear-gradient(
+      96.3deg,
+      #092d3c 19.41%,
+      rgba(9, 45, 60, 0.858685) 46.55%,
+      rgba(9, 45, 60, 0.188637) 78.88%,
+      rgba(9, 45, 60, 0.107717) 91.6%,
+      rgba(9, 45, 60, 0) 103.01%
+    );
+  }
+  &-eight::before {
+    background: linear-gradient(
+      96.93deg,
+      #c1dee3 39.21%,
+      rgba(193, 222, 227, 0.188637) 53.01%,
+      rgba(193, 222, 227, 0.107717) 72.42%,
+      rgba(193, 222, 227, 0) 102.69%
+    );
+  }
 }
 
 .gradient-lg-full {
-    &::before {
-        @media (max-width: 992px) {
-            background: var(--main-40);
-        }
+  &::before {
+    @media (max-width: 992px) {
+      background: var(--main-40);
     }
+  }
 }
 
 .style-full {
-    &::before {
-        max-width: 100%;
-    }
+  &::before {
+    max-width: 100%;
+  }
 }
 /* ========================== Gradient BG Css End =============================== */
