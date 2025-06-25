@@ -219,36 +219,59 @@
       let selectButtonText = selectDropdownWrapper.querySelector(
         ".select-button__text"
       );
+      let selectButtonFlag = selectDropdownWrapper.querySelector(
+        ".select-dropdown__flag img"
+      ); // Get the image inside the button
+
       let selectDropdown =
         selectDropdownWrapper.querySelector(".select-dropdown");
       let selectDropdownItems = selectDropdownWrapper.querySelectorAll(
         ".select-dropdown__item"
       );
 
+      // Toggle dropdown on button click
       selectButton.addEventListener("click", function (event) {
         event.stopPropagation();
         selectDropdown.classList.toggle("active");
         selectDropdown.classList.toggle("invisible");
         selectDropdown.classList.toggle("opacity-0");
 
-        selectButtonArrow.style.transform = "rotate(180deg)";
+        const isActive = selectDropdown.classList.contains("active");
+        selectButtonArrow.style.transform = isActive
+          ? "rotate(180deg)"
+          : "rotate(0deg)";
       });
 
+      // Handle item selection
       selectDropdownItems.forEach((selectDropdownItem) => {
         selectDropdownItem.addEventListener("click", function (event) {
           event.stopPropagation();
-          let itemText = (selectDropdownItem.querySelector(
-            ".select-dropdown__text"
-          ).textContent = this.textContent);
-          selectButtonText.textContent = itemText;
 
+          // Get text and image from the clicked item
+          const itemText = selectDropdownItem.querySelector(
+            ".select-dropdown__text"
+          ).textContent;
+          const itemImage = selectDropdownItem
+            .querySelector(".select-dropdown__flag img")
+            .getAttribute("src");
+          const itemImageAlt = selectDropdownItem
+            .querySelector(".select-dropdown__flag img")
+            .getAttribute("alt");
+
+          // Update button text and image
+          selectButtonText.textContent = itemText;
+          selectButtonFlag.setAttribute("src", itemImage);
+          selectButtonFlag.setAttribute("alt", itemImageAlt);
+
+          // Close dropdown
           selectDropdown.classList.remove("active");
           selectDropdown.classList.add("invisible", "opacity-0");
           selectButtonArrow.style.transform = "rotate(0deg)";
         });
       });
 
-      body.addEventListener("click", function () {
+      // Close dropdown when clicking outside
+      document.addEventListener("click", function () {
         selectDropdown.classList.remove("active");
         selectDropdown.classList.add("invisible", "opacity-0");
         selectButtonArrow.style.transform = "rotate(0deg)";
@@ -830,7 +853,7 @@
     });
     // ========================= Shop Details Slider Js End =====================
 
-     // ========================= Color Picker Js Start =====================
+    // ========================= Color Picker Js Start =====================
     $(document).on("click", ".color-picker", function () {
       $(".color-picker__color").css("transform", "scale(1)");
 
@@ -845,7 +868,7 @@
       $(this).addClass("bg-main-600 text-white border-main-600");
     });
     // ========================= Size Picker Js End =====================
-    
+
     // ========================= Increment & Decrement Js Start =====================
     $(document).on("click", ".increment-btn", function () {
       const $input = $(this).siblings(".input-value");
