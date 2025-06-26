@@ -1776,6 +1776,10 @@ input:focus-visible {
     background-color: #FCD3BF;
 }
 
+.bg-pink-50 {
+    background-color: #FEF4F9;
+}
+
 .hover-bg-white:hover {
     background-color: hsl(var(--white)) !important;
 }
@@ -4621,6 +4625,10 @@ input:focus-visible {
     max-width: 248px;
 }
 
+.max-w-290-px {
+    max-width: 290px;
+}
+
 .max-w-348-px {
     max-width: 348px;
 }
@@ -7012,6 +7020,7 @@ input:focus-visible {
 
 .nav-submenu__item.activePage .nav-submenu__link {
     color: var(--main-600) !important;
+    background-color: var(--neutral-200);
 }
 
 .nav-submenu__item:hover a {

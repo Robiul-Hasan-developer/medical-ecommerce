@@ -311,7 +311,7 @@
 
     // ========================= Aos Animation Js Start ===================
     AOS.init({
-      once: true,
+      once: false,
     });
     // ========================= Aos Animation Js End ===================
 
