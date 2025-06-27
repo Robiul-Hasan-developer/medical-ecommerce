@@ -3286,6 +3286,10 @@ input:focus-visible {
     height: 92px;
 }
 
+.tw-h-96-px {
+    height: 96px;
+}
+
 .tw-h-130-px {
     height: 130px;
 }
@@ -6011,6 +6015,10 @@ input:focus-visible {
     box-shadow: 0px 8px 36px 0px #0000000F;
 }
 
+.common-shadow-12 {
+    box-shadow: 0px 4px 24px 0px #00000012;
+}
+
 .hover-common-shadow-1:hover {
     box-shadow: 0px 4px 32px 0px #00000029;
 }
@@ -6287,6 +6295,10 @@ input:focus-visible {
 
 .tw-w-84-px {
     width: 84px;
+}
+
+.tw-w-96-px {
+    width: 96px;
 }
 
 .tw-w-300-px {
