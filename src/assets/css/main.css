@@ -1252,6 +1252,10 @@ h6,
     font-size: var(--heading-six);
 }
 
+h6.fw-normal {
+    line-height: 1.65;
+}
+
 h1 > a,
 h2 > a,
 h3 > a,
@@ -5499,6 +5503,10 @@ input:focus-visible {
 
 .tw-p-60-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+}
+
+.tw-p-80-px {
+    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 5rem);
 }
 
 .tw-px-32-px {

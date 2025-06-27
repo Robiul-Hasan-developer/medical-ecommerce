@@ -72,6 +72,9 @@ h6,
 .h6 {
   font-size: var(--heading-six);
 }
+h6.fw-normal {
+  line-height: 1.65;
+}
 
 h1 > a,
 h2 > a,
