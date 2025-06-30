@@ -685,6 +685,70 @@
 *********************************************************************************************************/
 
     /********************************************************************************************************
+                                        Home Four Js Start 
+*********************************************************************************************************/
+    // ================================= Brand slider Start =========================
+    var brandSlider = new Swiper(".brand-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1500,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 5,
+      breakpoints: {
+        300: {
+          slidesPerView: 2,
+        },
+        575: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+      },
+    });
+    // ================================= Brand slider End =========================
+
+    // ================================ Project slider js Start =================================
+    var testimonialsFourSlider = new Swiper(".testimonials-four-slider", {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      speed: 1500,
+      autoplay: true,
+      autoplay: {
+        delay: 3000, // 3000 milliseconds = 3 seconds delay
+        disableOnInteraction: false, // Optional: Keeps autoplay even after user interaction
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          centeredSlides: false,
+          slidesPerView: 1,
+        },
+        576: {
+          centeredSlides: true,
+        },
+      },
+    });
+    // ================================ Project slider js End =================================
+
+    /********************************************************************************************************
+                                        Home Four Js End 
+*********************************************************************************************************/
+
+    /********************************************************************************************************
                                         Other Pages Js Start 
 *********************************************************************************************************/
     // ========================= magnific Popup Js Start =====================

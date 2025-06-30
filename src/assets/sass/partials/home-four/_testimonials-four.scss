@@ -1,0 +1,19 @@
+/* Testimonials four section start */
+.testimonials-four-item {
+  &__title {
+    border-bottom: 1px solid #62737d39;
+  }
+}
+
+.swiper-slide.swiper-slide-active {
+  .hover-bg-main-600 {
+    background-color: var(--main-600) !important;
+  }
+  .group-hover-text-white {
+    color: hsl(var(--white)) !important;
+  }
+  .testimonials-four-item__rating {
+    background-color: var(--main-800);
+  }
+}
+/* Testimonials four section end */

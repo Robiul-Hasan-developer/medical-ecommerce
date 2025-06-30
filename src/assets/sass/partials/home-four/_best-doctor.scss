@@ -1,0 +1,54 @@
+/* Best Doctor css start */
+.best-doctor {
+  &__item {
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      width: calc(100% + 80px);
+      height: 0;
+      border-radius: 12px;
+      background-color: var(--main-two-600);
+      z-index: -1;
+      inset-inline-start: 50%;
+      transform: translateX(-50%);
+      inset-block-end: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s linear;
+    }
+    &:hover {
+      &::before {
+        height: 100%;
+        visibility: visible;
+        opacity: 1;
+        inset-block-start: 0;
+      }
+      .text-white {
+        color: hsl(var(--heading-color)) !important;
+      }
+    }
+  }
+}
+
+.triangle-right {
+  position: relative;
+  margin-block-start: 44px;
+  &::before {
+    position: absolute;
+    width: 145px;
+    height: 44px;
+    background: inherit;
+    inset-inline-end: 0;
+    inset-block-end: calc(100% - 1px);
+    content: "";
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+}
+
+.best-doctor-image {
+  max-width: 46.5%;
+  object-fit: cover;
+}
+/* Best Doctor css end */

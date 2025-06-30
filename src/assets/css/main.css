@@ -1784,6 +1784,10 @@ input:focus-visible {
     background-color: #FEF4F9;
 }
 
+.bg-heading {
+    background-color: hsl(var(--heading-color));
+}
+
 .hover-bg-white:hover {
     background-color: hsl(var(--white)) !important;
 }
@@ -3005,6 +3009,10 @@ input:focus-visible {
     line-height: 1;
 }
 
+.tw-leading-18 {
+    line-height: 1.8;
+}
+
 .opacity-05 {
     opacity: 0.05;
 }
@@ -3282,6 +3290,10 @@ input:focus-visible {
     height: 75px;
 }
 
+.tw-h-78-px {
+    height: 78px;
+}
+
 .tw-h-84-px {
     height: 84px;
 }
@@ -3308,6 +3320,10 @@ input:focus-visible {
 
 .tw-h-370-px {
     height: 370px;
+}
+
+.tw-h-375-px {
+    height: 375px;
 }
 
 .tw-min-h-184-px {
@@ -4657,6 +4673,10 @@ input:focus-visible {
     max-width: 560px;
 }
 
+.max-w-640-px {
+    max-width: 640px;
+}
+
 .max-w-670-px {
     max-width: 670px;
 }
@@ -5513,6 +5533,10 @@ input:focus-visible {
     padding-inline: clamp(1.25rem, -12.1677rem + 32.9177vw, 2rem);
 }
 
+.tw-px-54-px {
+    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+}
+
 .tw-px-40-px {
     padding-inline: clamp(1.25rem, -12.1677rem + 32.9177vw, 2.5rem);
 }
@@ -5531,6 +5555,10 @@ input:focus-visible {
 
 .tw-px-86-px {
     padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 5.375rem);
+}
+
+.tw-py-54-px {
+    padding-block: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
 }
 
 .tw-pe-84-px {
@@ -6025,6 +6053,14 @@ input:focus-visible {
 
 .common-shadow-12 {
     box-shadow: 0px 4px 24px 0px #00000012;
+}
+
+.common-shadow-13 {
+    box-shadow: 0px 4px 42px 0px #00000012;
+}
+
+.common-shadow-14 {
+    box-shadow: 0px 4px 19px 0px #00000012;
 }
 
 .hover-common-shadow-1:hover {
@@ -6679,12 +6715,12 @@ input:focus-visible {
     background: linear-gradient(181.44deg, #e8f3ff 1.22%, rgba(232, 244, 255, 0) 117.41%);
 }
 
-.gradient-overlay-one, .gradient-overlay-two, .gradient-overlay-three, .gradient-overlay-four, .gradient-overlay-five, .gradient-overlay-six, .gradient-overlay-seven, .gradient-overlay-eight {
+.gradient-overlay-one, .gradient-overlay-two, .gradient-overlay-three, .gradient-overlay-four, .gradient-overlay-five, .gradient-overlay-six, .gradient-overlay-seven, .gradient-overlay-eight, .gradient-overlay-nine {
     position: relative;
     z-index: 1;
 }
 
-.gradient-overlay-one::before, .gradient-overlay-two::before, .gradient-overlay-three::before, .gradient-overlay-four::before, .gradient-overlay-five::before, .gradient-overlay-six::before, .gradient-overlay-seven::before, .gradient-overlay-eight::before {
+.gradient-overlay-one::before, .gradient-overlay-two::before, .gradient-overlay-three::before, .gradient-overlay-four::before, .gradient-overlay-five::before, .gradient-overlay-six::before, .gradient-overlay-seven::before, .gradient-overlay-eight::before, .gradient-overlay-nine::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -6731,6 +6767,11 @@ input:focus-visible {
 
 .gradient-overlay-eight::before {
     background: linear-gradient(96.93deg, #c1dee3 39.21%, rgba(193, 222, 227, 0.188637) 53.01%, rgba(193, 222, 227, 0.107717) 72.42%, rgba(193, 222, 227, 0) 102.69%);
+}
+
+.gradient-overlay-nine::before {
+    background: linear-gradient(2.9deg, #0053f9 -104.5%, rgba(249, 3, 3, 0.713) 65.84%);
+    background: linear-gradient(2.9deg, #849ccb -104.5%, rgba(255, 255, 255, 0) 65.84%);
 }
 
 @media (max-width: 992px) {
@@ -7552,6 +7593,117 @@ input:focus-visible {
 }
 
 /* Banner four css end  */
+/* Best Doctor css start */
+.best-doctor__item {
+    position: relative;
+    z-index: 1;
+}
+
+.best-doctor__item::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 80px);
+    height: 0;
+    border-radius: 12px;
+    background-color: var(--main-two-600);
+    z-index: -1;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    inset-block-end: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.best-doctor__item:hover::before {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    inset-block-start: 0;
+}
+
+.best-doctor__item:hover .text-white {
+    color: hsl(var(--heading-color)) !important;
+}
+
+.triangle-right {
+    position: relative;
+    margin-block-start: 44px;
+}
+
+.triangle-right::before {
+    position: absolute;
+    width: 145px;
+    height: 44px;
+    background: inherit;
+    inset-inline-end: 0;
+    inset-block-end: calc(100% - 1px);
+    content: "";
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.best-doctor-image {
+    max-width: 46.5%;
+    object-fit: cover;
+}
+
+/* Best Doctor css end */
+/* Brand Four section css start */
+.left-right-gradient::before,
+.left-right-gradient::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(90deg, #d8dfef, transparent);
+    z-index: 2;
+}
+
+.left-right-gradient::after {
+    background: linear-gradient(90deg, transparent, #dce3f0);
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+}
+
+.gradient-width-100::before,
+.gradient-width-100::after {
+    width: 100px;
+}
+
+/* Brand Four section css end */
+/* ambulance service css start */
+.half-bg-main-two-600::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    background-color: #fcd3bf;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    z-index: -1;
+}
+
+/* ambulance service css end */
+/* Testimonials four section start */
+.testimonials-four-item__title {
+    border-bottom: 1px solid #62737d39;
+}
+
+.swiper-slide.swiper-slide-active .hover-bg-main-600 {
+    background-color: var(--main-600) !important;
+}
+
+.swiper-slide.swiper-slide-active .group-hover-text-white {
+    color: hsl(var(--white)) !important;
+}
+
+.swiper-slide.swiper-slide-active .testimonials-four-item__rating {
+    background-color: var(--main-800);
+}
+
+/* Testimonials four section end */
 /* ======================= Doctor list section css start =============================== */
 .show-socials-icons.active .show-socials-icons__item {
     transform: scale(1);

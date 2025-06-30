@@ -17,7 +17,8 @@
   &-five,
   &-six,
   &-seven,
-  &-eight {
+  &-eight,
+  &-nine {
     position: relative;
     z-index: 1;
     &::before {
@@ -100,6 +101,18 @@
       rgba(193, 222, 227, 0.188637) 53.01%,
       rgba(193, 222, 227, 0.107717) 72.42%,
       rgba(193, 222, 227, 0) 102.69%
+    );
+  }
+  &-nine::before {
+    background: linear-gradient(
+      2.9deg,
+      #0053f9 -104.5%,
+      rgba(249, 3, 3, 0.713) 65.84%
+    );
+    background: linear-gradient(
+      2.9deg,
+      #849ccb -104.5%,
+      rgba(255, 255, 255, 0) 65.84%
     );
   }
 }

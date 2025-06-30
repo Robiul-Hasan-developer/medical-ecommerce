@@ -1,0 +1,12 @@
+/* ambulance service css start */
+.half-bg-main-two-600::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: #fcd3bf;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  z-index: -1;
+}
+/* ambulance service css end */

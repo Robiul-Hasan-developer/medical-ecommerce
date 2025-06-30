@@ -1,0 +1,24 @@
+/* Brand Four section css start */
+.left-right-gradient::before,
+.left-right-gradient::after {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 100%;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  background: linear-gradient(90deg, #d8dfef, transparent);
+  z-index: 2;
+}
+
+.left-right-gradient::after {
+  background: linear-gradient(90deg, transparent, #dce3f0);
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+}
+
+.gradient-width-100::before,
+.gradient-width-100::after {
+  width: 100px;
+}
+/* Brand Four section css end */

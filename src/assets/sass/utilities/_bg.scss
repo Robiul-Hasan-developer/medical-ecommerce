@@ -31,6 +31,9 @@
   &-pink-50 {
     background-color: #FEF4F9;
   }
+  &-heading {
+    background-color: hsl(var(--heading-color));
+  }
 }
 
 .hover-bg-white {
