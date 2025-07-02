@@ -1,0 +1,16 @@
+/* ========================== page style five Start ==========================  */
+.page-style-five {
+  &:root {
+    --main-h: 211;
+    --main-s: 63%;
+    --main-l: 24%;
+    --main: var(--main-h) var(--main-s) var(--main-l);
+
+    --heading: 211 63% 24%;
+
+    /* Font Family Variable */
+    --heading-font: "Parkinsans", sans-serif;
+    --body-font: "Satoshi", sans-serif;
+  }
+}
+/* ========================== page style five End ==========================  */
