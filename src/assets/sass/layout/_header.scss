@@ -129,4 +129,10 @@
     justify-content: center;
   }
 }
+
+.absolute-header.fixed-header {
+  position: fixed !important;
+  background-color: var(--main-600);
+}
+
 /* ================================= Header Css End =========================== */

@@ -165,6 +165,10 @@
   animation: animationUpDown 8s linear infinite;
 }
 
+.animation-upDown-two {
+  animation: animationUpDownTwo 8s linear infinite;
+}
+
 .animation-rotate-scale {
   animation: scaleRotate 4.5s ease-in-out infinite;
 }
@@ -211,6 +215,18 @@
   }
 }
 
+@keyframes animationUpDownTwo {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .animation-delay {
   &-1 {
     animation-delay: 1s !important;
@@ -220,6 +236,12 @@
   }
   &-3 {
     animation-delay: 3s;
+  }
+  &-4 {
+    animation-delay: 4s;
+  }
+  &-5 {
+    animation-delay: 5s;
   }
 }
 

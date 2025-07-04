@@ -221,6 +221,93 @@ if ($(".line").length) {
 }
 // **************************** Blog js End ****************************
 
+// **************************** Banner Five js Start ****************************
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function () {
+  if ($(".banner-five-element").length) {
+    if (window.innerWidth > 575) {
+      const items = document.querySelectorAll(".banner-five-element");
+
+      const elements = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".banner-five",
+          start: "top 60%",
+          toggleActions: "play none none reverse",
+          markers: false,
+        },
+        defaults: {
+          ease: "ease1",
+          duration: 1.5,
+        },
+      });
+      elements
+        .from(items[0], {
+          xPercent: 500,
+          yPercent: 500,
+          scale: 0.6,
+          filter: "blur(10px)",
+          rotate: 8,
+        })
+        .from(
+          items[1],
+          {
+            xPercent: -500,
+            yPercent: 500,
+            scale: 0.6,
+            filter: "blur(10px)",
+            rotate: 4.13,
+          },
+          "<"
+        )
+        .from(
+          items[2],
+          {
+            xPercent: 500,
+            yPercent: -500,
+            scale: 0.6,
+            filter: "blur(10px)",
+          },
+          "<"
+        )
+        .from(
+          items[3],
+          {
+            xPercent: -500,
+            yPercent: -500,
+            scale: 0.6,
+            filter: "blur(10px)",
+            rotate: -12.15,
+          },
+          "<"
+        );
+    }
+  }
+
+  // Banner five image
+  if ($(".banner-five-image").length) {
+    const blurImage = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".banner-five",
+        start: "top 60%",
+        toggleActions: "play none none reverse",
+        markers: false,
+      },
+      defaults: {
+        ease: "ease1",
+        duration: 3,
+      },
+    });
+
+    blurImage.from(".banner-five-image", {
+      scale: 0.6,
+      xPercent: 200,
+      filter: "blur(10px)",
+    });
+  }
+});
+// **************************** Banner Five js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */

@@ -1,5 +1,45 @@
 /* Banner five css start */
+.banner-five-count-img {
+  margin-inline-start: 30%;
+  margin-block-end: 7%;
+}
 .banner-five {
   background-color: #2626ea;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  padding: 300px 0 280px;
+  @media (max-width: 575px) {
+    padding: 220px 0 200px;
+  }
+}
+.banner-five-element {
+  max-width: 12%;
+  &-1 {
+    margin-inline-start: 10%;
+    margin-block-start: 10%;
+    @media (max-width: 991px) {
+      margin-block-start: 18%;
+    }
+  }
+  &-2 {
+    margin-inline-end: 10%;
+    margin-block-start: 12%;
+    @media (max-width: 991px) {
+      margin-block-start: 18%;
+    }
+  }
+  &-3 {
+    margin-inline-start: 9%;
+    margin-block-end: 10%;
+  }
+  &-4 {
+    margin-inline-end: 18%;
+    margin-block-end: 8%;
+  }
+}
+
+.banner-five-shape {
+  margin-inline-start: 16%;
+  margin-block-end: 10%;
 }
 /* Banner five css end */

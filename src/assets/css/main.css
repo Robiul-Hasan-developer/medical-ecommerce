@@ -3035,6 +3035,14 @@ input:focus-visible {
     font-size: clamp(2rem, -1.6347rem + 7.5724vw, 6.25rem);
 }
 
+.text-48-px {
+    font-size: clamp(1.5rem, -0.3228rem + 3.7975vw, 3rem);
+}
+
+.text-60-px {
+    font-size: clamp(1.75rem, 4.0494rem - 0.2994vw, 3.75rem);
+}
+
 .tw-text-xxs {
     font-size: 0.625rem;
 }
@@ -5534,7 +5542,7 @@ input:focus-visible {
 }
 
 .tw-px-54-px {
-    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 3.375rem);
 }
 
 .tw-px-40-px {
@@ -6569,6 +6577,10 @@ input:focus-visible {
     animation: animationUpDown 8s linear infinite;
 }
 
+.animation-upDown-two {
+    animation: animationUpDownTwo 8s linear infinite;
+}
+
 .animation-rotate-scale {
     animation: scaleRotate 4.5s ease-in-out infinite;
 }
@@ -6623,6 +6635,20 @@ input:focus-visible {
     }
 }
 
+@keyframes animationUpDownTwo {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .animation-delay-1 {
     animation-delay: 1s !important;
 }
@@ -6633,6 +6659,14 @@ input:focus-visible {
 
 .animation-delay-3 {
     animation-delay: 3s;
+}
+
+.animation-delay-4 {
+    animation-delay: 4s;
+}
+
+.animation-delay-5 {
+    animation-delay: 5s;
 }
 
 .animation-rotate-right {
@@ -7100,6 +7134,12 @@ input:focus-visible {
         justify-content: center;
     }
 }
+
+.absolute-header.fixed-header {
+    position: fixed !important;
+    background-color: var(--main-600);
+}
+
 /* ================================= Header Css End =========================== */
 /* Mobile Menu Sidebar Start */
 .mobile-menu.active {
@@ -7714,12 +7754,73 @@ input:focus-visible {
   /* Font Family Variable */
     --heading-font: "Parkinsans", sans-serif;
     --body-font: "Satoshi", sans-serif;
+    --heading-one: clamp( 2.5rem, -3.5385rem + 11.5385vw, 8rem);
+    --heading-two: clamp(2rem, -0.1923rem + 4.5673vw, 4.375rem);
+    --heading-three: clamp(1.75rem, 0.1346rem + 3.3654vw, 3.5rem);
+    --heading-four: clamp(1.5rem, 0.8077rem + 1.4423vw, 2.25rem);
+    --heading-five: clamp(1.25rem, 1.0192rem + 0.4808vw, 1.5rem);
+    --heading-six: clamp(1.125rem, 1.0096rem + 0.2404vw, 1.25rem);
 }
 
 /* ========================== page style five End ==========================  */
 /* Banner five css start */
+.banner-five-count-img {
+    margin-inline-start: 30%;
+    margin-block-end: 7%;
+}
+
 .banner-five {
     background-color: #2626ea;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    padding: 300px 0 280px;
+}
+
+@media (max-width: 575px) {
+    .banner-five {
+        padding: 220px 0 200px;
+    }
+}
+
+.banner-five-element {
+    max-width: 12%;
+}
+
+.banner-five-element-1 {
+    margin-inline-start: 10%;
+    margin-block-start: 10%;
+}
+
+@media (max-width: 991px) {
+    .banner-five-element-1 {
+        margin-block-start: 18%;
+    }
+}
+
+.banner-five-element-2 {
+    margin-inline-end: 10%;
+    margin-block-start: 12%;
+}
+
+@media (max-width: 991px) {
+    .banner-five-element-2 {
+        margin-block-start: 18%;
+    }
+}
+
+.banner-five-element-3 {
+    margin-inline-start: 9%;
+    margin-block-end: 10%;
+}
+
+.banner-five-element-4 {
+    margin-inline-end: 18%;
+    margin-block-end: 8%;
+}
+
+.banner-five-shape {
+    margin-inline-start: 16%;
+    margin-block-end: 10%;
 }
 
 /* Banner five css end */
