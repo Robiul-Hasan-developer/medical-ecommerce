@@ -21,4 +21,13 @@
 .gradient-width-100::after {
   width: 100px;
 }
+
+.gradient-white {
+  &::before {
+    background: linear-gradient(90deg, #fff, transparent);
+  }
+  &::after {
+    background: linear-gradient(90deg, transparent, #fff);
+  }
+}
 /* Brand Four section css end */

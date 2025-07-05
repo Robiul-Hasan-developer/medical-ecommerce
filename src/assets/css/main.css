@@ -7728,6 +7728,14 @@ input:focus-visible {
     width: 100px;
 }
 
+.gradient-white::before {
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+.gradient-white::after {
+    background: linear-gradient(90deg, transparent, #fff);
+}
+
 /* Brand Four section css end */
 /* ambulance service css start */
 .half-bg-main-two-600::before {
