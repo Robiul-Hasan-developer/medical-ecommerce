@@ -1769,23 +1769,31 @@ input:focus-visible {
 }
 
 .bg-cyan-blue-600 {
-    background-color: #14A5CF14;
+    background-color: #14a5cf14;
 }
 
 .bg-cyan-blue-40 {
-    background-color: #EDF8FC;
+    background-color: #edf8fc;
 }
 
 .bg-orange-100 {
-    background-color: #FCD3BF;
+    background-color: #fcd3bf;
 }
 
 .bg-pink-50 {
-    background-color: #FEF4F9;
+    background-color: #fef4f9;
 }
 
 .bg-heading {
     background-color: hsl(var(--heading-color));
+}
+
+.bg-mint-50 {
+    background-color: #dffaf2;
+}
+
+.bg-soft-blue {
+    background-color: #c2d3ff;
 }
 
 .hover-bg-white:hover {
@@ -2720,6 +2728,10 @@ input:focus-visible {
 
 .text-main {
     color: var(--main-600);
+}
+
+.text-danger-600 {
+    color: #ff3346;
 }
 
 .text-white-43 {
