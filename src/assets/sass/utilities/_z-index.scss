@@ -1,22 +1,25 @@
 /* Z index css start */
 .tw-z {
-    &-n2 {
-        z-index: -2;
-    }
-    &-99 {
-        z-index: 99;
-    }
-    &-991 {
-        z-index: 991;
-    }
-    &-999 {
-        z-index: 999;
-    }
+  &-n2 {
+    z-index: -2;
+  }
+  &-99 {
+    z-index: 99;
+  }
+  &-991 {
+    z-index: 991;
+  }
+  &-999 {
+    z-index: 999;
+  }
 }
 
 .hover-z {
-    &-1:hover {
-        z-index: 1;
-    }
+  &-1:hover {
+    z-index: 1;
+  }
+  &-4:hover {
+    z-index: 4 !important;
+  }
 }
 /* Z index css End */

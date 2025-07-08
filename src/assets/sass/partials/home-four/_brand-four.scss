@@ -30,4 +30,13 @@
     background: linear-gradient(90deg, transparent, #fff);
   }
 }
+
+.gradient-yellow-light {
+  &::before {
+    background: linear-gradient(90deg, #fcf8f4, transparent);
+  }
+  &::after {
+    background: linear-gradient(90deg, transparent, #fcf8f4);
+  }
+}
 /* Brand Four section css end */

@@ -12,12 +12,39 @@
     --heading-font: "Parkinsans", sans-serif;
     --body-font: "Satoshi", sans-serif;
 
-    --heading-one: clamp( 2.5rem, -3.5385rem + 11.5385vw, 8rem); // Min:40px - Max:128px
-    --heading-two: clamp(2rem, -0.1923rem + 4.5673vw, 4.375rem); // Min: 32px - Max: 70px
-    --heading-three: clamp(1.75rem, 0.1346rem + 3.3654vw, 3.5rem); // Min: 28px - Max: 56px
-    --heading-four: clamp(1.5rem, 0.8077rem + 1.4423vw, 2.25rem);// Min: 24px - Max: 36px
-    --heading-five: clamp(1.25rem, 1.0192rem + 0.4808vw, 1.5rem); // Min: 18px - Max: 24px
-    --heading-six: clamp(1.125rem, 1.0096rem + 0.2404vw, 1.25rem); // Min: 16px - Max-20px
+    --heading-one: clamp(
+      2.5rem,
+      -3.5385rem + 11.5385vw,
+      8rem
+    ); // Min:40px - Max:128px
+    --heading-two: clamp(
+      2rem,
+      -0.1923rem + 4.5673vw,
+      4.375rem
+    ); // Min: 32px - Max: 70px
+    --heading-three: clamp(
+      1.75rem,
+      0.1346rem + 3.3654vw,
+      3.5rem
+    ); // Min: 28px - Max: 56px
+    --heading-four: clamp(
+      1.5rem,
+      0.8077rem + 1.4423vw,
+      2.25rem
+    ); // Min: 24px - Max: 36px
+    --heading-five: clamp(
+      1.25rem,
+      1.0192rem + 0.4808vw,
+      1.5rem
+    ); // Min: 18px - Max: 24px
+    --heading-six: clamp(
+      1.125rem,
+      1.0096rem + 0.2404vw,
+      1.25rem
+    ); // Min: 16px - Max-20px
   }
+}
+.home-five-body-bg body {
+  background-color: #fcf8f4;
 }
 /* ========================== page style five End ==========================  */

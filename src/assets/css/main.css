@@ -101,6 +101,7 @@
     --success-700: #249E67;
     --success-800: #1E8055;
     --success-900: #186243;
+    --danger-30: #FF33460F;
     --danger-50: #FFF5F5;
     --danger-100: #FFE5E5;
     --danger-200: #FBB8B8;
@@ -1508,6 +1509,10 @@ input:focus-visible {
     background-color: var(--success-900) !important;
 }
 
+.bg-danger-30 {
+    background-color: var(--danger-30) !important;
+}
+
 .bg-danger-50 {
     background-color: var(--danger-50) !important;
 }
@@ -1724,6 +1729,10 @@ input:focus-visible {
     background-color: var(--success-900) !important;
 }
 
+.hover-bg-danger-30:hover {
+    background-color: var(--danger-30) !important;
+}
+
 .hover-bg-danger-50:hover {
     background-color: var(--danger-50) !important;
 }
@@ -1794,6 +1803,10 @@ input:focus-visible {
 
 .bg-soft-blue {
     background-color: #c2d3ff;
+}
+
+.bg-sky-custom {
+    background-color: #b1e2f6;
 }
 
 .hover-bg-white:hover {
@@ -1991,6 +2004,10 @@ input:focus-visible {
 
 .border-success-900 {
     border-color: var(--success-900) !important;
+}
+
+.border-danger-30 {
+    border-color: var(--danger-30) !important;
 }
 
 .border-danger-50 {
@@ -2213,6 +2230,10 @@ input:focus-visible {
     border-color: var(--success-900) !important;
 }
 
+.hover-border-danger-30:hover {
+    border-color: var(--danger-30) !important;
+}
+
 .hover-border-danger-50:hover {
     border-color: var(--danger-50) !important;
 }
@@ -2431,6 +2452,10 @@ input:focus-visible {
 
 .focus-border-success-900:focus {
     border-color: var(--success-900) !important;
+}
+
+.focus-border-danger-30:focus {
+    border-color: var(--danger-30) !important;
 }
 
 .focus-border-danger-50:focus {
@@ -2668,6 +2693,10 @@ input:focus-visible {
 
 .text-success-900 {
     color: var(--success-900);
+}
+
+.text-danger-30 {
+    color: var(--danger-30);
 }
 
 .text-danger-50 {
@@ -2936,6 +2965,10 @@ input:focus-visible {
     color: var(--success-900) !important;
 }
 
+.hover-text-danger-30:hover {
+    color: var(--danger-30) !important;
+}
+
 .hover-text-danger-50:hover {
     color: var(--danger-50) !important;
 }
@@ -3002,6 +3035,44 @@ input:focus-visible {
     cursor: grab;
 }
 
+/* element double animation css start */
+.element-double-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.element-double-animation__element {
+    transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+    -webkit-transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.element-double-animation__element::after {
+    content: attr(data-content);
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    color: inherit;
+    transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+    -webkit-transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.element-double-animation .hover-element-main-two-600::after {
+    color: var(--main-two-600);
+}
+
+.element-double-animation:hover .element-double-animation__element {
+    transform: translateY(-105%);
+}
+
+.element-double-animation:hover .element-double-animation__element::after {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+}
+
+/* element double animation css end */
 .focus-outline-0:focus-visible, .focus-outline-0:focus {
     outline: 0 !important;
 }
@@ -3051,8 +3122,16 @@ input:focus-visible {
     font-size: clamp(1.5rem, -0.3228rem + 3.7975vw, 3rem);
 }
 
+.text-54-px {
+    font-size: clamp(2rem, 0.7308rem + 2.6442vw, 3.375rem);
+}
+
 .text-60-px {
     font-size: clamp(1.75rem, 4.0494rem - 0.2994vw, 3.75rem);
+}
+
+.text-140-px {
+    font-size: clamp(3.75rem, 1.9415rem + 6.8085vw, 8.75rem);
 }
 
 .tw-text-xxs {
@@ -3367,6 +3446,48 @@ input:focus-visible {
 }
 
 /* Height Css Class End */
+/* image double animation css start */
+.image-double-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-double-animation__element {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.image-double-animation__element:first-child {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    -webkit-transform: translateX(50%) scaleX(2);
+    transform: translateX(50%) scaleX(2);
+    opacity: 0;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.image-double-animation:hover .image-double-animation__element:first-child {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+.image-double-animation:hover .image-double-animation__element:nth-child(2) {
+    -webkit-transform: translateX(-50%) scaleX(2);
+    transform: translateX(-50%) scaleX(2);
+    opacity: 0;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+/* image double animation css end */
 /* Gap Css start */
 .tw-gap-05 {
     gap: var(--size-05);
@@ -3582,6 +3703,10 @@ input:focus-visible {
     transform: translateX(0);
 }
 
+.group-item:hover .group-hover-item-rotate-45-deg {
+    transform: translateY(-3px) rotate(-35deg);
+}
+
 /* ======================== Group Css End =============================== */
 /* grid css start */
 .grid-cols-2 {
@@ -3740,6 +3865,31 @@ input:focus-visible {
 }
 
 /* Inset class End */
+/* Hover animation white css start */
+.hover-animation-white {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-animation-white:after {
+    content: "";
+    position: absolute;
+    width: 250%;
+    height: 0%;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+.hover-animation-white:hover:after {
+    height: 250%;
+    transition: all 0.6s linear;
+    background-color: transparent;
+}
+
+/* Hover animation white css end */
 /* Line Clamp start */
 .line-clamp-1 {
     display: -webkit-box;
@@ -4523,6 +4673,10 @@ input:focus-visible {
     margin-inline-start: -80px;
 }
 
+.tw--ms-10-px {
+    margin-inline-start: -10px;
+}
+
 .tw--me-6-px {
     margin-inline-end: -6px;
 }
@@ -4661,12 +4815,20 @@ input:focus-visible {
     max-width: 130px;
 }
 
+.max-w-192-px {
+    max-width: 192px;
+}
+
 .max-w-200-px {
     max-width: 200px;
 }
 
 .max-w-232-px {
     max-width: 232px;
+}
+
+.max-w-320-px {
+    max-width: 320px;
 }
 
 .max-w-248-px {
@@ -5613,6 +5775,10 @@ input:focus-visible {
     padding-inline-start: clamp(1.25rem, -12.1677rem + 32.9177vw, 3.25rem);
 }
 
+.tw-ps-48-px {
+    padding-inline-start: clamp(1.25rem, -12.1677rem + 32.9177vw, 2.5rem);
+}
+
 .tw-ps-84-px {
     padding-inline-start: clamp(1.5rem, -12.1677rem + 32.9177vw, 5.25rem);
 }
@@ -5926,6 +6092,10 @@ input:focus-visible {
     transform: scale(1.02);
 }
 
+.hover-scale-14:hover {
+    transform: scale(1.4);
+}
+
 .hover-scale-104:hover {
     transform: scale(1.04);
 }
@@ -6085,6 +6255,10 @@ input:focus-visible {
 
 .common-shadow-14 {
     box-shadow: 0px 4px 19px 0px #00000012;
+}
+
+.common-shadow-15 {
+    box-shadow: 0px 4px 16px 0px #00000008;
 }
 
 .hover-common-shadow-1:hover {
@@ -6401,6 +6575,10 @@ input:focus-visible {
 
 .hover-z-1:hover {
     z-index: 1;
+}
+
+.hover-z-4:hover {
+    z-index: 4 !important;
 }
 
 /* Z index css End */
@@ -7736,6 +7914,14 @@ input:focus-visible {
     background: linear-gradient(90deg, transparent, #fff);
 }
 
+.gradient-yellow-light::before {
+    background: linear-gradient(90deg, #fcf8f4, transparent);
+}
+
+.gradient-yellow-light::after {
+    background: linear-gradient(90deg, transparent, #fcf8f4);
+}
+
 /* Brand Four section css end */
 /* ambulance service css start */
 .half-bg-main-two-600::before {
@@ -7778,12 +7964,40 @@ input:focus-visible {
   /* Font Family Variable */
     --heading-font: "Parkinsans", sans-serif;
     --body-font: "Satoshi", sans-serif;
-    --heading-one: clamp( 2.5rem, -3.5385rem + 11.5385vw, 8rem);
-    --heading-two: clamp(2rem, -0.1923rem + 4.5673vw, 4.375rem);
-    --heading-three: clamp(1.75rem, 0.1346rem + 3.3654vw, 3.5rem);
-    --heading-four: clamp(1.5rem, 0.8077rem + 1.4423vw, 2.25rem);
-    --heading-five: clamp(1.25rem, 1.0192rem + 0.4808vw, 1.5rem);
-    --heading-six: clamp(1.125rem, 1.0096rem + 0.2404vw, 1.25rem);
+    --heading-one: clamp(
+    2.5rem,
+    -3.5385rem + 11.5385vw,
+    8rem
+  );
+    --heading-two: clamp(
+    2rem,
+    -0.1923rem + 4.5673vw,
+    4.375rem
+  );
+    --heading-three: clamp(
+    1.75rem,
+    0.1346rem + 3.3654vw,
+    3.5rem
+  );
+    --heading-four: clamp(
+    1.5rem,
+    0.8077rem + 1.4423vw,
+    2.25rem
+  );
+    --heading-five: clamp(
+    1.25rem,
+    1.0192rem + 0.4808vw,
+    1.5rem
+  );
+    --heading-six: clamp(
+    1.125rem,
+    1.0096rem + 0.2404vw,
+    1.25rem
+  );
+}
+
+.home-five-body-bg body {
+    background-color: #fcf8f4;
 }
 
 /* ========================== page style five End ==========================  */
@@ -7848,6 +8062,57 @@ input:focus-visible {
 }
 
 /* Banner five css end */
+/* About Five css start */
+.circle-border {
+    position: relative;
+}
+
+.circle-border::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border: 1px solid hsl(var(--white));
+    border-radius: 50%;
+    top: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg.radial-progress {
+    height: auto;
+    max-width: 140px;
+    transform: rotate(0deg);
+    width: 100%;
+}
+
+svg.radial-progress circle {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 6;
+    stroke-linecap: round;
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: 1;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.9114857513;
+    stroke-dashoffset: 219.9114857513;
+  /* Full circumference */
+    stroke: #1351d8;
+    transition: stroke-dashoffset 1.25s ease-out;
+}
+
+svg.radial-progress text {
+    fill: hsl(var(--heading-color));
+    font-weight: 700;
+    text-anchor: middle;
+    transform: rotate(0deg);
+}
+
+/* About Five css end */
 /* ======================= Doctor list section css start =============================== */
 .show-socials-icons.active .show-socials-icons__item {
     transform: scale(1);

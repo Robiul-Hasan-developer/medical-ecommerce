@@ -1,4 +1,3 @@
-
 //  Typography
 @import "typography";
 
@@ -14,18 +13,22 @@
 @import "colors-hover";
 // cursor
 @import "cursor";
+// element double animation
+@import "element-double-animation";
 // outline
 @import "outline";
 
 //  Classes
 @import "classes";
 
-// font size 
+// font size
 @import "font-size";
-// font size 
+// font size
 @import "font";
 // height
 @import "height";
+// image double animation
+@import "image-double-animation";
 // gap
 @import "gap";
 // group
@@ -34,6 +37,8 @@
 @import "grid";
 // inset
 @import "inset";
+// hover animation white
+@import "hover-animation-white";
 // line clamp
 @import "line-clamp";
 //  margin
@@ -58,7 +63,7 @@
 @import "scroll-hide";
 // scrollbar
 @import "scrollbar";
-// shadow 
+// shadow
 @import "shadow";
 // transition
 @import "transition";
@@ -69,9 +74,9 @@
 // underline
 @import "underline";
 // width
- @import "width";
+@import "width";
 // Z index
- @import "z-index";
+@import "z-index";
 // animation
 @import "animation";
 // letter spacing

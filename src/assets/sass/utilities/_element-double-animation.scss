@@ -1,0 +1,38 @@
+/* element double animation css start */
+.element-double-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.element-double-animation__element {
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.element-double-animation__element::after {
+  content: attr(data-content);
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 100%;
+  color: inherit;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.element-double-animation .hover-element-main-two-600::after {
+  color: var(--main-two-600);
+}
+
+.element-double-animation:hover .element-double-animation__element {
+  transform: translateY(-105%);
+}
+
+.element-double-animation:hover .element-double-animation__element::after {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+}
+
+/* element double animation css end */

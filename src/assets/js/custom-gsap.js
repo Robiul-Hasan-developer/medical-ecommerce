@@ -308,6 +308,41 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // **************************** Banner Five js End ****************************
 
+// **************************** split Reveal js Start ****************************
+if ($(".split-reveal").length) {
+  let revealContainers = document.querySelectorAll(".split-reveal");
+
+  revealContainers.forEach((container) => {
+    let splitElement = container.querySelector(".split-reveal-element");
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container,
+        toggleActions: "play none none none",
+      },
+    });
+
+    tl.set(container, {
+      autoAlpha: 1,
+    });
+
+    tl.from(container, {
+      duration: 1,
+      xPercent: -100,
+      ease: Power2.out,
+    });
+
+    tl.from(splitElement, {
+      duration: 1,
+      xPercent: 100,
+      scale: 1,
+      delay: -1,
+      ease: Power2.out,
+    });
+  });
+}
+// **************************** split Reveal js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
