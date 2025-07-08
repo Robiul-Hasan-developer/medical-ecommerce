@@ -1,0 +1,33 @@
+/* View Cursor Css start */
+.cursor-none {
+    cursor: none;
+}
+
+.view-cursor {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    color: hsl(var(--heading-color));
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6px 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10.25rem;
+    height: 10.25rem;
+    border-radius: 50%;
+    background-color: var(--main-two-600);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    text-transform: capitalize;
+    text-align: center;
+}
+/* View Cursor Css end */

@@ -343,6 +343,51 @@ if ($(".split-reveal").length) {
 }
 // **************************** split Reveal js End ****************************
 
+
+// **************************** Hover Cursor Js Start ****************************
+const viewCursor = document.querySelector(".view-cursor");
+const viewCursorShows = document.querySelectorAll(".view-cursor-show");
+
+// Move .view-cursor with mouse
+document.body.addEventListener("mousemove", function (event) {
+  gsap.to(viewCursor, {
+    x: event.clientX + 20, // offset right
+    y: event.clientY + 20, // offset down
+    duration: 0.3,
+    ease: "expo.out",
+  });
+});
+
+// Loop through all .view-cursor-show
+viewCursorShows.forEach((item) => {
+  item.addEventListener("mouseenter", function () {
+    gsap.to(viewCursor, {
+      autoAlpha: 1, // opacity + visibility
+      scale: 1,
+    });
+    gsap.to(dot, {
+      scale: 0,
+    });
+    gsap.to(cursor, {
+      scale: 0,
+    });
+  });
+
+  item.addEventListener("mouseleave", function () {
+    gsap.to(viewCursor, {
+      autoAlpha: 0,
+      scale: 0,
+    });
+    gsap.to(dot, {
+      scale: 1,
+    });
+    gsap.to(cursor, {
+      scale: 1,
+    });
+  });
+});
+// **************************** Hover Cursor Js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
