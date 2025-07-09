@@ -12,4 +12,39 @@
   border-color: var(--main-600) !important;
 }
 
+.style-circle {
+  text-align: center;
+  .swiper-pagination-bullet {
+    position: relative;
+    margin: 0 7px !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: hsl(var(--heading-color));
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s linear;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 26px;
+      height: 26px;
+      border: 2px solid hsl(var(--heading-color));
+      border-radius: 50%;
+      inset-block-start: 50%;
+      inset-inline-start: 50%;
+      transform: translate(-50%, -50%) scale(.4);
+      visibility: hidden;
+      opacity: 0;
+      transition: .3s linear;
+    }
+    &.swiper-pagination-bullet-active {
+        margin: 0 14px !important;
+      &::before {
+        transform: translate(-50%, -50%) scale(1);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
 /* =========================== Swiper Slider Css End ============================== */

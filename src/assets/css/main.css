@@ -1095,6 +1095,46 @@ input[type=number] {
     border-color: var(--main-600) !important;
 }
 
+.style-circle {
+    text-align: center;
+}
+
+.style-circle .swiper-pagination-bullet {
+    position: relative;
+    margin: 0 7px !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: hsl(var(--heading-color));
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.3s linear;
+}
+
+.style-circle .swiper-pagination-bullet::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 2px solid hsl(var(--heading-color));
+    border-radius: 50%;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) scale(0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.style-circle .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    margin: 0 14px !important;
+}
+
+.style-circle .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
 /* =========================== Swiper Slider Css End ============================== */
 /* Range slider start */
 input[type=number]::-webkit-outer-spin-button,
@@ -1809,6 +1849,18 @@ input:focus-visible {
     background-color: #b1e2f6;
 }
 
+.bg-mint-light {
+    background-color: #E5FAF2;
+}
+
+.bg-soft-indigo {
+    background-color: #CEDAFD;
+}
+
+.bg-lavender-soft {
+    background-color: #e2cefd;
+}
+
 .hover-bg-white:hover {
     background-color: hsl(var(--white)) !important;
 }
@@ -2056,6 +2108,10 @@ input:focus-visible {
 
 .border-white-12 {
     border: 1px solid #FFFFFF1A !important;
+}
+
+.border-white-5 {
+    border-color: hsl(var(--white)/0.5) !important;
 }
 
 .hover-border-main-40:hover {
@@ -3140,6 +3196,10 @@ input:focus-visible {
 
 .text-36-px {
     font-size: 2.5rem;
+}
+
+.text-22-px {
+    font-size: clamp(1rem, 0.6538rem + 0.7212vw, 1.375rem);
 }
 
 .tw-text-xxs {

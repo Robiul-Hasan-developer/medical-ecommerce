@@ -11,6 +11,9 @@
   &-white-12 {
     border: 1px solid #FFFFFF1A !important;
   }
+  &-white-5 {
+    border-color: hsl(var(--white)/.5) !important;
+  }
 }
 
 // hover border

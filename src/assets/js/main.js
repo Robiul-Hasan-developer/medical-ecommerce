@@ -779,6 +779,30 @@
     $(window).on("scroll", animateProgress);
     animateProgress(); // Run on page load
     // ========================= Animated Radial Progress Js End ===================
+
+    // ========================= Testimonials Five Js Start ===================
+    var testimonialsFiveSlider = new Swiper(".testimonials-five-slider", {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".testimonials-five-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        300: {
+          centeredSlides: false,
+          slidesPerView: 1,
+        },
+        992: {
+          centeredSlides: true,
+        },
+      },
+    });
+    // ========================= Testimonials Five Js End ===================
     /********************************************************************************************************
                                         Home Five Js End 
 *********************************************************************************************************/
@@ -983,6 +1007,7 @@
       }
     });
     // ========================= Increment & Decrement Js End =====================
+
     /********************************************************************************************************
                                         Other Pages Js End 
 *********************************************************************************************************/

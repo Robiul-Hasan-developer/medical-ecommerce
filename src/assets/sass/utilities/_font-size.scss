@@ -21,6 +21,9 @@
   &-36-px {
     font-size: 2.5rem;
   }
+  &-22-px {
+    font-size: clamp(1rem, 0.6538rem + 0.7212vw, 1.375rem);
+  }
 }
 
 @each $property, $value in $font-sizes {
