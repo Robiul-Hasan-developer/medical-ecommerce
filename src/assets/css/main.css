@@ -3096,6 +3096,10 @@ input:focus-visible {
     line-height: 1.8;
 }
 
+.text-balance {
+    text-wrap: balance;
+}
+
 .opacity-05 {
     opacity: 0.05;
 }
@@ -4903,6 +4907,10 @@ input:focus-visible {
     max-width: 1650px;
 }
 
+.max-w-1720-px {
+    max-width: 1720px;
+}
+
 .max-w-1800-px {
     max-width: 1800px;
 }
@@ -5775,6 +5783,10 @@ input:focus-visible {
     padding-block-end: 205px;
 }
 
+.tw-pb-94-px {
+    padding-block-end: 94px;
+}
+
 .tw-ps-52-px {
     padding-inline-start: clamp(1.25rem, -12.1677rem + 32.9177vw, 3.25rem);
 }
@@ -5805,6 +5817,10 @@ input:focus-visible {
 
 .tw-py-200-px {
     padding-block: clamp(6.25rem, 0.4808rem + 12.0192vw, 12.5rem);
+}
+
+.tw-py-70-px {
+    padding-block: clamp(2.5rem, 0.7692rem + 3.6058vw, 4.375rem);
 }
 
 .important-tw-py-5 {
@@ -8155,6 +8171,34 @@ svg.radial-progress text {
 }
 
 /* About Five css end */
+/* triangle left right css start */
+.bg-body-yellow {
+    background-color: #fcf8f4;
+}
+
+.triangle-left-right {
+    position: relative;
+}
+
+.triangle-left-right::before, .triangle-left-right::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-color: #cbcbcb00;
+    inset-inline-start: -31px;
+    inset-block-end: -2px;
+    border-radius: 50%;
+    box-shadow: 8px 10px #fcf8f4;
+}
+
+.triangle-left-right::after {
+    inset-inline-end: -32px;
+    inset-inline-start: auto;
+    box-shadow: -8px 10px #fcf8f4;
+}
+
+/* triangle left right css end */
 /* ======================= Doctor list section css start =============================== */
 .show-socials-icons.active .show-socials-icons__item {
     transform: scale(1);

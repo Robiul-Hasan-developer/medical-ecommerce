@@ -111,6 +111,9 @@
     &-205-px {
       padding-block-end: 205px;
     }
+      &-94-px {
+      padding-block-end: 94px;
+    }
   }
 
   &-ps {
@@ -143,6 +146,9 @@
     }
     &-200-px {
       padding-block: clamp(6.25rem, 0.4808rem + 12.0192vw, 12.5rem);
+    }
+    &-70-px {
+      padding-block: clamp(2.5rem, 0.7692rem + 3.6058vw, 4.375rem);
     }
   }
 }

@@ -1,0 +1,25 @@
+/* triangle left right css start */
+.bg-body-yellow {
+    background-color: #fcf8f4;
+}
+
+.triangle-left-right {
+    position: relative;
+    &::before, &::after {
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 32px;
+        background-color: #cbcbcb00;
+         inset-inline-start: -31px;
+        inset-block-end: -2px;
+        border-radius: 50%;
+        box-shadow: 8px 10px #fcf8f4;
+    }
+    &::after {
+        inset-inline-end: -32px;
+        inset-inline-start: auto;
+        box-shadow: -8px 10px #fcf8f4;
+    }
+}
+/* triangle left right css end */
