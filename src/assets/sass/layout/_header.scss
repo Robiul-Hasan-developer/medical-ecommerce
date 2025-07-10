@@ -135,4 +135,11 @@
   background-color: var(--main-600);
 }
 
+.responsive-button {
+  @media (max-width: 575px) {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+}
 /* ================================= Header Css End =========================== */
