@@ -1682,13 +1682,13 @@
                         </p>
                     </div>
 
-                    <form action="#">
+                    <form action="#" class="form-submit">
                         <div class="row gy-4">
                             <div class="col-sm-6">
                                 <div class="position-relative">
                                     <input type="text"
                                         class="tw-ps-6 tw-py-5 tw-rounded-xl bg-neutral-100 tw-pe-16 border border-neutral-200 focus-outline-0 focus-border-main-600 w-100 fw-medium text-heading"
-                                        placeholder="Name">
+                                        placeholder="Name" required>
                                     <span
                                         class="position-absolute tw-end-0 top-50 translate-middle-y tw-me-6 tw-text-lg tw-leading-none d-flex">
                                         <i class="ph-bold ph-users"></i>
@@ -1699,7 +1699,7 @@
                                 <div class="position-relative">
                                     <input type="email"
                                         class="tw-ps-6 tw-py-5 tw-rounded-xl bg-neutral-100 tw-pe-16 border border-neutral-200 focus-outline-0 focus-border-main-600 w-100 fw-medium text-heading"
-                                        placeholder="Email">
+                                        placeholder="Email" required>
                                     <span
                                         class="position-absolute tw-end-0 top-50 translate-middle-y tw-me-6 tw-text-lg tw-leading-none d-flex">
                                         <i class="ph-bold ph-envelope-simple"></i>
@@ -1945,7 +1945,7 @@
                     & Blogs</span>
                 <h3 class="splitTextStyleOne fw-medium text-balance">Stay Updated With Our Latest Insights</h3>
             </div>
-            <div class="tw-mt-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="tw-mt-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <a href="blog.html"
                     class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main-two hover-style-three button--stroke d-inline-flex align-items-center justify-content-center tw-gap-3 group tw-py-5 tw-px-6 fw-semibold tw-rounded-lg tw-text-sm tw-end-0 tw-duration-200 text-success-600 group-item text-capitalize"
                     data-block="button">
@@ -1959,7 +1959,7 @@
         </div>
 
         <div class="row gy-4">
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <div class="blog-five-item image-double-animation">
                     <a href="blog-details.html" class="overflow-hidden d-block position-relative">
                         <img src="assets/images/thumbs/blog-five-img1.png" alt="Image"
@@ -1968,7 +1968,7 @@
                             class="image-double-animation__element w-100 object-fit-cover" />
                     </a>
                     <div class="tw-mt-505">
-                        <div class="">
+                        <div class="d-flex align-items-center tw-gap-4">
                             <span
                                 class="tw-px-5 border border-neutral-200 tw-py-1 rounded-pill text-heading fw-semibold">02
                                 Apr 2021</span>
@@ -1995,7 +1995,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-md-6">
+            <div class="col-lg-7 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <div class="blog-five-item image-double-animation">
                     <a href="blog-details.html" class="overflow-hidden d-block position-relative">
                         <img src="assets/images/thumbs/blog-five-img2.png" alt="Image"
@@ -2004,7 +2004,7 @@
                             class="image-double-animation__element w-100 object-fit-cover" />
                     </a>
                     <div class="tw-mt-505">
-                        <div class="">
+                        <div class="d-flex align-items-center tw-gap-4">
                             <span
                                 class="tw-px-5 border border-neutral-200 tw-py-1 rounded-pill text-heading fw-semibold">02
                                 Apr 2021</span>
@@ -2034,154 +2034,195 @@
 </section>
 <!-- ================================== Blog Five section end ============================= -->
 
-
-<div class="py-120 bg-white"></div>
-
-<!-- =============================== Footer Three section start =================================== -->
-<footer class="bg-main-600 pt-120 position-relative z-1">
-    <img src="assets/images/shapes/footer-three-img1.png" alt="Shape" class="d-lg-block d-none position-absolute z-n1 bottom-0 tw-start-0 tw-ms-9 tw-mb-16 tw-pb-16">
-    <img src="assets/images/shapes/footer-three-img2.png" alt="Shape" class="d-lg-block d-none position-absolute z-n1 bottom-0 tw-end-0 tw-me-10 tw-mb-16 tw-pb-16">
-    
-    <div class="container">
-        <div class="tw-pb-11 border-bottom border-neutral-700 border-top-0 border-end-0 border-start-0">
-            <div class="row gy-4">
-                <div class="col-xl-7">
-                    <div class="d-flex align-items-center tw-gap-4">
-                        <img src="assets/images/icons/envelope-icon.png" alt="Envelope Icon">
-                         <h4 class="text-white splitTextStyleOne">Get Our Latest's News & Updates</h4>
+<!-- ========================== Footer Five section start ============================= -->
+<footer class="footer-five bg-white">
+    <div class="footer-five__inner pt-120">
+        <div class="container">
+            <div class="">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <h3 class="text-48-px">We Don't ignore patient We take care Them.</h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="#" class="form-submit tw-py-48-px tw-px-54-px bg-white rounded-pill">
+                            <div class="position-relative">
+                                <input type="text"
+                                    class="focus-outline-0 bg-transparent border-0 tw-pb-4 tw-pe-14 w-100 border-bottom border-neutral-200 focus-border-main-600 placeholder-text-black text-heading tw-text-lg placeholder-text-lg fw-medium"
+                                    placeholder="Enter Email Address" required>
+                                <button type="submit"
+                                    class="tw-text-xl d-flex text-neutral-500 position-absolute top-0 tw-end-0 tw-pe-5">
+                                    <img src="assets/images/icons/paper-up-right.png" alt="Paper Icon">
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-xl-5">
-                    <form action="#" class="">
-                        <div class="position-relative">
-                            <input type="email" class="bg-white tw-ps-6 rounded-pill tw-py-4 focus-outline-0 w-100 tw-pe-16" placeholder="Business email adress">
-                            <button type="submit" class="hover--translate-y-1 active--translate-y-50-scale-9 btn btn-main-two hover-style-three button--stroke d-flex align-items-center justify-content-center tw-gap-5 group p-0 fw-semibold tw-w-12 tw-h-12 tw-text-lg tw-duration-200 rounded-circle position-absolute top-50 translate-middle-y tw-end-0 tw-me-105" data-block="button">
-                                <span class="button__flair"></span>
-                                <span class="button__label"><i class="ph-bold ph-arrow-up-right"></i></span>
-                            </button>
+            </div>
+
+            <!-- Content Start -->
+            <div class="pt-120 tw-pb-14">
+                <div class="row gy-5">
+                    <div class="col-lg-4 col-sm-6 d-sm-block d-none">
+                        <div
+                            class="bg-main-two-600 text-heading rounded-circle text-center d-flex justify-content-center align-items-center flex-column tw-p-10 w-100 h-100 max-w-280-px aspect-ratio-1">
+                            <h2 class="fw-medium counter text-100-px">12+</h2>
+                            <h5 class="fw-medium">Department</h5>
                         </div>
-                    </form> 
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="">
+                            <h6 class="fw-bold text-title-600 tw-mb-8 text-capitalize">Useful Link</h6>
+                            <ul class="d-flex flex-column tw-gap-4">
+                                <li>
+                                    <a href="about.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">About
+                                        Us</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Error
+                                        404</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="doctor-list.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Doctor
+                                        List</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="shop.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Product
+                                        Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <h6 class="fw-bold text-title-600 tw-mb-8 text-capitalize">Service</h6>
+                            <ul class="d-flex flex-column tw-gap-4">
+                                <li>
+                                    <a href="service.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Retina
+                                        clinic </a>
+                                </li>
+                                <li>
+                                    <a href="service.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Glaucoma
+                                        clinic </a>
+                                </li>
+                                <li>
+                                    <a href="service.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Cornea
+                                        eye disease
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Uveitis
+                                        clinic
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Pediatric
+                                        ophthalmology
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="service.html"
+                                        class="hover-arrow-start text-title-600 hover-text-main-600 fw-medium hover-underline hover--translate-y-1 active--translate-y-scale-9">Neuro-ophthalmology
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <h6 class="fw-bold text-title-600 tw-mb-8 text-capitalize">Say Hello</h6>
+                            <a href="mailto:contact@pbmit.com"
+                                class="tw-text-base text-decoration-underline fw-medium text-main-600 hover-text-main-500">contact@pbmit.com</a>
+                            <a href="tel:+(02)574-328-301"
+                                class="h6 text-decoration-underline fw-bold text-main-600 hover-text-main-500 tw-mt-2">+(02)
+                                574 - 328 - 301</a>
+
+                            <div class="position-relative tw-mt-6 hover-parallax-wrapper">
+                                <a href="appointment.html"
+                                    class="hover-parallax-item btn btn-main hover-style-two group group-item button--stroke d-flex flex-column align-items-center justify-content-center bg-main-600 text-white tw-w-140-px tw-h-140-px rounded-circle hover-text-heading p-0"
+                                    data-block="button">
+                                    <span class="button__flair"></span>
+                                    <img src="assets/images/icons/arrow-curve.png" alt="Arrow"
+                                        class="tw-mb-2 invert-white group-hover-item-text-invert-black">
+                                    <span class="text-capitalize tw-text-sm fw-bolder z-1">Get in
+                                        tocuh</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content End -->
+
+        </div>
+
+        <!-- Bottom Footer Start -->
+        <div class="container">
+            <div class="border-top border-black-11 border-0 tw-py-8 position-relative z-1 pointer-events-none">
+                <div class="container container-two pointer-events-auto">
+                    <div class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
+                        <p class="text-heading fw-semibold">
+                            Copyright © SEO7 2025 . All rights reserved, Wowtheme7
+                        </p>
+                        <ul class="pagination d-flex align-items-center tw-gap-5 justify-content-start flex-wrap">
+                            <li>
+                                <a href="https://www.facebook.com" class="tw-text-2xl text-heading hover-text-main-600">
+                                    <i class="ph-bold ph-facebook-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com" class="tw-text-2xl text-heading hover-text-main-600">
+                                    <i class="ph-bold ph-twitter-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com"
+                                    class="tw-text-2xl text-heading hover-text-main-600">
+                                    <i class="ph-bold ph-instagram-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com"
+                                    class="tw-text-2xl text-heading hover-text-main-600">
+                                    <i class="ph-bold ph-pinterest-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.dribbble.com" class="tw-text-2xl text-heading hover-text-main-600">
+                                    <i class="ph ph-dribbble-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.dribbble.com" class="tw-text-2xl text-heading hover-text-main-600">
+                                    <i class="ph ph-youtube-logo"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Bottom Footer End -->
 
-        <div class="tw-mt-14 tw-pb-13">
-            <div class="row gy-5">
-                <div class="col-xl-3 col-md-6">
-                    <div class="">
-                        <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9 tw-mb-6">
-                            <img src="assets/images/logo/logo-white.png" alt="Thumbnail">
-                        </a>
-                        <p class="text-white">A new way to make the payments easy, reliable and 100% secure. claritatem</p>
-                        <div class="tw-mt-16 tw-pt-14 d-flex align-items-center tw-gap-4">
-                            <a href="https://www.facebook.com" class="tw-w-10 tw-h-10 border border-white-12 rounded-circle d-flex justify-content-center align-items-center text-white hover-bg-main-two-600 hover-text-heading text-neutral-400">
-                                <i class="ph-fill ph-facebook-logo"></i>
-                            </a>
-                            <a href="https://www.twitter.com" class="tw-w-10 tw-h-10 border border-white-12 rounded-circle d-flex justify-content-center align-items-center text-white hover-bg-main-two-600 hover-text-heading text-neutral-400">
-                                <i class="ph-fill ph-twitter-logo"></i>
-                            </a>
-                            <a href="https://www.linkedin.com" class="tw-w-10 tw-h-10 border border-white-12 rounded-circle d-flex justify-content-center align-items-center text-white hover-bg-main-two-600 hover-text-heading text-neutral-400">
-                                <i class="ph-fill ph-linkedin-logo"></i>
-                            </a>
-                            <a href="https://www.instagram.com" class="tw-w-10 tw-h-10 border border-white-12 rounded-circle d-flex justify-content-center align-items-center text-white hover-bg-main-two-600 hover-text-heading text-neutral-400">
-                                <i class="ph-fill ph-instagram-logo"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="">
-                        <h6 class="fw-medium text--white tw-mb-8">Useful Links</h6>
-                        <ul class="d-flex flex-column tw-gap-4">
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Orthopedics</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Neurology</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Eye Care</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Endocrinology</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Dental</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-6">
-                    <div class="">
-                        <h6 class="fw-medium text--white tw-mb-8">Community</h6>
-                        <ul class="d-flex flex-column tw-gap-4">
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Help Center</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Partners</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Suggestions</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Blog</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-300 hover-text-white hover-underline hover--translate-y-1 active--translate-y-scale-9">Newsletters</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="bg-main-700 tw-p-60-px">
-                        <h6 class="fw-medium text--white tw-mb-8">Opening houres</h6>
-                        <ul class="d-flex flex-column tw-gap-4">
-                            <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
-                            </li>
-                            <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
-                            </li>
-                            <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
-                            </li>
-                            <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
-                            </li>
-                            <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
-                            </li>
-                            <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
-                            </li>
-                            <li>
-                                <span class="hover-arrow-start text-neutral-300 hover-text-white">Monday :08.00 - 10.00</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer Bottom start -->
-         <div class="d-flex flex-wrap align-items-center justify-content-between tw-pb-9">
-            <p class="text--white text-line-1 fw-normal"> 
-                © 2025 <a href="https://themeforest.net/user/wowtheme7" class="fw-medium text-main-two-600 hover-text-main-two-600 hover-underline hover--translate-y-1 active--translate-y-scale-9">WowTheme7</a> - IT Services. All rights reserved.
-            </p>
-            <div class="d-flex align-items-center tw-gap-6 flex-wrap">
-                <a href="javascript:void(0)" class="text-white fw-bold hover-underline hover-text-main-two-600">Faqs</a>
-                <a href="javascript:void(0)" class="text-white fw-bold hover-underline hover-text-main-two-600">Setting</a>
-                <a href="javascript:void(0)" class="text-white fw-bold hover-underline hover-text-main-two-600">Privacy</a>
-                <a href="javascript:void(0)" class="text-white fw-bold hover-underline hover-text-main-two-600">Contact</a>
-            </div>
-         </div>
-        <!-- Footer Bottom End -->
-
-        
     </div>
 </footer>
-<!-- =============================== Footer Three section end =================================== -->
+<!-- ========================== Footer Five section end ============================= -->
 
     <!-- Jquery js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>

@@ -388,6 +388,40 @@ viewCursorShows.forEach((item) => {
 });
 // **************************** Hover Cursor Js End ****************************
 
+
+// **************************** Hover Parallax animation js Start ****************************
+var hoverBtns = gsap.utils.toArray(".hover-parallax-wrapper");
+const hoverBtnItem = gsap.utils.toArray(".hover-parallax-item");
+hoverBtns.forEach((btn, i) => {
+  $(btn).mousemove(function (e) {
+    callParallax(e);
+  });
+
+  function callParallax(e) {
+    parallaxIt(e, hoverBtnItem[i], 60);
+  }
+
+  function parallaxIt(e, target, movement) {
+    var $this = $(btn);
+    var relX = e.pageX - $this.offset().left;
+    var relY = e.pageY - $this.offset().top;
+
+    gsap.to(target, 1, {
+      x: ((relX - $this.width() / 2) / $this.width()) * movement,
+      y: ((relY - $this.height() / 2) / $this.height()) * movement,
+      ease: Power2.easeOut,
+    });
+  }
+  $(btn).mouseleave(function (e) {
+    gsap.to(hoverBtnItem[i], 1, {
+      x: 0,
+      y: 0,
+      ease: Power2.easeOut,
+    });
+  });
+});
+// **************************** Hover Parallax animation js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */

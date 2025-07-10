@@ -375,6 +375,10 @@
     color: hsl(var(--black));
 }
 
+.placeholder-text-black::placeholder {
+    color: #000;
+}
+
 .placeholder-text-neutral-500::placeholder {
     color: var(--neutral-500);
 }
@@ -385,6 +389,10 @@
 
 .placeholder-text-sm::placeholder {
     font-size: 14px !important;
+}
+
+.placeholder-text-lg::placeholder {
+    font-size: 18px !important;
 }
 
 /* input File End */
@@ -2114,6 +2122,10 @@ input:focus-visible {
     border-color: hsl(var(--white)/0.5) !important;
 }
 
+.border-black-11 {
+    border-color: #2929291C !important;
+}
+
 .hover-border-main-40:hover {
     border-color: var(--main-40) !important;
 }
@@ -3168,6 +3180,14 @@ input:focus-visible {
     filter: grayscale(1);
 }
 
+.invert-white {
+    filter: contrast(1) invert(1);
+}
+
+.aspect-ratio-1 {
+    aspect-ratio: 1;
+}
+
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {
@@ -3491,6 +3511,10 @@ input:focus-visible {
 
 .tw-h-375-px {
     height: 375px;
+}
+
+.tw-h-140-px {
+    height: 140px;
 }
 
 .tw-min-h-184-px {
@@ -5023,6 +5047,10 @@ input:focus-visible {
     max-width: 548px;
 }
 
+.max-w-280-px {
+    max-width: 280px;
+}
+
 /* Max width Css Class End */
 /* Overlay Start */
 .overlay {
@@ -5871,6 +5899,10 @@ input:focus-visible {
     padding-block-start: 94px;
 }
 
+.tw-py-48-px {
+    padding-block: clamp(1.25rem, -12.1677rem + 32.9177vw, 2.75rem);
+}
+
 .tw-py-80-px {
     padding-block: 80px;
 }
@@ -6671,6 +6703,10 @@ input:focus-visible {
 
 .tw-w-w-max {
     width: max-content;
+}
+
+.tw-w-140-px {
+    width: 140px;
 }
 
 /* width Css Class End */
@@ -8259,6 +8295,26 @@ svg.radial-progress text {
 }
 
 /* triangle left right css end */
+/* Footer Five Css start */
+.footer-five__inner {
+    background-color: #C0E6F6;
+    margin: 40px;
+    margin-block-start: 0;
+    border-radius: 1rem;
+}
+
+@media (max-width: 1199px) {
+    .footer-five__inner {
+        margin: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-five__inner {
+        margin: 16px;
+    }
+}
+/* Footer Five Css end */
 /* ======================= Doctor list section css start =============================== */
 .show-socials-icons.active .show-socials-icons__item {
     transform: scale(1);

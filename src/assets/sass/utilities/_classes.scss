@@ -33,4 +33,12 @@
 .filter-grayscale-1 {
     filter: grayscale(1);
 }
+
+.invert-white {
+    filter: contrast(1) invert(1);
+}
+
+.aspect-ratio-1 {
+    aspect-ratio: 1;
+}
 /* ================================= Classes Css End =========================== */

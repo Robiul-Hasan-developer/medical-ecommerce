@@ -24,6 +24,9 @@
 
 
 .placeholder-text {
+    &-black::placeholder {
+        color: #000;
+    }
     &-neutral-500::placeholder {
         color: var(--neutral-500);
     }
@@ -35,6 +38,9 @@
 .placeholder-text {
     &-sm::placeholder {
         font-size: 14px !important;
+    }
+    &-lg::placeholder {
+        font-size: 18px !important;
     }
 }
 /* input File End */

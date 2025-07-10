@@ -141,6 +141,9 @@
   }
 
   &-py {
+    &-48-px {
+      padding-block: clamp(1.25rem, -12.1677rem + 32.9177vw, 2.75rem);
+    }
     &-80-px {
       padding-block: 80px;
     }
