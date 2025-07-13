@@ -422,6 +422,80 @@ hoverBtns.forEach((btn, i) => {
 });
 // **************************** Hover Parallax animation js End ****************************
 
+
+// gallery section animation
+
+  //  gsap.registerPlugin(ScrollTrigger);
+
+  // // Animate each image based on direction, and reverse when scrolling back
+  // gsap.utils.toArray(".gallery-thumb").forEach((el) => {
+  //   const direction = el.getAttribute("data-direction");
+  //   let x = 0, y = 0;
+
+  //   switch (direction) {
+  //     case "left":
+  //       x = -100;
+  //       break;
+  //     case "right":
+  //       x = 100;
+  //       break;
+  //     case "top":
+  //       y = -100;
+  //       break;
+  //     case "bottom":
+  //       y = 100;
+  //       break;
+  //     default:
+  //       y = 50; // fallback
+  //   }
+
+  //   gsap.fromTo(el,
+  //     {
+  //       opacity: 0,
+  //       x,
+  //       y,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       x: 0,
+  //       y: 0,
+  //       duration: 1.2,
+  //       ease: "power2.out",
+  //       scrollTrigger: {
+  //         trigger: el,
+  //         start: "top 90%",
+  //         toggleActions: "play reverse play reverse", 
+  //       }
+  //     }
+  //   );
+  // });
+
+  // // Animate the entire wrapper - also reversible
+  // if (document.querySelector(".gallery-thumb-wrapper")) {
+  //   const blurImage = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".gallery-thumb-wrapper",
+  //       start: "top 80%",
+  //       toggleActions: "play reverse play reverse",
+  //     }
+  //   });
+
+  //   blurImage.fromTo(".gallery-thumb-wrapper",
+  //     {
+  //       scale: 0.6, 
+  //       opacity: 0.5,
+  //       filter: "blur(10px)",
+  //     },
+  //     {
+  //       scale: 1,
+  //       opacity: 1,
+  //       filter: "blur(0px)",
+  //       duration: 1.5,
+  //       ease: "power2.out",
+  //     }
+  //   );
+  // }
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
