@@ -397,13 +397,24 @@
 
 /* input File End */
 /* Autofill Css */
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active,
-textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, textarea:-webkit-autofill:active {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
     -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
 }
 
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill {
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px transparent inset;
     -webkit-text-fill-color: hsl(var(--heading-color)) !important;
     caret-color: hsl(var(--heading-color));
@@ -423,6 +434,7 @@ input[type=number] {
 /* Custom Checkbox & Radio Css Start */
 .common-check {
     display: flex;
+    -webkit-display: flex;
     align-items: center;
     margin-block-end: 16px;
 }
@@ -691,6 +703,7 @@ input[type=number] {
     inset-block-start: 20px;
     inset-inline-end: 20px;
     display: flex;
+    -webkit-display: flex;
     flex-direction: column;
     gap: 16px;
     z-index: 9999;
@@ -727,6 +740,7 @@ input[type=number] {
 
 .toast-message__content {
     display: flex;
+    -webkit-display: flex;
     align-items: center;
     gap: 16px;
 }
@@ -1153,6 +1167,7 @@ input[type=number]::-webkit-inner-spin-button {
 .price-input .separator {
     width: 130px;
     display: flex;
+    -webkit-display: flex;
     font-size: 19px;
     align-items: center;
     justify-content: center;
@@ -1239,6 +1254,7 @@ body {
     background-color: hsl(var(--white));
     min-height: 100vh;
     display: flex;
+    -webkit-display: flex;
     flex-direction: column;
 }
 
@@ -6561,6 +6577,7 @@ input:focus-visible {
     visibility: hidden;
     z-index: 999999;
     display: flex;
+    -webkit-display: flex;
     justify-content: center;
     align-items: center;
     width: 10.25rem;
@@ -7295,6 +7312,7 @@ input:focus-visible {
   /* light background */
     z-index: 9999;
     display: flex;
+    -webkit-display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -7373,9 +7391,9 @@ input:focus-visible {
     inset-inline-end: 0;
     width: 100%;
     z-index: 9;
-    backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
 }
 
 @media screen and (max-width: 991px) {
@@ -7482,6 +7500,7 @@ input:focus-visible {
         width: 48px;
         height: 48px;
         display: flex;
+        -webkit-display: flex;
         align-items: center;
         justify-content: center;
     }
@@ -7628,7 +7647,8 @@ input:focus-visible {
 
 /* ===================== Scroll to Top End ================================= */
 /* Custom Cursor Css Start */
-.cursor, .dot {
+.cursor,
+.dot {
     width: 32px;
     height: 32px;
     border: 1px solid hsl(var(--white));
@@ -7642,6 +7662,7 @@ input:focus-visible {
     visibility: hidden;
     font-size: 8px;
     display: flex;
+    -webkit-display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;

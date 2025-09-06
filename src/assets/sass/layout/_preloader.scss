@@ -3,9 +3,11 @@
 .preloader {
   position: fixed;
   inset: 0;
-  background-color: #fff; /* light background */
+  background-color: #fff;
+  /* light background */
   z-index: 9999;
   display: flex;
+  -webkit-display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -35,45 +37,37 @@
   left: -120%;
   animation: heartRateOut 4.5s linear infinite;
   background: rgba(255, 255, 255, 1);
-  background: -moz-linear-gradient(
-    left,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: -ms-linear-gradient(
-    left,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 80%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: -moz-linear-gradient(left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 80%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 @keyframes heartRateIn {
   0% {
     width: 100%;
   }
+
   50% {
     width: 0%;
   }
+
   100% {
     width: 0;
   }
@@ -83,11 +77,14 @@
   0% {
     left: -120%;
   }
+
   30% {
     left: -120%;
   }
+
   100% {
     left: 0;
   }
 }
+
 /* ================================= preload Css End ===========================  */

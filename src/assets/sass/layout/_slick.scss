@@ -1,28 +1,34 @@
-/* ================= Slick Arrow & Dots css Start ================ */ 
+/* ================= Slick Arrow & Dots css Start ================ */
 .slick-initialized.slick-slider {
-  .slick-track {
-      display: flex;
-  }
-  .slick-slide {
-    cursor: grab;
-      height: auto;
-      margin: 0 10px;
-      > div {
-          height: 100%;
-      }
-  }
+    .slick-track {
+        display: flex;
+        -webkit-display: flex;
+    }
+
+    .slick-slide {
+        cursor: grab;
+        height: auto;
+        margin: 0 10px;
+
+        >div {
+            height: 100%;
+        }
+    }
 }
 
-/* Dots Css Start */ 
+/* Dots Css Start */
 .slick-dots {
     text-align: center;
     padding-block-start: 20px;
+
     li {
         display: inline-block;
+
         button {
             border: none;
             background-color: hsl(var(--black)/.2);
-            color: hsl(var(--white));;
+            color: hsl(var(--white));
+            ;
             margin: 0 3px;
             width: 8px;
             height: 8px;
@@ -31,6 +37,7 @@
             text-indent: -9999px;
             transition: .3s linear;
         }
+
         &.slick-active button {
             background-color: var(--main-600);
             width: 25px;
@@ -38,5 +45,6 @@
         }
     }
 }
+
 /* Dots Css End */
-/* ================= Slick Arrow & Dots css Start ================ */ 
+/* ================= Slick Arrow & Dots css Start ================ */

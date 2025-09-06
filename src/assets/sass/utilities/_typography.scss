@@ -16,6 +16,7 @@ body {
   background-color: hsl(var(--white));
   min-height: 100vh;
   display: flex;
+  -webkit-display: flex;
   flex-direction: column;
 }
 
@@ -52,41 +53,48 @@ h1,
 .h1 {
   font-size: var(--heading-one);
 }
+
 h2,
 .h2 {
   font-size: var(--heading-two);
 }
+
 h3,
 .h3 {
   font-size: var(--heading-three);
 }
+
 h4,
 .h4 {
   font-size: var(--heading-four);
 }
+
 h5,
 .h5 {
   font-size: var(--heading-five);
 }
+
 h6,
 .h6 {
   font-size: var(--heading-six);
 }
+
 h6.fw-normal {
   line-height: 1.65;
 }
 
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
   font-weight: inherit;
   font-size: inherit;
   color: inherit;
   transition: 0.2s linear;
   line-height: inherit;
+
   &:hover {
     color: var(--main-600);
   }
@@ -98,30 +106,37 @@ a {
   text-decoration: none;
   color: #0661e9;
 }
+
 a:hover {
   color: #1d72f2;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 select {
   cursor: pointer;
 }
+
 ul,
 ol {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 button {
   border: 0;
   background-color: transparent;
+
   &:focus {
     outline: none;
     box-shadow: none;
   }
 }
+
 input:focus,
 input:focus-visible {
   box-shadow: none;
@@ -130,4 +145,5 @@ input:focus-visible {
 .splitTextStyleOne div {
   display: inline-block;
 }
+
 /* ================================= Typography Css End =========================== */

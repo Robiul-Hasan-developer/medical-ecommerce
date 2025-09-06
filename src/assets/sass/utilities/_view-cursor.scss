@@ -17,6 +17,7 @@
     visibility: hidden;
     z-index: 999999;
     display: flex;
+    -webkit-display: flex;
     justify-content: center;
     align-items: center;
     width: 10.25rem;
@@ -30,4 +31,5 @@
     text-transform: capitalize;
     text-align: center;
 }
+
 /* View Cursor Css end */
